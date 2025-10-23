@@ -1,2 +1,4 @@
 requests>=2.31.0
 python-chess>=1.999
+chess>=1.10.0
+chess.pgn>=1.10.0

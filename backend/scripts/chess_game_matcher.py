@@ -8,10 +8,7 @@ import json
 import csv
 import re
 from datetime import datetime
-from typing import List, Dict, Optional, Tuple
-import chess
-import chess.pgn
-from io import StringIO
+from typing import List, Dict, Optional
 
 class ChessGameMatcher:
     def __init__(self, csv_file: str):
