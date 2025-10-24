@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore chess positions from Daniel Naroditsky's YouTube speedrun games. Interactive chess board with moves and video links.">
+    <meta name="keywords" content="chess, Daniel Naroditsky, Danya, speedrun, positions, YouTube, chess board">
+    <meta name="author" content="Chess Gift">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Danya's Chess Positions Explorer">
+    <meta property="og:description" content="Explore chess positions from Daniel Naroditsky's YouTube speedrun games">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Danya's Chess Positions Explorer">
+    <meta property="twitter:description" content="Explore chess positions from Daniel Naroditsky's YouTube speedrun games">
+    
+    <title>Danya's Chess Positions Explorer</title>
+    
+    <!-- Chess libraries -->
+    <link rel="stylesheet" href="https://unpkg.com/@chrisoakman/chessboardjs@1.0.0/dist/chessboard-1.0.0.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/@chrisoakman/chessboardjs@1.0.0/dist/chessboard-1.0.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chess.js/0.10.3/chess.js"></script>
+    
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <h1>Danya's Chess Positions Explorer</h1>
+            <p class="subtitle">Play through positions from Daniel Naroditsky's speedrun games on YouTube</p>
+        </header>
+
+        <!-- Loading Screen -->
+        <div id="loading-screen" class="loading-screen">
+            <div class="loading-content">
+                <div class="spinner"></div>
+                <p>Loading chess positions database...</p>
+                <p class="loading-detail">This may take a moment on first load</p>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div id="main-content" class="main-content" style="display: none;">
+            <!-- Board Section -->
+            <div class="board-section">
+                <div class="board-container">
+                    <div id="board"></div>
+                </div>
+                
+                <!-- Board Controls -->
+                <div class="board-controls">
+                    <button id="btn-start" class="control-btn" title="Go to start of history">⏮️</button>
+                    <button id="btn-back" class="control-btn" title="Previous move">◀️</button>
+                    <button id="btn-forward" class="control-btn" title="Next move">▶️</button>
+                    <button id="btn-reset" class="control-btn reset-btn" title="Reset board (clear history)">🔄 Reset</button>
+                    <button id="btn-flip" class="control-btn" title="Flip board">↕️</button>
+                    <button id="btn-sound" class="control-btn sound-btn" title="Toggle sound">🔊</button>
+                </div>
+
+                <!-- Current Position Info -->
+                <div class="position-info">
+                    <div class="info-item">
+                        <span class="info-label">FEN:</span>
+                        <input type="text" id="fen-display" readonly>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Move:</span>
+                        <span id="move-number">Start position</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Videos:</span>
+                        <span id="video-count">0</span>
+                    </div>
+                </div>
+
+                <!-- Move History -->
+                <div class="move-history">
+                    <h3>Move History</h3>
+                    <div id="move-history-list" class="move-list"></div>
+                </div>
+            </div>
+
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <!-- Next Moves -->
+                <div class="moves-section">
+                    <h2>Available Moves</h2>
+                    
+                    <div class="move-category">
+                        <h3 class="category-title danya-moves">🟢 Danya Played</h3>
+                        <div id="danya-moves" class="moves-container">
+                            <p class="no-moves">No moves in database</p>
+                        </div>
+                    </div>
+
+                    <div class="move-category">
+                        <h3 class="category-title opponent-moves">🔴 Opponents Played</h3>
+                        <div id="opponent-moves" class="moves-container">
+                            <p class="no-moves">No moves in database</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video Links -->
+                <div class="videos-section">
+                    <h2>YouTube Videos</h2>
+                    <div id="video-links" class="video-links-container">
+                        <p class="no-videos">No videos for this position</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/app.js" defer></script>
+</body>
+</html>
+
