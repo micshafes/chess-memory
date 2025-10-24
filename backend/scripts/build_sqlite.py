@@ -8,7 +8,7 @@ import re
 import os
 
 # === CONFIG ===
-INPUT_FILE = os.path.abspath("../../data/json/back_to_3000_game_data.json")
+INPUT_FILE = os.path.abspath("../../data/json/top_theory_game_data.json")
 DB_FILE = os.path.abspath("../../data/sqlite/chess_positions.db")
 
 # Ensure the folder exists
