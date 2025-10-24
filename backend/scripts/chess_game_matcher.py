@@ -72,7 +72,30 @@ class ChessGameMatcher:
             'Referer': 'https://www.chess.com/',
         }
         
+        archive_urls = [
+                        "https://api.chess.com/pub/player/hebeccararis/games/2023/09",
+                        "https://api.chess.com/pub/player/hebeccararis/games/2023/10",
+                        "https://api.chess.com/pub/player/hebeccararis/games/2024/02",
+                        "https://api.chess.com/pub/player/hebeccararis/games/2024/03",
+                        "https://api.chess.com/pub/player/hebeccararis/games/2024/04",
+                        "https://api.chess.com/pub/player/hebeccararis/games/2024/05",
+                        "https://api.chess.com/pub/player/hebeccararis/games/2024/06",
+                        "https://api.chess.com/pub/player/hebeccararis/games/2024/07",
+                        "https://api.chess.com/pub/player/hebeccararis/games/2024/08",
+                        "https://api.chess.com/pub/player/hebeccararis/games/2024/09",
+                        "https://api.chess.com/pub/player/hebeccararis/games/2024/10",
+                        "https://api.chess.com/pub/player/hebeccararis/games/2024/11",
+                        "https://api.chess.com/pub/player/hebeccararis/games/2024/12",
+                        "https://api.chess.com/pub/player/hebeccararis/games/2025/01",
+                        "https://api.chess.com/pub/player/hebeccararis/games/2025/02",
+                        "https://api.chess.com/pub/player/hebeccararis/games/2025/03",
+                        "https://api.chess.com/pub/player/hebeccararis/games/2025/04",
+                        "https://api.chess.com/pub/player/hebeccararis/games/2025/05",
+                        "https://api.chess.com/pub/player/hebeccararis/games/2025/07",
+                        "https://api.chess.com/pub/player/hebeccararis/games/2025/10"
+                        ]
         try:
+            # return archive_urls
             response = requests.get(url, headers=headers, timeout=10)
             response.raise_for_status()
             data = response.json()
@@ -128,7 +151,7 @@ class ChessGameMatcher:
         print(f"Found {len(found_games)} matches out of {len(target_game_ids)} target games")
         return found_games
     
-    def match_csv_with_api(self, username: str = "senseidanya") -> List[Dict]:
+    def match_csv_with_api(self, username: str = "hebeccararis") -> List[Dict]:
         """Match CSV games with API data"""
         print("=" * 60)
         print("CHESS GAME MATCHER")
@@ -222,7 +245,7 @@ DETAILED RESULTS:
 
 def main():
     """Main function to run the game matcher"""
-    matcher = ChessGameMatcher("back_to_3000_speedrun.csv")
+    matcher = ChessGameMatcher("../../data/csv/develop_your_instincts.csv")
     
     # Run the matching process
     matches = matcher.match_csv_with_api()

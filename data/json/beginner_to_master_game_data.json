@@ -1,0 +1,1217 @@
+[
+  {
+    "csv_game": {
+      "row_number": 2,
+      "youtube_url": "https://youtu.be/R2skmBe07aQ?si=TAF5rq2HCM36eMeN&t=39",
+      "chess_url": "https://www.chess.com/game/live/6069461723?username=senseidanya",
+      "game_id": "6069461723",
+      "youtube_timestamp": 39
+    },
+    "api_game": {
+      "url": "https://www.chess.com/game/live/6069461723",
+      "pgn": "[Event \"Live Chess\"]\n[Site \"Chess.com\"]\n[Date \"2020.12.27\"]\n[Round \"-\"]\n[White \"Prashanthsrn\"]\n[Black \"SenseiDanya\"]\n[Result \"0-1\"]\n[CurrentPosition \"r4rk1/p4pb1/1p5p/2pp4/8/5N2/PP2KPPP/1b6 w - -\"]\n[Timezone \"UTC\"]\n[ECO \"B30\"]\n[ECOUrl \"https://www.chess.com/openings/Sicilian-Defense-Old-Sicilian-Variation-3.Bc4-e6-4.Nc3\"]\n[UTCDate \"2020.12.27\"]\n[UTCTime \"07:55:52\"]\n[WhiteElo \"1317\"]\n[BlackElo \"1360\"]\n[TimeControl \"600\"]\n[Termination \"SenseiDanya won by resignation\"]\n[StartTime \"07:55:52\"]\n[EndDate \"2020.12.27\"]\n[EndTime \"08:05:29\"]\n[Link \"https://www.chess.com/game/live/6069461723\"]\n\n1. e4 {[%clk 0:09:59.2]} 1... c5 {[%clk 0:09:55.8]} 2. Nf3 {[%clk 0:09:56.7]} 2... Nc6 {[%clk 0:09:53]} 3. Bc4 {[%clk 0:09:52.8]} 3... e6 {[%clk 0:09:38.5]} 4. Nc3 {[%clk 0:09:46.2]} 4... Nf6 {[%clk 0:09:29.1]} 5. e5 {[%clk 0:09:39.3]} 5... d5 {[%clk 0:09:13.5]} 6. exf6 {[%clk 0:09:20.6]} 6... dxc4 {[%clk 0:09:10.1]} 7. fxg7 {[%clk 0:09:13.7]} 7... Bxg7 {[%clk 0:09:09.2]} 8. Ne4 {[%clk 0:09:06.4]} 8... b6 {[%clk 0:08:29.1]} 9. d3 {[%clk 0:08:54.7]} 9... cxd3 {[%clk 0:08:18.4]} 10. cxd3 {[%clk 0:08:52.9]} 10... Bb7 {[%clk 0:07:27]} 11. Bf4 {[%clk 0:08:38.3]} 11... O-O {[%clk 0:07:08.7]} 12. Nfg5 {[%clk 0:08:24.9]} 12... Nb4 {[%clk 0:06:24.3]} 13. O-O {[%clk 0:08:00.6]} 13... h6 {[%clk 0:06:11.1]} 14. Nf3 {[%clk 0:07:16.3]} 14... Nxd3 {[%clk 0:06:09.2]} 15. Rb1 {[%clk 0:06:18.1]} 15... Bxe4 {[%clk 0:05:58.8]} 16. Qe2 {[%clk 0:06:07.3]} 16... Qd5 {[%clk 0:05:25.5]} 17. Rfd1 {[%clk 0:05:41.3]} 17... Nxf4 {[%clk 0:05:11.6]} 18. Rxd5 {[%clk 0:05:38.1]} 18... Nxe2+ {[%clk 0:05:10.6]} 19. Kf1 {[%clk 0:05:36]} 19... exd5 {[%clk 0:05:07]} 20. Kxe2 {[%clk 0:05:30.4]} 20... Bxb1 {[%clk 0:05:06.1]} 0-1\n",
+      "time_control": "600",
+      "end_time": 1609056329,
+      "rated": true,
+      "accuracies": {
+        "white": 74.61,
+        "black": 92.79
+      },
+      "tcn": "mCYIgv5QfA0Sbs!TCKZJKTJAT292sCXPltAtkt6XcD8!vMQzeg3VMvztabXCdm7JfdtDdJDmgfSJfmCb",
+      "uuid": "ebdcc07e-4818-11eb-9c8f-0069e4010001",
+      "initial_setup": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "fen": "r4rk1/p4pb1/1p5p/2pp4/8/5N2/PP2KPPP/1b6 w - -",
+      "time_class": "rapid",
+      "rules": "chess",
+      "white": {
+        "rating": 1317,
+        "result": "resigned",
+        "@id": "https://api.chess.com/pub/player/prashanthsrn",
+        "username": "Prashanthsrn",
+        "uuid": "c7582c7c-77c8-11e6-8026-000000000000"
+      },
+      "black": {
+        "rating": 1360,
+        "result": "win",
+        "@id": "https://api.chess.com/pub/player/senseidanya",
+        "username": "SenseiDanya",
+        "uuid": "a3066ffc-17d6-11eb-b317-1754d2b3bc66"
+      },
+      "eco": "https://www.chess.com/openings/Sicilian-Defense-Old-Sicilian-Variation-3.Bc4-e6-4.Nc3"
+    },
+    "archive_url": "https://api.chess.com/pub/player/senseidanya/games/2020/12",
+    "match_status": "FOUND",
+    "youtube_url": "https://youtu.be/R2skmBe07aQ?si=TAF5rq2HCM36eMeN&t=39",
+    "youtube_timestamp": 39
+  },
+  {
+    "csv_game": {
+      "row_number": 3,
+      "youtube_url": "https://youtu.be/R2skmBe07aQ?si=ptNmTz8BTncf69Zj&t=926",
+      "chess_url": "https://www.chess.com/game/live/6069536239?username=senseidanya",
+      "game_id": "6069536239",
+      "youtube_timestamp": 926
+    },
+    "api_game": {
+      "url": "https://www.chess.com/game/live/6069536239",
+      "pgn": "[Event \"Live Chess\"]\n[Site \"Chess.com\"]\n[Date \"2020.12.27\"]\n[Round \"-\"]\n[White \"SenseiDanya\"]\n[Black \"AdityaRajagopal\"]\n[Result \"1-0\"]\n[CurrentPosition \"r2qr2k/1p5Q/p1n5/3p1nN1/PP1P4/2P4P/5PPB/R3R1K1 b - -\"]\n[Timezone \"UTC\"]\n[ECO \"B13\"]\n[ECOUrl \"https://www.chess.com/openings/Caro-Kann-Defense-Exchange-Variation...4.Bd3-Nc6-5.c3-g6\"]\n[UTCDate \"2020.12.27\"]\n[UTCTime \"08:13:29\"]\n[WhiteElo \"1412\"]\n[BlackElo \"1176\"]\n[TimeControl \"600\"]\n[Termination \"SenseiDanya won by checkmate\"]\n[StartTime \"08:13:29\"]\n[EndDate \"2020.12.27\"]\n[EndTime \"08:23:41\"]\n[Link \"https://www.chess.com/game/live/6069536239\"]\n\n1. e4 {[%clk 0:10:00]} 1... c6 {[%clk 0:10:00]} 2. d4 {[%clk 0:09:55.1]} 2... d5 {[%clk 0:09:59]} 3. exd5 {[%clk 0:09:41.7]} 3... cxd5 {[%clk 0:09:57.9]} 4. Bd3 {[%clk 0:09:13.6]} 4... Nc6 {[%clk 0:09:48.8]} 5. c3 {[%clk 0:08:37]} 5... g6 {[%clk 0:09:42.1]} 6. h3 {[%clk 0:08:23.8]} 6... Bg7 {[%clk 0:09:37.5]} 7. Nf3 {[%clk 0:08:22.8]} 7... e6 {[%clk 0:09:12.8]} 8. O-O {[%clk 0:08:16.6]} 8... Nge7 {[%clk 0:09:10.2]} 9. Bf4 {[%clk 0:07:54.5]} 9... O-O {[%clk 0:09:06.8]} 10. Nbd2 {[%clk 0:07:43.7]} 10... f6 {[%clk 0:09:01.7]} 11. Re1 {[%clk 0:07:25.5]} 11... Re8 {[%clk 0:08:58.9]} 12. b4 {[%clk 0:06:47]} 12... a6 {[%clk 0:08:51.6]} 13. a4 {[%clk 0:06:45.1]} 13... g5 {[%clk 0:07:24.6]} 14. Bh2 {[%clk 0:06:43.4]} 14... h5 {[%clk 0:07:16.9]} 15. Nxg5 {[%clk 0:06:02.4]} 15... e5 {[%clk 0:06:48.9]} 16. Qxh5 {[%clk 0:05:51.9]} 16... e4 {[%clk 0:06:37.1]} 17. Ndxe4 {[%clk 0:05:14.5]} 17... Bf5 {[%clk 0:05:47.2]} 18. Nxf6+ {[%clk 0:04:58.8]} 18... Bxf6 {[%clk 0:05:30.5]} 19. Qf7+ {[%clk 0:04:57.9]} 19... Kh8 {[%clk 0:05:27.9]} 20. Qxf6+ {[%clk 0:04:57.2]} 20... Kg8 {[%clk 0:05:23]} 21. Qf7+ {[%clk 0:04:56.2]} 21... Kh8 {[%clk 0:05:22.3]} 22. Bxf5 {[%clk 0:04:43.4]} 22... Nxf5 {[%clk 0:05:16.4]} 23. Qh7# {[%clk 0:04:43.3]} 1-0\n",
+      "time_control": "600",
+      "end_time": 1609057421,
+      "rated": true,
+      "accuracies": {
+        "white": 97.47,
+        "black": 73.48
+      },
+      "tcn": "mCYQlBZJCJQJft5Qks2Upx92gv0Seg!0cD8!bl1Tfe98jzWOiyUMDp3NvMSKdNKClC6LCT2TN1!?1T?!T1!?tL0L13",
+      "uuid": "62234ed9-481b-11eb-9c8f-0069e4010001",
+      "initial_setup": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "fen": "r2qr2k/1p5Q/p1n5/3p1nN1/PP1P4/2P4P/5PPB/R3R1K1 b - -",
+      "time_class": "rapid",
+      "rules": "chess",
+      "white": {
+        "rating": 1412,
+        "result": "win",
+        "@id": "https://api.chess.com/pub/player/senseidanya",
+        "username": "SenseiDanya",
+        "uuid": "a3066ffc-17d6-11eb-b317-1754d2b3bc66"
+      },
+      "black": {
+        "rating": 1176,
+        "result": "checkmated",
+        "@id": "https://api.chess.com/pub/player/adityarajagopal",
+        "username": "AdityaRajagopal",
+        "uuid": "1b3731f4-bfb8-11ea-8ace-b55aa1a8f7ca"
+      },
+      "eco": "https://www.chess.com/openings/Caro-Kann-Defense-Exchange-Variation...4.Bd3-Nc6-5.c3-g6"
+    },
+    "archive_url": "https://api.chess.com/pub/player/senseidanya/games/2020/12",
+    "match_status": "FOUND",
+    "youtube_url": "https://youtu.be/R2skmBe07aQ?si=ptNmTz8BTncf69Zj&t=926",
+    "youtube_timestamp": 926
+  },
+  {
+    "csv_game": {
+      "row_number": 4,
+      "youtube_url": "https://youtu.be/RUYbO35XVCE?si=DMwYSBwUyA-jqEcP&t=9",
+      "chess_url": "https://www.chess.com/game/live/6069689253?username=senseidanya",
+      "game_id": "6069689253",
+      "youtube_timestamp": 9
+    },
+    "api_game": {
+      "url": "https://www.chess.com/game/live/6069689253",
+      "pgn": "[Event \"Live Chess\"]\n[Site \"Chess.com\"]\n[Date \"2020.12.27\"]\n[Round \"-\"]\n[White \"SenseiDanya\"]\n[Black \"AlexSem\"]\n[Result \"1-0\"]\n[CurrentPosition \"r2kqR2/4Q2p/p5p1/1p1Np3/4p3/4B3/PPP3PP/R5K1 b - -\"]\n[Timezone \"UTC\"]\n[ECO \"C70\"]\n[ECOUrl \"https://www.chess.com/openings/Ruy-Lopez-Opening-Morphy-Defense-Caro-Variation-5.Bb3-Nf6\"]\n[UTCDate \"2020.12.27\"]\n[UTCTime \"08:48:29\"]\n[WhiteElo \"1412\"]\n[BlackElo \"1469\"]\n[TimeControl \"600\"]\n[Termination \"SenseiDanya won by resignation\"]\n[StartTime \"08:48:29\"]\n[EndDate \"2020.12.27\"]\n[EndTime \"08:59:00\"]\n[Link \"https://www.chess.com/game/live/6069689253\"]\n\n1. e4 {[%clk 0:10:00]} 1... e5 {[%clk 0:10:00]} 2. Nf3 {[%clk 0:09:58.4]} 2... Nc6 {[%clk 0:09:58.4]} 3. Bb5 {[%clk 0:09:54]} 3... a6 {[%clk 0:09:57.2]} 4. Ba4 {[%clk 0:09:53]} 4... b5 {[%clk 0:09:55.7]} 5. Bb3 {[%clk 0:09:41.3]} 5... Nf6 {[%clk 0:09:54.7]} 6. d4 {[%clk 0:09:11.7]} 6... d6 {[%clk 0:09:33.3]} 7. Ng5 {[%clk 0:07:55.8]} 7... Bg4 {[%clk 0:08:22.5]} 8. Bxf7+ {[%clk 0:07:21.2]} 8... Ke7 {[%clk 0:08:12.3]} 9. f3 {[%clk 0:07:20.5]} 9... Bh5 {[%clk 0:08:06]} 10. Bxh5 {[%clk 0:07:04.9]} 10... Nxh5 {[%clk 0:08:05.9]} 11. d5 {[%clk 0:06:42.7]} 11... Nb8 {[%clk 0:07:29.5]} 12. Ne6 {[%clk 0:06:41.7]} 12... Qd7 {[%clk 0:07:23.7]} 13. O-O {[%clk 0:06:27.5]} 13... c6 {[%clk 0:07:13.8]} 14. f4 {[%clk 0:06:11.9]} 14... cxd5 {[%clk 0:06:39.5]} 15. Nxf8 {[%clk 0:05:36.4]} 15... Rxf8 {[%clk 0:06:37.2]} 16. Qxh5 {[%clk 0:05:35.2]} 16... Nc6 {[%clk 0:06:23.6]} 17. Nc3 {[%clk 0:05:23.2]} 17... dxe4 {[%clk 0:06:10.4]} 18. Nd5+ {[%clk 0:05:22.1]} 18... Kd8 {[%clk 0:06:02.3]} 19. Be3 {[%clk 0:05:13.4]} 19... g6 {[%clk 0:05:29]} 20. Qg5+ {[%clk 0:04:53.9]} 20... Ne7 {[%clk 0:05:14.1]} 21. fxe5 {[%clk 0:04:45.4]} 21... dxe5 {[%clk 0:05:10.4]} 22. Rxf8+ {[%clk 0:04:44.1]} 22... Qe8 {[%clk 0:05:04.7]} 23. Qxe7+ {[%clk 0:04:43.2]} 1-0\n",
+      "time_control": "600",
+      "end_time": 1609059540,
+      "rated": false,
+      "accuracies": {
+        "white": 94.29,
+        "black": 74.82
+      },
+      "tcn": "mC0Kgv5QfHWOHyXHyr!TlBZRvM6Er180nvEN1NTNBJQ5MS7ZegYQvDQJS9?9dN5QbsJCsJ07cu2UNMQ0DKRKf9Z8M0",
+      "uuid": "4df38412-4820-11eb-9c8f-0069e4010001",
+      "initial_setup": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "fen": "r2kqR2/4Q2p/p5p1/1p1Np3/4p3/4B3/PPP3PP/R5K1 b - -",
+      "time_class": "rapid",
+      "rules": "chess",
+      "white": {
+        "rating": 1412,
+        "result": "win",
+        "@id": "https://api.chess.com/pub/player/senseidanya",
+        "username": "SenseiDanya",
+        "uuid": "a3066ffc-17d6-11eb-b317-1754d2b3bc66"
+      },
+      "black": {
+        "rating": 1469,
+        "result": "resigned",
+        "@id": "https://api.chess.com/pub/player/alexsem",
+        "username": "AlexSem",
+        "uuid": "9fd1bd8c-b232-11e0-805b-000000000000"
+      },
+      "eco": "https://www.chess.com/openings/Ruy-Lopez-Opening-Morphy-Defense-Caro-Variation-5.Bb3-Nf6"
+    },
+    "archive_url": "https://api.chess.com/pub/player/senseidanya/games/2020/12",
+    "match_status": "FOUND",
+    "youtube_url": "https://youtu.be/RUYbO35XVCE?si=DMwYSBwUyA-jqEcP&t=9",
+    "youtube_timestamp": 9
+  },
+  {
+    "csv_game": {
+      "row_number": 5,
+      "youtube_url": "https://youtu.be/wn7jKtpg2dg?si=v5-bp7GfEBvdiejD&t=6",
+      "chess_url": "https://www.chess.com/game/live/6069962514?username=senseidanya",
+      "game_id": "6069962514",
+      "youtube_timestamp": 6
+    },
+    "api_game": {
+      "url": "https://www.chess.com/game/live/6069962514",
+      "pgn": "[Event \"Live Chess\"]\n[Site \"Chess.com\"]\n[Date \"2020.12.27\"]\n[Round \"-\"]\n[White \"rad_cliff\"]\n[Black \"SenseiDanya\"]\n[Result \"0-1\"]\n[CurrentPosition \"r4rk1/pQ3ppp/2p5/8/P1b1n3/8/4RPPP/q4NK1 w - -\"]\n[Timezone \"UTC\"]\n[ECO \"C51\"]\n[ECOUrl \"https://www.chess.com/openings/Giuoco-Piano-Game-Evans-Accepted-Anderssen-Variation-Cordel-Line...8.Nxc4-d5-9.exd5-Qxd5-10.Ne3\"]\n[UTCDate \"2020.12.27\"]\n[UTCTime \"09:46:32\"]\n[WhiteElo \"1294\"]\n[BlackElo \"1466\"]\n[TimeControl \"600\"]\n[Termination \"SenseiDanya won by resignation\"]\n[StartTime \"09:46:32\"]\n[EndDate \"2020.12.27\"]\n[EndTime \"09:56:45\"]\n[Link \"https://www.chess.com/game/live/6069962514\"]\n\n1. e4 {[%clk 0:10:00]} 1... e5 {[%clk 0:10:00]} 2. Nf3 {[%clk 0:09:59]} 2... Nc6 {[%clk 0:09:59]} 3. Bc4 {[%clk 0:09:57]} 3... Bc5 {[%clk 0:09:47.1]} 4. b4 {[%clk 0:09:52.9]} 4... Bxb4 {[%clk 0:09:12.7]} 5. c3 {[%clk 0:09:50.5]} 5... Be7 {[%clk 0:08:37.3]} 6. d4 {[%clk 0:09:32.2]} 6... Na5 {[%clk 0:08:12.4]} 7. Nxe5 {[%clk 0:09:06.5]} 7... Nxc4 {[%clk 0:08:10.3]} 8. Nxc4 {[%clk 0:09:06.4]} 8... d5 {[%clk 0:07:59.5]} 9. exd5 {[%clk 0:08:38.6]} 9... Qxd5 {[%clk 0:07:55.9]} 10. Ne3 {[%clk 0:08:31.1]} 10... Qd8 {[%clk 0:07:21.3]} 11. O-O {[%clk 0:08:29.4]} 11... Nf6 {[%clk 0:07:20.5]} 12. Re1 {[%clk 0:08:15]} 12... O-O {[%clk 0:07:16.7]} 13. c4 {[%clk 0:07:45.5]} 13... c6 {[%clk 0:06:35.8]} 14. a4 {[%clk 0:07:35.7]} 14... Be6 {[%clk 0:06:26]} 15. Nc3 {[%clk 0:07:24.2]} 15... Bb4 {[%clk 0:05:57.8]} 16. Bd2 {[%clk 0:06:58.3]} 16... Qxd4 {[%clk 0:05:45.5]} 17. Qb3 {[%clk 0:06:39]} 17... Qxd2 {[%clk 0:05:31.7]} 18. Qxb4 {[%clk 0:06:33.7]} 18... Ne4 {[%clk 0:05:20.2]} 19. Re2 {[%clk 0:05:30.1]} 19... Qxc3 {[%clk 0:05:19.3]} 20. Qxb7 {[%clk 0:05:13.9]} 20... Qxa1+ {[%clk 0:05:07.2]} 21. Nf1 {[%clk 0:05:08]} 21... Bxc4 {[%clk 0:05:05.9]} 0-1\n",
+      "time_control": "600",
+      "end_time": 1609063005,
+      "rated": true,
+      "accuracies": {
+        "white": 84,
+        "black": 98.04
+      },
+      "tcn": "mC0Kgv5QfA9IjzIzksz0lBQGvKGAKAZJCJ7JAuJ7eg!Tfe8!sAYQiy6Sbs0zcl7BdrBlrzTCemlszXsaufSA",
+      "uuid": "644e32dd-4828-11eb-9c8f-0069e4010001",
+      "initial_setup": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "fen": "r4rk1/pQ3ppp/2p5/8/P1b1n3/8/4RPPP/q4NK1 w - -",
+      "time_class": "rapid",
+      "rules": "chess",
+      "white": {
+        "rating": 1294,
+        "result": "resigned",
+        "@id": "https://api.chess.com/pub/player/rad_cliff",
+        "username": "rad_cliff",
+        "uuid": "6cf7688e-578b-11e3-804e-000000000000"
+      },
+      "black": {
+        "rating": 1466,
+        "result": "win",
+        "@id": "https://api.chess.com/pub/player/senseidanya",
+        "username": "SenseiDanya",
+        "uuid": "a3066ffc-17d6-11eb-b317-1754d2b3bc66"
+      },
+      "eco": "https://www.chess.com/openings/Giuoco-Piano-Game-Evans-Accepted-Anderssen-Variation-Cordel-Line...8.Nxc4-d5-9.exd5-Qxd5-10.Ne3"
+    },
+    "archive_url": "https://api.chess.com/pub/player/senseidanya/games/2020/12",
+    "match_status": "FOUND",
+    "youtube_url": "https://youtu.be/wn7jKtpg2dg?si=v5-bp7GfEBvdiejD&t=6",
+    "youtube_timestamp": 6
+  },
+  {
+    "csv_game": {
+      "row_number": 6,
+      "youtube_url": "https://youtu.be/wn7jKtpg2dg?si=7MRpBOdB44f66nPv&t=1562",
+      "chess_url": "https://www.chess.com/game/live/6070107913?username=senseidanya",
+      "game_id": "6070107913",
+      "youtube_timestamp": 1562
+    },
+    "api_game": {
+      "url": "https://www.chess.com/game/live/6070107913",
+      "pgn": "[Event \"Live Chess\"]\n[Site \"Chess.com\"]\n[Date \"2020.12.27\"]\n[Round \"-\"]\n[White \"SenseiDanya\"]\n[Black \"CallTheKrankenwagen\"]\n[Result \"1-0\"]\n[CurrentPosition \"2rnr3/1p2bkpp/pR3pn1/3p4/1P1P4/PB3N2/1B1Q1PPP/4R1K1 b - -\"]\n[Timezone \"UTC\"]\n[ECO \"C02\"]\n[ECOUrl \"https://www.chess.com/openings/French-Defense-Advance-Paulsen-Main-Line-6...f6\"]\n[UTCDate \"2020.12.27\"]\n[UTCTime \"10:15:15\"]\n[WhiteElo \"1466\"]\n[BlackElo \"1560\"]\n[TimeControl \"600\"]\n[Termination \"SenseiDanya won by resignation\"]\n[StartTime \"10:15:15\"]\n[EndDate \"2020.12.27\"]\n[EndTime \"10:28:36\"]\n[Link \"https://www.chess.com/game/live/6070107913\"]\n\n1. e4 {[%clk 0:10:00]} 1... e6 {[%clk 0:10:00]} 2. d4 {[%clk 0:09:41.5]} 2... d5 {[%clk 0:09:58.5]} 3. e5 {[%clk 0:09:28.3]} 3... c5 {[%clk 0:09:57.3]} 4. c3 {[%clk 0:09:12]} 4... Nc6 {[%clk 0:09:55.8]} 5. Nf3 {[%clk 0:08:46.6]} 5... Qb6 {[%clk 0:09:53.2]} 6. a3 {[%clk 0:08:32]} 6... f6 {[%clk 0:09:51.1]} 7. b4 {[%clk 0:08:19.2]} 7... cxd4 {[%clk 0:09:30.4]} 8. cxd4 {[%clk 0:08:18.3]} 8... a6 {[%clk 0:09:10]} 9. Bd3 {[%clk 0:07:37.5]} 9... Bd7 {[%clk 0:08:58.7]} 10. O-O {[%clk 0:07:14.2]} 10... Nge7 {[%clk 0:08:02]} 11. Nc3 {[%clk 0:06:53.5]} 11... Ng6 {[%clk 0:06:52.6]} 12. Re1 {[%clk 0:06:18.8]} 12... Be7 {[%clk 0:06:43.1]} 13. Bb2 {[%clk 0:05:39]} 13... Nf4 {[%clk 0:06:12.9]} 14. Bc2 {[%clk 0:05:15.8]} 14... Rc8 {[%clk 0:05:21.9]} 15. Qd2 {[%clk 0:05:04.2]} 15... Ng6 {[%clk 0:04:50.4]} 16. Nxd5 {[%clk 0:04:57.3]} 16... exd5 {[%clk 0:04:03.3]} 17. e6 {[%clk 0:04:52.6]} 17... Bxe6 {[%clk 0:03:52.7]} 18. Rxe6 {[%clk 0:04:50.5]} 18... Kf7 {[%clk 0:03:45.2]} 19. Rae1 {[%clk 0:04:38]} 19... Rhe8 {[%clk 0:03:03.1]} 20. Bb3 {[%clk 0:04:17.1]} 20... Nd8 {[%clk 0:02:41.5]} 21. Rxb6 {[%clk 0:04:14.9]} 1-0\n",
+      "time_control": "600",
+      "end_time": 1609064916,
+      "rated": false,
+      "accuracies": {
+        "white": 82.69,
+        "black": 67.82
+      },
+      "tcn": "mC0SlBZJCKYIks5Qgv7Piq1TjzIBsBWOft6Zeg!0bs0Ufe90cjUDtk46dlDUsJSJKSZSeS81ae?8krQ7SP",
+      "uuid": "6b04cebf-482c-11eb-9c8f-0069e4010001",
+      "initial_setup": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "fen": "2rnr3/1p2bkpp/pR3pn1/3p4/1P1P4/PB3N2/1B1Q1PPP/4R1K1 b - -",
+      "time_class": "rapid",
+      "rules": "chess",
+      "white": {
+        "rating": 1466,
+        "result": "win",
+        "@id": "https://api.chess.com/pub/player/senseidanya",
+        "username": "SenseiDanya",
+        "uuid": "a3066ffc-17d6-11eb-b317-1754d2b3bc66"
+      },
+      "black": {
+        "rating": 1560,
+        "result": "resigned",
+        "@id": "https://api.chess.com/pub/player/callthekrankenwagen",
+        "username": "CallTheKrankenwagen",
+        "uuid": "21fcaf1c-90bc-11ea-9a12-7bf962835d90"
+      },
+      "eco": "https://www.chess.com/openings/French-Defense-Advance-Paulsen-Main-Line-6...f6"
+    },
+    "archive_url": "https://api.chess.com/pub/player/senseidanya/games/2020/12",
+    "match_status": "FOUND",
+    "youtube_url": "https://youtu.be/wn7jKtpg2dg?si=7MRpBOdB44f66nPv&t=1562",
+    "youtube_timestamp": 1562
+  },
+  {
+    "csv_game": {
+      "row_number": 7,
+      "youtube_url": "https://youtu.be/Vy6j7N_Wh0o?si=L4OdZyQXa834-ZBW&t=175",
+      "chess_url": "https://www.chess.com/game/live/6070306082?username=senseidanya",
+      "game_id": "6070306082",
+      "youtube_timestamp": 175
+    },
+    "api_game": {
+      "url": "https://www.chess.com/game/live/6070306082",
+      "pgn": "[Event \"Live Chess\"]\n[Site \"Chess.com\"]\n[Date \"2020.12.27\"]\n[Round \"-\"]\n[White \"Jiggahertz\"]\n[Black \"SenseiDanya\"]\n[Result \"0-1\"]\n[CurrentPosition \"r2qk2r/p4ppp/2p1p3/2b1Pb2/Qn1N1P2/N7/PP1P2PP/R1B2RK1 w kq -\"]\n[Timezone \"UTC\"]\n[ECO \"B21\"]\n[ECOUrl \"https://www.chess.com/openings/Sicilian-Defense-McDonnell-Attack-2...d5-3.e5-Nc6\"]\n[UTCDate \"2020.12.27\"]\n[UTCTime \"10:53:07\"]\n[WhiteElo \"1344\"]\n[BlackElo \"1512\"]\n[TimeControl \"900\"]\n[Termination \"SenseiDanya won by resignation\"]\n[StartTime \"10:53:07\"]\n[EndDate \"2020.12.27\"]\n[EndTime \"11:02:36\"]\n[Link \"https://www.chess.com/game/live/6070306082\"]\n\n1. e4 {[%clk 0:15:00]} 1... c5 {[%clk 0:15:00]} 2. f4 {[%clk 0:14:48.8]} 2... d5 {[%clk 0:14:27.6]} 3. e5 {[%clk 0:14:40.2]} 3... Nc6 {[%clk 0:14:01]} 4. Nf3 {[%clk 0:14:34.7]} 4... Bf5 {[%clk 0:13:53.3]} 5. c3 {[%clk 0:14:18.4]} 5... d4 {[%clk 0:13:25.7]} 6. Bb5 {[%clk 0:14:00.3]} 6... e6 {[%clk 0:12:15.4]} 7. Na3 {[%clk 0:13:14.6]} 7... Ne7 {[%clk 0:11:39.7]} 8. O-O {[%clk 0:12:51.3]} 8... Nd5 {[%clk 0:11:16]} 9. cxd4 {[%clk 0:12:24.6]} 9... cxd4 {[%clk 0:11:13.6]} 10. Nxd4 {[%clk 0:12:11.5]} 10... Bc5 {[%clk 0:10:53.3]} 11. Bxc6+ {[%clk 0:11:55.1]} 11... bxc6 {[%clk 0:10:52.3]} 12. Qa4 {[%clk 0:11:47.8]} 12... Nb4 {[%clk 0:10:05.5]} 0-1\n",
+      "time_control": "900",
+      "end_time": 1609066956,
+      "rated": true,
+      "accuracies": {
+        "white": 65.42,
+        "black": 84.48
+      },
+      "tcn": "mCYInDZJCK5Qgv6LksJBfH0Sbq!0eg0JsBIBvB9IHQXQdyJz",
+      "uuid": "acf8dd29-4831-11eb-9c8f-0069e4010001",
+      "initial_setup": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "fen": "r2qk2r/p4ppp/2p1p3/2b1Pb2/Qn1N1P2/N7/PP1P2PP/R1B2RK1 w kq -",
+      "time_class": "rapid",
+      "rules": "chess",
+      "white": {
+        "rating": 1344,
+        "result": "resigned",
+        "@id": "https://api.chess.com/pub/player/jiggahertz",
+        "username": "Jiggahertz",
+        "uuid": "92afdf16-ea9e-11e2-8058-000000000000"
+      },
+      "black": {
+        "rating": 1512,
+        "result": "win",
+        "@id": "https://api.chess.com/pub/player/senseidanya",
+        "username": "SenseiDanya",
+        "uuid": "a3066ffc-17d6-11eb-b317-1754d2b3bc66"
+      },
+      "eco": "https://www.chess.com/openings/Sicilian-Defense-McDonnell-Attack-2...d5-3.e5-Nc6"
+    },
+    "archive_url": "https://api.chess.com/pub/player/senseidanya/games/2020/12",
+    "match_status": "FOUND",
+    "youtube_url": "https://youtu.be/Vy6j7N_Wh0o?si=L4OdZyQXa834-ZBW&t=175",
+    "youtube_timestamp": 175
+  },
+  {
+    "csv_game": {
+      "row_number": 8,
+      "youtube_url": "https://youtu.be/Vy6j7N_Wh0o?si=BTxSQc5YKsTwh2Dr&t=1386",
+      "chess_url": "https://www.chess.com/game/live/6070532448?username=senseidanya",
+      "game_id": "6070532448",
+      "youtube_timestamp": 1386
+    },
+    "api_game": {
+      "url": "https://www.chess.com/game/live/6070532448",
+      "pgn": "[Event \"Live Chess\"]\n[Site \"Chess.com\"]\n[Date \"2020.12.27\"]\n[Round \"-\"]\n[White \"MidnightRhino\"]\n[Black \"SenseiDanya\"]\n[Result \"0-1\"]\n[CurrentPosition \"r1b2rk1/ppp3bp/3p2pB/2nPpp2/2PnP2q/2N2P2/PP1QN1PP/RB2K2R w KQ -\"]\n[Timezone \"UTC\"]\n[ECO \"E81\"]\n[ECOUrl \"https://www.chess.com/openings/Kings-Indian-Defense-Samisch-Normal-Defense\"]\n[UTCDate \"2020.12.27\"]\n[UTCTime \"11:34:12\"]\n[WhiteElo \"1702\"]\n[BlackElo \"1512\"]\n[TimeControl \"900\"]\n[Termination \"SenseiDanya won by resignation\"]\n[StartTime \"11:34:12\"]\n[EndDate \"2020.12.27\"]\n[EndTime \"11:39:08\"]\n[Link \"https://www.chess.com/game/live/6070532448\"]\n\n1. d4 {[%clk 0:15:00]} 1... Nf6 {[%clk 0:15:00]} 2. c4 {[%clk 0:14:55.9]} 2... g6 {[%clk 0:14:53.3]} 3. f3 {[%clk 0:14:29.1]} 3... Bg7 {[%clk 0:14:34.2]} 4. e4 {[%clk 0:14:24.7]} 4... d6 {[%clk 0:14:25.6]} 5. Nc3 {[%clk 0:14:22.9]} 5... O-O {[%clk 0:14:24.9]} 6. Bd3 {[%clk 0:14:21.2]} 6... Nc6 {[%clk 0:13:42.7]} 7. Nge2 {[%clk 0:14:18]} 7... Nd7 {[%clk 0:13:27.6]} 8. Be3 {[%clk 0:14:15.2]} 8... e5 {[%clk 0:13:24.4]} 9. d5 {[%clk 0:14:13.8]} 9... Nd4 {[%clk 0:13:02.5]} 10. Qd2 {[%clk 0:14:11.3]} 10... Nc5 {[%clk 0:12:46.2]} 11. Bb1 {[%clk 0:14:02.1]} 11... f5 {[%clk 0:12:05.2]} 12. Bh6 {[%clk 0:13:58.9]} 12... Qh4+ {[%clk 0:11:23]} 0-1\n",
+      "time_control": "900",
+      "end_time": 1609069148,
+      "rated": false,
+      "accuracies": {
+        "white": 82.94,
+        "black": 92.86
+      },
+      "tcn": "lB!TkA2Unv92mCZRbs8!ft5QgmTZcu0KBJQBdlZItb1LuV7F",
+      "uuid": "6d89a3ee-4837-11eb-9c8f-0069e4010001",
+      "initial_setup": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "fen": "r1b2rk1/ppp3bp/3p2pB/2nPpp2/2PnP2q/2N2P2/PP1QN1PP/RB2K2R w KQ -",
+      "time_class": "rapid",
+      "rules": "chess",
+      "white": {
+        "rating": 1702,
+        "result": "resigned",
+        "@id": "https://api.chess.com/pub/player/midnightrhino",
+        "username": "MidnightRhino",
+        "uuid": "6bdd2bd6-7dc7-11e6-8038-000000000000"
+      },
+      "black": {
+        "rating": 1512,
+        "result": "win",
+        "@id": "https://api.chess.com/pub/player/senseidanya",
+        "username": "SenseiDanya",
+        "uuid": "a3066ffc-17d6-11eb-b317-1754d2b3bc66"
+      },
+      "eco": "https://www.chess.com/openings/Kings-Indian-Defense-Samisch-Normal-Defense"
+    },
+    "archive_url": "https://api.chess.com/pub/player/senseidanya/games/2020/12",
+    "match_status": "FOUND",
+    "youtube_url": "https://youtu.be/Vy6j7N_Wh0o?si=BTxSQc5YKsTwh2Dr&t=1386",
+    "youtube_timestamp": 1386
+  },
+  {
+    "csv_game": {
+      "row_number": 9,
+      "youtube_url": "https://youtu.be/n5BL4u1QpfY?si=kDznRkS-FX4Kg25I&t=4",
+      "chess_url": "https://www.chess.com/game/live/6138854911?username=senseidanya",
+      "game_id": "6138854911",
+      "youtube_timestamp": 4
+    },
+    "api_game": {
+      "url": "https://www.chess.com/game/live/6138854911",
+      "pgn": "[Event \"Live Chess\"]\n[Site \"Chess.com\"]\n[Date \"2021.01.04\"]\n[Round \"-\"]\n[White \"SenseiDanya\"]\n[Black \"uuuuuuuuuuuh\"]\n[Result \"1-0\"]\n[CurrentPosition \"r1bqk2r/pppp2pp/2n2n2/2b1p1N1/4P3/1B6/PPPP1PPP/RNBQ1RK1 b - -\"]\n[Timezone \"UTC\"]\n[ECO \"C57\"]\n[ECOUrl \"https://www.chess.com/openings/Italian-Game-Traxler-Bishop-Sacrifice-Line\"]\n[UTCDate \"2021.01.04\"]\n[UTCTime \"08:35:00\"]\n[WhiteElo \"1512\"]\n[BlackElo \"1224\"]\n[TimeControl \"900+10\"]\n[Termination \"SenseiDanya won by resignation\"]\n[StartTime \"08:35:00\"]\n[EndDate \"2021.01.04\"]\n[EndTime \"08:37:53\"]\n[Link \"https://www.chess.com/game/live/6138854911\"]\n\n1. e4 {[%clk 0:15:10]} 1... e5 {[%clk 0:15:10]} 2. Nf3 {[%clk 0:15:14.3]} 2... Nc6 {[%clk 0:15:18.2]} 3. Bc4 {[%clk 0:15:19.8]} 3... Nf6 {[%clk 0:15:12.4]} 4. Ng5 {[%clk 0:15:24]} 4... Bc5 {[%clk 0:15:19]} 5. Bxf7+ {[%clk 0:14:18.2]} 5... Kf8 {[%clk 0:15:23.8]} 6. Bb3 {[%clk 0:14:12.3]} 6... Ke8 {[%clk 0:15:33.3]} 7. O-O {[%clk 0:14:13.8]} 1-0\n",
+      "time_control": "900+10",
+      "end_time": 1609749473,
+      "rated": false,
+      "accuracies": {
+        "white": 99.58,
+        "black": 90.39
+      },
+      "tcn": "mC0Kgv5QfA!TvM9IA1891r98eg",
+      "uuid": "b63dbf24-4e67-11eb-9c8f-0069e4010001",
+      "initial_setup": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "fen": "r1bqk2r/pppp2pp/2n2n2/2b1p1N1/4P3/1B6/PPPP1PPP/RNBQ1RK1 b - -",
+      "time_class": "rapid",
+      "rules": "chess",
+      "white": {
+        "rating": 1512,
+        "result": "win",
+        "@id": "https://api.chess.com/pub/player/senseidanya",
+        "username": "SenseiDanya",
+        "uuid": "a3066ffc-17d6-11eb-b317-1754d2b3bc66"
+      },
+      "black": {
+        "rating": 1224,
+        "result": "resigned",
+        "@id": "https://api.chess.com/pub/player/uuuuuuuuuuuh",
+        "username": "uuuuuuuuuuuh",
+        "uuid": "b218f220-af95-11ea-998a-e519ba933c87"
+      },
+      "eco": "https://www.chess.com/openings/Italian-Game-Traxler-Bishop-Sacrifice-Line"
+    },
+    "archive_url": "https://api.chess.com/pub/player/senseidanya/games/2021/01",
+    "match_status": "FOUND",
+    "youtube_url": "https://youtu.be/n5BL4u1QpfY?si=kDznRkS-FX4Kg25I&t=4",
+    "youtube_timestamp": 4
+  },
+  {
+    "csv_game": {
+      "row_number": 10,
+      "youtube_url": "https://youtu.be/n5BL4u1QpfY?si=Ud0SCQRS444qrKrE&t=448",
+      "chess_url": "https://www.chess.com/game/live/6138887530?username=senseidanya",
+      "game_id": "6138887530",
+      "youtube_timestamp": 448
+    },
+    "api_game": {
+      "url": "https://www.chess.com/game/live/6138887530",
+      "pgn": "[Event \"Live Chess\"]\n[Site \"Chess.com\"]\n[Date \"2021.01.04\"]\n[Round \"-\"]\n[White \"SenseiDanya\"]\n[Black \"Vilhaze\"]\n[Result \"1-0\"]\n[CurrentPosition \"2R2r2/pP1Bkppp/4p3/b7/8/5P2/PP3P1P/6K1 b - -\"]\n[Timezone \"UTC\"]\n[ECO \"B22\"]\n[ECOUrl \"https://www.chess.com/openings/Alapin-Sicilian-Defense-Barmen-Defense...7.cxd4-e6-8.Nc3-Bb4-9.O-O\"]\n[UTCDate \"2021.01.04\"]\n[UTCTime \"08:42:11\"]\n[WhiteElo \"1590\"]\n[BlackElo \"1640\"]\n[TimeControl \"600+5\"]\n[Termination \"SenseiDanya won by resignation\"]\n[StartTime \"08:42:11\"]\n[EndDate \"2021.01.04\"]\n[EndTime \"08:53:27\"]\n[Link \"https://www.chess.com/game/live/6138887530\"]\n\n1. e4 {[%clk 0:10:05]} 1... c5 {[%clk 0:10:05]} 2. c3 {[%clk 0:09:53.6]} 2... d5 {[%clk 0:10:00.5]} 3. exd5 {[%clk 0:09:47.7]} 3... Qxd5 {[%clk 0:10:02]} 4. d4 {[%clk 0:09:51.6]} 4... cxd4 {[%clk 0:09:40.5]} 5. cxd4 {[%clk 0:09:42.4]} 5... Nc6 {[%clk 0:09:24.4]} 6. Nf3 {[%clk 0:09:46.4]} 6... Bg4 {[%clk 0:09:11.9]} 7. Be2 {[%clk 0:09:44.5]} 7... e6 {[%clk 0:08:52.1]} 8. Nc3 {[%clk 0:09:41.7]} 8... Bb4 {[%clk 0:08:47.9]} 9. O-O {[%clk 0:09:28.8]} 9... Qd7 {[%clk 0:08:05.6]} 10. d5 {[%clk 0:09:01.8]} 10... Bxc3 {[%clk 0:07:36.5]} 11. dxc6 {[%clk 0:08:34]} 11... Qxd1 {[%clk 0:07:26.1]} 12. Rxd1 {[%clk 0:08:38.2]} 12... Ba5 {[%clk 0:06:58.5]} 13. cxb7 {[%clk 0:08:39.2]} 13... Rb8 {[%clk 0:06:58.5]} 14. Ba6 {[%clk 0:07:44]} 14... Bxf3 {[%clk 0:06:25.1]} 15. gxf3 {[%clk 0:07:46.9]} 15... Nf6 {[%clk 0:06:29.7]} 16. Bf4 {[%clk 0:07:49.7]} 16... Nd7 {[%clk 0:06:14.1]} 17. Bxb8 {[%clk 0:07:31.6]} 17... Nxb8 {[%clk 0:06:18]} 18. Rac1 {[%clk 0:07:27.3]} 18... Ke7 {[%clk 0:06:10]} 19. Rc8 {[%clk 0:07:30.4]} 19... Re8 {[%clk 0:05:57.2]} 20. Bb5 {[%clk 0:07:22.8]} 20... Rf8 {[%clk 0:05:41.4]} 21. Rd7+ {[%clk 0:07:18.7]} 21... Nxd7 {[%clk 0:05:43.2]} 22. Bxd7 {[%clk 0:07:22.9]} 1-0\n",
+      "time_control": "600+5",
+      "end_time": 1609750407,
+      "rated": true,
+      "accuracies": {
+        "white": 97.7,
+        "black": 86.26
+      },
+      "tcn": "mCYIksZJCJ7JlBIBsB5Qgv6Efm0Sbs9zegJZBJzsJQZdfdsGQX45mOEvov!TcDTZD5Z5ac80c6?8OH89dZ5ZHZ",
+      "uuid": "bc812e6f-4e68-11eb-9c8f-0069e4010001",
+      "initial_setup": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "fen": "2R2r2/pP1Bkppp/4p3/b7/8/5P2/PP3P1P/6K1 b - -",
+      "time_class": "rapid",
+      "rules": "chess",
+      "white": {
+        "rating": 1590,
+        "result": "win",
+        "@id": "https://api.chess.com/pub/player/senseidanya",
+        "username": "SenseiDanya",
+        "uuid": "a3066ffc-17d6-11eb-b317-1754d2b3bc66"
+      },
+      "black": {
+        "rating": 1640,
+        "result": "resigned",
+        "@id": "https://api.chess.com/pub/player/vilhaze",
+        "username": "Vilhaze",
+        "uuid": "4e5cb764-7efa-11e6-805e-000000000000"
+      },
+      "eco": "https://www.chess.com/openings/Alapin-Sicilian-Defense-Barmen-Defense...7.cxd4-e6-8.Nc3-Bb4-9.O-O"
+    },
+    "archive_url": "https://api.chess.com/pub/player/senseidanya/games/2021/01",
+    "match_status": "FOUND",
+    "youtube_url": "https://youtu.be/n5BL4u1QpfY?si=Ud0SCQRS444qrKrE&t=448",
+    "youtube_timestamp": 448
+  },
+  {
+    "csv_game": {
+      "row_number": 11,
+      "youtube_url": "https://youtu.be/HF8cvN3ZKtU?si=WiKq40cVXcCv4ttJ&t=9",
+      "chess_url": "https://www.chess.com/game/live/6154705687?username=senseidanya",
+      "game_id": "6154705687",
+      "youtube_timestamp": 9
+    },
+    "api_game": {
+      "url": "https://www.chess.com/game/live/6154705687",
+      "pgn": "[Event \"Live Chess\"]\n[Site \"Chess.com\"]\n[Date \"2021.01.06\"]\n[Round \"-\"]\n[White \"DMD9584\"]\n[Black \"SenseiDanya\"]\n[Result \"0-1\"]\n[CurrentPosition \"2r2rk1/pp1n3p/3b4/3p1pB1/3P4/8/PPP1qPPP/R4RK1 w - -\"]\n[Timezone \"UTC\"]\n[ECO \"B10\"]\n[ECOUrl \"https://www.chess.com/openings/Caro-Kann-Defense-2.Nf3-d5-3.exd5-cxd5\"]\n[UTCDate \"2021.01.06\"]\n[UTCTime \"00:03:34\"]\n[WhiteElo \"1535\"]\n[BlackElo \"1590\"]\n[TimeControl \"600\"]\n[Termination \"SenseiDanya won by resignation\"]\n[StartTime \"00:03:34\"]\n[EndDate \"2021.01.06\"]\n[EndTime \"00:12:42\"]\n[Link \"https://www.chess.com/game/live/6154705687\"]\n\n1. e4 {[%clk 0:10:00]} 1... c6 {[%clk 0:10:00]} 2. Nf3 {[%clk 0:09:52.6]} 2... d5 {[%clk 0:09:54.9]} 3. exd5 {[%clk 0:09:45.9]} 3... cxd5 {[%clk 0:09:46.2]} 4. Bb5+ {[%clk 0:09:19.6]} 4... Bd7 {[%clk 0:09:21.8]} 5. Bxd7+ {[%clk 0:09:12]} 5... Nxd7 {[%clk 0:09:20.7]} 6. d4 {[%clk 0:09:05.5]} 6... Ngf6 {[%clk 0:09:00.6]} 7. Nc3 {[%clk 0:08:51.9]} 7... e6 {[%clk 0:08:59.1]} 8. Be3 {[%clk 0:08:47.5]} 8... Bd6 {[%clk 0:08:18.4]} 9. O-O {[%clk 0:08:19.6]} 9... O-O {[%clk 0:08:16.5]} 10. Qd2 {[%clk 0:08:16.3]} 10... Rc8 {[%clk 0:08:09.7]} 11. Ne2 {[%clk 0:07:54.5]} 11... Ne4 {[%clk 0:07:50.3]} 12. Qd3 {[%clk 0:07:08.7]} 12... f5 {[%clk 0:07:49.4]} 13. Nf4 {[%clk 0:06:39.9]} 13... Qf6 {[%clk 0:07:06.8]} 14. Qe2 {[%clk 0:04:46.7]} 14... g5 {[%clk 0:07:05.1]} 15. Nxe6 {[%clk 0:04:28.3]} 15... Qxe6 {[%clk 0:06:50.5]} 16. Nxg5 {[%clk 0:04:18]} 16... Nxg5 {[%clk 0:06:49]} 17. Bxg5 {[%clk 0:04:16]} 17... Qxe2 {[%clk 0:06:48.2]} 0-1\n",
+      "time_control": "600",
+      "end_time": 1609891962,
+      "rated": false,
+      "accuracies": {
+        "white": 76.98,
+        "black": 95.86
+      },
+      "tcn": "mCYQgvZJCJQJfH6ZHZ5ZlB!Tbs0Scu9Reg8!dl46smTClt1LmD7Ttm2MDSTSvMCMuMSm",
+      "uuid": "9cb82992-4fb2-11eb-9c8f-0069e4010001",
+      "initial_setup": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "fen": "2r2rk1/pp1n3p/3b4/3p1pB1/3P4/8/PPP1qPPP/R4RK1 w - -",
+      "time_class": "rapid",
+      "rules": "chess",
+      "white": {
+        "rating": 1535,
+        "result": "resigned",
+        "@id": "https://api.chess.com/pub/player/dmd9584",
+        "username": "DMD9584",
+        "uuid": "88fe94ac-08fb-11eb-b8c4-a113755985e5"
+      },
+      "black": {
+        "rating": 1590,
+        "result": "win",
+        "@id": "https://api.chess.com/pub/player/senseidanya",
+        "username": "SenseiDanya",
+        "uuid": "a3066ffc-17d6-11eb-b317-1754d2b3bc66"
+      },
+      "eco": "https://www.chess.com/openings/Caro-Kann-Defense-2.Nf3-d5-3.exd5-cxd5"
+    },
+    "archive_url": "https://api.chess.com/pub/player/senseidanya/games/2021/01",
+    "match_status": "FOUND",
+    "youtube_url": "https://youtu.be/HF8cvN3ZKtU?si=WiKq40cVXcCv4ttJ&t=9",
+    "youtube_timestamp": 9
+  },
+  {
+    "csv_game": {
+      "row_number": 12,
+      "youtube_url": "https://youtu.be/vosZEy6YML0?si=T6I-dMTEWNOCEKdc&t=7",
+      "chess_url": "https://www.chess.com/game/live/6157350504?username=senseidanya",
+      "game_id": "6157350504",
+      "youtube_timestamp": 7
+    },
+    "api_game": {
+      "url": "https://www.chess.com/game/live/6157350504",
+      "pgn": "[Event \"Live Chess\"]\n[Site \"Chess.com\"]\n[Date \"2021.01.06\"]\n[Round \"-\"]\n[White \"Tubertz\"]\n[Black \"SenseiDanya\"]\n[Result \"0-1\"]\n[CurrentPosition \"8/1p6/4n2k/p5pp/PP5K/5r2/8/8 w - -\"]\n[Timezone \"UTC\"]\n[ECO \"B13\"]\n[ECOUrl \"https://www.chess.com/openings/Caro-Kann-Defense-Exchange-Variation...4.Bd3-Nf6-5.c3-Nc6\"]\n[UTCDate \"2021.01.06\"]\n[UTCTime \"09:13:19\"]\n[WhiteElo \"1608\"]\n[BlackElo \"1590\"]\n[TimeControl \"900\"]\n[Termination \"SenseiDanya won by checkmate\"]\n[StartTime \"09:13:19\"]\n[EndDate \"2021.01.06\"]\n[EndTime \"09:34:40\"]\n[Link \"https://www.chess.com/game/live/6157350504\"]\n\n1. e4 {[%clk 0:15:00]} 1... c6 {[%clk 0:15:00]} 2. d4 {[%clk 0:14:58]} 2... d5 {[%clk 0:14:58.8]} 3. exd5 {[%clk 0:14:55.3]} 3... cxd5 {[%clk 0:14:39.3]} 4. Bd3 {[%clk 0:14:54.2]} 4... Nc6 {[%clk 0:14:06.5]} 5. c3 {[%clk 0:14:53]} 5... Nf6 {[%clk 0:14:05.5]} 6. Ne2 {[%clk 0:14:48.4]} 6... Bg4 {[%clk 0:13:20.7]} 7. O-O {[%clk 0:14:44.8]} 7... e6 {[%clk 0:13:08.2]} 8. Qb3 {[%clk 0:14:31.3]} 8... Rb8 {[%clk 0:12:51.5]} 9. h3 {[%clk 0:14:08.7]} 9... Bh5 {[%clk 0:12:48.1]} 10. Nf4 {[%clk 0:14:05.4]} 10... Bg6 {[%clk 0:12:46.7]} 11. Be3 {[%clk 0:13:10.1]} 11... Bd6 {[%clk 0:12:38.8]} 12. Nd2 {[%clk 0:12:48.3]} 12... Bxf4 {[%clk 0:12:07.5]} 13. Bxg6 {[%clk 0:12:44.5]} 13... Bxe3 {[%clk 0:12:00.5]} 14. Bxf7+ {[%clk 0:12:38.7]} 14... Kxf7 {[%clk 0:11:54.1]} 15. fxe3 {[%clk 0:12:37.4]} 15... Rf8 {[%clk 0:11:18.5]} 16. Rf2 {[%clk 0:12:25]} 16... Kg8 {[%clk 0:11:16]} 17. Raf1 {[%clk 0:12:23.4]} 17... Qc7 {[%clk 0:10:02.6]} 18. Qc2 {[%clk 0:11:55.9]} 18... Rf7 {[%clk 0:09:35.9]} 19. c4 {[%clk 0:11:44.2]} 19... Rbf8 {[%clk 0:09:28.7]} 20. a3 {[%clk 0:11:27]} 20... Qg3 {[%clk 0:08:23.6]} 21. Nf3 {[%clk 0:10:17.2]} 21... Ne4 {[%clk 0:08:03.8]} 22. cxd5 {[%clk 0:08:50.1]} 22... exd5 {[%clk 0:07:59.4]} 23. Re2 {[%clk 0:07:52.7]} 23... Rxf3 {[%clk 0:07:56.5]} 24. Rxf3 {[%clk 0:07:44.8]} 24... Rxf3 {[%clk 0:07:55.2]} 25. Qb3 {[%clk 0:06:32.4]} 25... Rf7 {[%clk 0:06:15.9]} 26. Qxd5 {[%clk 0:05:30.1]} 26... Ng5 {[%clk 0:06:13.3]} 27. Kh1 {[%clk 0:04:59.7]} 27... Nxh3 {[%clk 0:06:01.5]} 28. gxh3 {[%clk 0:04:23.7]} 28... Qxh3+ {[%clk 0:06:00.6]} 29. Kg1 {[%clk 0:04:22.6]} 29... Qf1+ {[%clk 0:05:59.7]} 30. Kh2 {[%clk 0:04:14.4]} 30... Qxe2+ {[%clk 0:05:57.9]} 31. Kg1 {[%clk 0:04:09.5]} 31... Qxe3+ {[%clk 0:05:56.5]} 32. Kg2 {[%clk 0:04:06.2]} 32... Qf2+ {[%clk 0:05:55.7]} 33. Kh3 {[%clk 0:04:02.9]} 33... Qf3+ {[%clk 0:05:55]} 34. Qxf3 {[%clk 0:04:00]} 34... Rxf3+ {[%clk 0:05:54.9]} 35. Kg4 {[%clk 0:03:58.9]} 35... Nxd4 {[%clk 0:05:54.8]} 36. a4 {[%clk 0:03:47.6]} 36... a5 {[%clk 0:05:53.6]} 37. b3 {[%clk 0:03:39.9]} 37... g6 {[%clk 0:05:52.8]} 38. Kg5 {[%clk 0:03:34.7]} 38... Kg7 {[%clk 0:05:51.4]} 39. Kg4 {[%clk 0:03:33]} 39... h5+ {[%clk 0:05:50.2]} 40. Kg5 {[%clk 0:03:19.9]} 40... Ne6+ {[%clk 0:05:49]} 41. Kh4 {[%clk 0:03:18.5]} 41... Kh6 {[%clk 0:05:46]} 42. b4 {[%clk 0:03:15.1]} 42... g5# {[%clk 0:05:45.1]} 0-1\n",
+      "time_control": "900",
+      "end_time": 1609925680,
+      "rated": false,
+      "accuracies": {
+        "white": 86.7,
+        "black": 94.74
+      },
+      "tcn": "mCYQlBZJCJQJft5Qks!Tgm6Eeg0Sdr45pxENmDNUcu9RblRDtUDuU181nu?9fn1!af7Yrk91sA59iqYwlvTCAJSJnm1vfv9vkrv1rJCMghMxoxwxhgxfgpfmpgmugounoxnvJv1vxEQBqyWGjr2UEM!2ME3NEMBSMF2VrzUM",
+      "uuid": "6cf2fb3a-4fff-11eb-bc90-0069e4010001",
+      "initial_setup": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "fen": "8/1p6/4n2k/p5pp/PP5K/5r2/8/8 w - -",
+      "time_class": "rapid",
+      "rules": "chess",
+      "white": {
+        "rating": 1608,
+        "result": "checkmated",
+        "@id": "https://api.chess.com/pub/player/tubertz",
+        "username": "Tubertz",
+        "uuid": "51d1f42e-01f3-11e6-805c-000000000000"
+      },
+      "black": {
+        "rating": 1590,
+        "result": "win",
+        "@id": "https://api.chess.com/pub/player/senseidanya",
+        "username": "SenseiDanya",
+        "uuid": "a3066ffc-17d6-11eb-b317-1754d2b3bc66"
+      },
+      "eco": "https://www.chess.com/openings/Caro-Kann-Defense-Exchange-Variation...4.Bd3-Nf6-5.c3-Nc6"
+    },
+    "archive_url": "https://api.chess.com/pub/player/senseidanya/games/2021/01",
+    "match_status": "FOUND",
+    "youtube_url": "https://youtu.be/vosZEy6YML0?si=T6I-dMTEWNOCEKdc&t=7",
+    "youtube_timestamp": 7
+  },
+  {
+    "csv_game": {
+      "row_number": 13,
+      "youtube_url": "https://youtu.be/d-MNpi_zPr0?si=CZCyd4wf__7E04uv&t=6",
+      "chess_url": "https://www.chess.com/game/live/6191416152?username=senseidanya",
+      "game_id": "6191416152",
+      "youtube_timestamp": 6
+    },
+    "api_game": {
+      "url": "https://www.chess.com/game/live/6191416152",
+      "pgn": "[Event \"Live Chess\"]\n[Site \"Chess.com\"]\n[Date \"2021.01.10\"]\n[Round \"-\"]\n[White \"CuriousChimpanzee\"]\n[Black \"SenseiDanya\"]\n[Result \"0-1\"]\n[CurrentPosition \"6k1/4ppbp/3p2p1/3P4/8/2p4P/P3QPP1/2q3K1 w - -\"]\n[Timezone \"UTC\"]\n[ECO \"E61\"]\n[ECOUrl \"https://www.chess.com/openings/Kings-Indian-Defense-Normal-Variation...5.Bf4-d6-6.e3-c5\"]\n[UTCDate \"2021.01.10\"]\n[UTCTime \"00:41:22\"]\n[WhiteElo \"1615\"]\n[BlackElo \"1651\"]\n[TimeControl \"600\"]\n[Termination \"SenseiDanya won by resignation\"]\n[StartTime \"00:41:22\"]\n[EndDate \"2021.01.10\"]\n[EndTime \"00:59:04\"]\n[Link \"https://www.chess.com/game/live/6191416152\"]\n\n1. d4 {[%clk 0:10:00]} 1... Nf6 {[%clk 0:10:00]} 2. c4 {[%clk 0:09:54.1]} 2... g6 {[%clk 0:09:52.9]} 3. Nc3 {[%clk 0:09:51]} 3... Bg7 {[%clk 0:09:51.2]} 4. Nf3 {[%clk 0:09:49.4]} 4... O-O {[%clk 0:09:48.9]} 5. Bf4 {[%clk 0:09:45.5]} 5... d6 {[%clk 0:09:40.5]} 6. e3 {[%clk 0:09:37.3]} 6... c5 {[%clk 0:09:03.8]} 7. Be2 {[%clk 0:09:25.4]} 7... Nc6 {[%clk 0:08:11.3]} 8. O-O {[%clk 0:09:14.4]} 8... Bg4 {[%clk 0:08:05.9]} 9. h3 {[%clk 0:08:54.1]} 9... Bxf3 {[%clk 0:07:43.3]} 10. Bxf3 {[%clk 0:08:44.4]} 10... Qb6 {[%clk 0:07:02.6]} 11. d5 {[%clk 0:08:23.8]} 11... Na5 {[%clk 0:06:24.8]} 12. b3 {[%clk 0:08:04.9]} 12... Nd7 {[%clk 0:06:10.7]} 13. Rc1 {[%clk 0:07:57.5]} 13... Qb4 {[%clk 0:06:09.6]} 14. Qd2 {[%clk 0:07:38.2]} 14... a6 {[%clk 0:05:53]} 15. Rfd1 {[%clk 0:07:25.3]} 15... b5 {[%clk 0:05:51.5]} 16. cxb5 {[%clk 0:07:00.2]} 16... axb5 {[%clk 0:05:51.4]} 17. Ne4 {[%clk 0:06:41]} 17... Qa3 {[%clk 0:05:06.5]} 18. Be2 {[%clk 0:05:55.4]} 18... Rfb8 {[%clk 0:04:39.6]} 19. Nc3 {[%clk 0:05:27.3]} 19... c4 {[%clk 0:04:06.9]} 20. bxc4 {[%clk 0:05:20.8]} 20... Nxc4 {[%clk 0:03:54.6]} 21. Bxc4 {[%clk 0:05:02.4]} 21... bxc4 {[%clk 0:03:53.3]} 22. Rc2 {[%clk 0:04:25.7]} 22... Nc5 {[%clk 0:03:29.5]} 23. Rb1 {[%clk 0:03:43.9]} 23... Nd3 {[%clk 0:03:06.6]} 24. Rxb8+ {[%clk 0:03:18.4]} 24... Rxb8 {[%clk 0:03:05.4]} 25. Ne2 {[%clk 0:02:43.4]} 25... Qa4 {[%clk 0:02:27]} 26. Nc1 {[%clk 0:02:06.2]} 26... Rb1 {[%clk 0:02:07.5]} 27. Kh2 {[%clk 0:01:53.9]} 27... Nxf4 {[%clk 0:01:43.5]} 28. exf4 {[%clk 0:01:47.9]} 28... c3 {[%clk 0:01:42.6]} 29. Qe2 {[%clk 0:01:23.5]} 29... Rxc1 {[%clk 0:01:25.8]} 30. Rxc1 {[%clk 0:01:20.6]} 30... Qxf4+ {[%clk 0:01:24.9]} 31. Kg1 {[%clk 0:01:12.6]} 31... Qxc1+ {[%clk 0:01:23.8]} 0-1\n",
+      "time_control": "600",
+      "end_time": 1610240344,
+      "rated": true,
+      "accuracies": {
+        "white": 78.57,
+        "black": 89.4
+      },
+      "tcn": "lB!TkA2Ubs92gv8!cDZRmuYIfm5Qeg6EpxEvmv7PBJQGjrTZacPzdlWOfdXHAHOHsCzqvm95CsIArAGAmAHAckZIdbItb545smqymc5bgptDuDAslmbckcyDpgDc",
+      "uuid": "85963af0-52dc-11eb-bc90-0069e4010001",
+      "initial_setup": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "fen": "6k1/4ppbp/3p2p1/3P4/8/2p4P/P3QPP1/2q3K1 w - -",
+      "time_class": "rapid",
+      "rules": "chess",
+      "white": {
+        "rating": 1615,
+        "result": "resigned",
+        "@id": "https://api.chess.com/pub/player/curiouschimpanzee",
+        "username": "CuriousChimpanzee",
+        "uuid": "747cb978-6b3a-11ea-9cc7-0f98f4871ae0"
+      },
+      "black": {
+        "rating": 1651,
+        "result": "win",
+        "@id": "https://api.chess.com/pub/player/senseidanya",
+        "username": "SenseiDanya",
+        "uuid": "a3066ffc-17d6-11eb-b317-1754d2b3bc66"
+      },
+      "eco": "https://www.chess.com/openings/Kings-Indian-Defense-Normal-Variation...5.Bf4-d6-6.e3-c5"
+    },
+    "archive_url": "https://api.chess.com/pub/player/senseidanya/games/2021/01",
+    "match_status": "FOUND",
+    "youtube_url": "https://youtu.be/d-MNpi_zPr0?si=CZCyd4wf__7E04uv&t=6",
+    "youtube_timestamp": 6
+  },
+  {
+    "csv_game": {
+      "row_number": 14,
+      "youtube_url": "https://youtu.be/d-MNpi_zPr0?si=e8iIg9e2GZ553xTy&t=1792",
+      "chess_url": "https://www.chess.com/game/live/6191609221?username=senseidanya",
+      "game_id": "6191609221",
+      "youtube_timestamp": 1792
+    },
+    "api_game": {
+      "url": "https://www.chess.com/game/live/6191609221",
+      "pgn": "[Event \"Live Chess\"]\n[Site \"Chess.com\"]\n[Date \"2021.01.10\"]\n[Round \"-\"]\n[White \"SenseiDanya\"]\n[Black \"aquilaungula\"]\n[Result \"1-0\"]\n[CurrentPosition \"r1b2rn1/1p1q1p1p/2n1pBp1/k1Q5/4P3/1P4P1/P1P2P1P/R2R1BK1 b - -\"]\n[Timezone \"UTC\"]\n[ECO \"B46\"]\n[ECOUrl \"https://www.chess.com/openings/Sicilian-Defense-Taimanov-Variation-5.Nc3-a6-6.g3-Nge7-7.Bg2\"]\n[UTCDate \"2021.01.10\"]\n[UTCTime \"01:15:23\"]\n[WhiteElo \"1651\"]\n[BlackElo \"1452\"]\n[TimeControl \"600\"]\n[Termination \"SenseiDanya won by resignation\"]\n[StartTime \"01:15:23\"]\n[EndDate \"2021.01.10\"]\n[EndTime \"01:24:41\"]\n[Link \"https://www.chess.com/game/live/6191609221\"]\n\n1. e4 {[%clk 0:10:00]} 1... c5 {[%clk 0:10:00]} 2. Nf3 {[%clk 0:09:54.2]} 2... e6 {[%clk 0:09:57.5]} 3. d4 {[%clk 0:09:53]} 3... cxd4 {[%clk 0:09:55]} 4. Nxd4 {[%clk 0:09:52.3]} 4... Nc6 {[%clk 0:09:54.8]} 5. Nc3 {[%clk 0:09:39.6]} 5... a6 {[%clk 0:09:50.1]} 6. g3 {[%clk 0:09:22.9]} 6... Nge7 {[%clk 0:09:26.5]} 7. Bg2 {[%clk 0:09:21.7]} 7... d6 {[%clk 0:09:19.5]} 8. O-O {[%clk 0:09:18.8]} 8... Qc7 {[%clk 0:09:10.4]} 9. b3 {[%clk 0:07:54.2]} 9... g6 {[%clk 0:09:00.3]} 10. Bb2 {[%clk 0:07:50.9]} 10... Bg7 {[%clk 0:08:59.2]} 11. Ndb5 {[%clk 0:07:05.7]} 11... axb5 {[%clk 0:08:08.8]} 12. Nxb5 {[%clk 0:06:54.5]} 12... Qd7 {[%clk 0:08:07.3]} 13. Bxg7 {[%clk 0:06:30.8]} 13... Rg8 {[%clk 0:08:04.8]} 14. Nxd6+ {[%clk 0:06:30.1]} 14... Kd8 {[%clk 0:08:01.8]} 15. Bf6 {[%clk 0:05:57.5]} 15... Rf8 {[%clk 0:07:52.2]} 16. Qd2 {[%clk 0:05:49.9]} 16... Kc7 {[%clk 0:07:23.3]} 17. Rfd1 {[%clk 0:05:47.6]} 17... Ng8 {[%clk 0:06:40.8]} 18. Nb5+ {[%clk 0:05:28.6]} 18... Kb6 {[%clk 0:06:36.8]} 19. Qe3+ {[%clk 0:05:15.5]} 19... Kxb5 {[%clk 0:06:28.3]} 20. Bf1+ {[%clk 0:04:58.2]} 20... Ka5 {[%clk 0:06:25.1]} 21. Qc5+ {[%clk 0:04:40.5]} 1-0\n",
+      "time_control": "600",
+      "end_time": 1610241881,
+      "rated": false,
+      "accuracies": {
+        "white": 83.95,
+        "black": 64.27
+      },
+      "tcn": "mCYIgv0SlBIBvB5QbsWOow!0foZReg7Yjr2Ucj92BHOHsHYZj2?!HR872T!9dl7Yfd0!RHYPluPHofHGuI",
+      "uuid": "4ebcb095-52e1-11eb-bc90-0069e4010001",
+      "initial_setup": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "fen": "r1b2rn1/1p1q1p1p/2n1pBp1/k1Q5/4P3/1P4P1/P1P2P1P/R2R1BK1 b - -",
+      "time_class": "rapid",
+      "rules": "chess",
+      "white": {
+        "rating": 1651,
+        "result": "win",
+        "@id": "https://api.chess.com/pub/player/senseidanya",
+        "username": "SenseiDanya",
+        "uuid": "a3066ffc-17d6-11eb-b317-1754d2b3bc66"
+      },
+      "black": {
+        "rating": 1452,
+        "result": "resigned",
+        "@id": "https://api.chess.com/pub/player/aquilaungula",
+        "username": "aquilaungula",
+        "uuid": "1a52f2a2-5b3e-11e5-8006-000000000000"
+      },
+      "eco": "https://www.chess.com/openings/Sicilian-Defense-Taimanov-Variation-5.Nc3-a6-6.g3-Nge7-7.Bg2"
+    },
+    "archive_url": "https://api.chess.com/pub/player/senseidanya/games/2021/01",
+    "match_status": "FOUND",
+    "youtube_url": "https://youtu.be/d-MNpi_zPr0?si=e8iIg9e2GZ553xTy&t=1792",
+    "youtube_timestamp": 1792
+  },
+  {
+    "csv_game": {
+      "row_number": 15,
+      "youtube_url": "https://youtu.be/uJCgrG90u8A?si=SITHjXhZQvxuLjM4&t=11",
+      "chess_url": "https://www.chess.com/game/live/6165834628?username=senseidanya",
+      "game_id": "6165834628",
+      "youtube_timestamp": 11
+    },
+    "api_game": {
+      "url": "https://www.chess.com/game/live/6165834628",
+      "pgn": "[Event \"Live Chess\"]\n[Site \"Chess.com\"]\n[Date \"2021.01.07\"]\n[Round \"-\"]\n[White \"AlexSem\"]\n[Black \"SenseiDanya\"]\n[Result \"0-1\"]\n[CurrentPosition \"r5k1/3nbppp/3p4/3np2P/6P1/3Q1P2/qP6/1KB2B1R w - -\"]\n[Timezone \"UTC\"]\n[ECO \"B90\"]\n[ECOUrl \"https://www.chess.com/openings/Sicilian-Defense-Open-Najdorf-Variation-6.f3-e5-7.Nb3-Be6\"]\n[UTCDate \"2021.01.07\"]\n[UTCTime \"07:16:29\"]\n[WhiteElo \"1461\"]\n[BlackElo \"1590\"]\n[TimeControl \"600+5\"]\n[Termination \"SenseiDanya won by resignation\"]\n[StartTime \"07:16:29\"]\n[EndDate \"2021.01.07\"]\n[EndTime \"07:30:33\"]\n[Link \"https://www.chess.com/game/live/6165834628\"]\n\n1. e4 {[%clk 0:10:05]} 1... c5 {[%clk 0:10:05]} 2. Nf3 {[%clk 0:10:08.5]} 2... d6 {[%clk 0:09:39.8]} 3. d4 {[%clk 0:10:07.5]} 3... cxd4 {[%clk 0:09:43.3]} 4. Nxd4 {[%clk 0:10:10.7]} 4... Nf6 {[%clk 0:09:43.2]} 5. Nc3 {[%clk 0:10:13.4]} 5... a6 {[%clk 0:09:05.4]} 6. f3 {[%clk 0:10:02.1]} 6... e5 {[%clk 0:08:44.6]} 7. Nb3 {[%clk 0:09:40.6]} 7... Be6 {[%clk 0:08:12]} 8. Bg5 {[%clk 0:09:36.8]} 8... Be7 {[%clk 0:07:38.5]} 9. Qd2 {[%clk 0:09:28.8]} 9... Nbd7 {[%clk 0:07:41.3]} 10. O-O-O {[%clk 0:09:31.1]} 10... O-O {[%clk 0:07:43.1]} 11. h4 {[%clk 0:09:14.2]} 11... b5 {[%clk 0:07:14.9]} 12. g4 {[%clk 0:08:50.3]} 12... b4 {[%clk 0:07:00]} 13. Nd5 {[%clk 0:08:48.3]} 13... Bxd5 {[%clk 0:06:25.3]} 14. exd5 {[%clk 0:08:45.5]} 14... a5 {[%clk 0:06:16]} 15. Kb1 {[%clk 0:08:31.8]} 15... a4 {[%clk 0:06:19.9]} 16. Nc1 {[%clk 0:08:32.6]} 16... Qb6 {[%clk 0:05:56.1]} 17. h5 {[%clk 0:08:19.9]} 17... b3 {[%clk 0:05:56.3]} 18. cxb3 {[%clk 0:08:19.1]} 18... axb3 {[%clk 0:06:00.4]} 19. Nxb3 {[%clk 0:08:21.8]} 19... Rxa2 {[%clk 0:05:09.4]} 20. Kxa2 {[%clk 0:08:15.2]} 20... Ra8+ {[%clk 0:05:12.9]} 21. Kb1 {[%clk 0:08:17.3]} 21... Qxb3 {[%clk 0:05:16.9]} 22. Qc3 {[%clk 0:06:21.2]} 22... Qxd1+ {[%clk 0:05:10.6]} 23. Bc1 {[%clk 0:06:13.5]} 23... Nxd5 {[%clk 0:04:57.4]} 24. Qd2 {[%clk 0:06:08.7]} 24... Qb3 {[%clk 0:04:43.5]} 25. Qd3 {[%clk 0:05:47]} 25... Qa2+ {[%clk 0:04:32.9]} 0-1\n",
+      "time_control": "600+5",
+      "end_time": 1610004633,
+      "rated": false,
+      "accuracies": {
+        "white": 80.55,
+        "black": 93.13
+      },
+      "tcn": "mCYIgvZRlBIBvB!TbsWOnv0KBr6ScM90dl5Zec8!pFXHoEHzsJSJCJOGcbGyrc7PFNzrkryrcr4ibi94ibPrlsrdMcTJsldrltri",
+      "uuid": "426e6e77-50b8-11eb-bc90-0069e4010001",
+      "initial_setup": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "fen": "r5k1/3nbppp/3p4/3np2P/6P1/3Q1P2/qP6/1KB2B1R w - -",
+      "time_class": "rapid",
+      "rules": "chess",
+      "white": {
+        "rating": 1461,
+        "result": "resigned",
+        "@id": "https://api.chess.com/pub/player/alexsem",
+        "username": "AlexSem",
+        "uuid": "9fd1bd8c-b232-11e0-805b-000000000000"
+      },
+      "black": {
+        "rating": 1590,
+        "result": "win",
+        "@id": "https://api.chess.com/pub/player/senseidanya",
+        "username": "SenseiDanya",
+        "uuid": "a3066ffc-17d6-11eb-b317-1754d2b3bc66"
+      },
+      "eco": "https://www.chess.com/openings/Sicilian-Defense-Open-Najdorf-Variation-6.f3-e5-7.Nb3-Be6"
+    },
+    "archive_url": "https://api.chess.com/pub/player/senseidanya/games/2021/01",
+    "match_status": "FOUND",
+    "youtube_url": "https://youtu.be/uJCgrG90u8A?si=SITHjXhZQvxuLjM4&t=11",
+    "youtube_timestamp": 11
+  },
+  {
+    "csv_game": {
+      "row_number": 16,
+      "youtube_url": "https://youtu.be/-PSQS88VdZU?si=hXkLb8PwrsURw9Bi&t=10",
+      "chess_url": "https://www.chess.com/game/live/6165998136?username=senseidanya",
+      "game_id": "6165998136",
+      "youtube_timestamp": 10
+    },
+    "api_game": {
+      "url": "https://www.chess.com/game/live/6165998136",
+      "pgn": "[Event \"Live Chess\"]\n[Site \"Chess.com\"]\n[Date \"2021.01.07\"]\n[Round \"-\"]\n[White \"AdityaRajagopal\"]\n[Black \"SenseiDanya\"]\n[Result \"0-1\"]\n[CurrentPosition \"r3n1k1/2p4p/1p1p2r1/pN1P4/2P5/6qK/PP2QR2/8 w - -\"]\n[Timezone \"UTC\"]\n[ECO \"E94\"]\n[ECOUrl \"https://www.chess.com/openings/Kings-Indian-Defense-Orthodox-Positional-Defense-Closed-Line-8...Nc5-9.Nd2-a5\"]\n[UTCDate \"2021.01.07\"]\n[UTCTime \"07:54:18\"]\n[WhiteElo \"1186\"]\n[BlackElo \"1600\"]\n[TimeControl \"600\"]\n[Termination \"SenseiDanya won by checkmate\"]\n[StartTime \"07:54:18\"]\n[EndDate \"2021.01.07\"]\n[EndTime \"08:05:42\"]\n[Link \"https://www.chess.com/game/live/6165998136\"]\n\n1. d4 {[%clk 0:10:00]} 1... Nf6 {[%clk 0:10:00]} 2. c4 {[%clk 0:09:57.4]} 2... g6 {[%clk 0:09:58.9]} 3. Nc3 {[%clk 0:09:56.2]} 3... Bg7 {[%clk 0:09:55.6]} 4. e4 {[%clk 0:09:52.5]} 4... d6 {[%clk 0:09:54.5]} 5. Nf3 {[%clk 0:09:47.5]} 5... O-O {[%clk 0:09:37.3]} 6. Be2 {[%clk 0:09:43.9]} 6... e5 {[%clk 0:09:05.6]} 7. d5 {[%clk 0:09:42.9]} 7... Na6 {[%clk 0:08:01.9]} 8. O-O {[%clk 0:09:32.7]} 8... Nc5 {[%clk 0:08:01]} 9. Nd2 {[%clk 0:08:48.9]} 9... a5 {[%clk 0:07:58.8]} 10. Re1 {[%clk 0:07:56.5]} 10... Ne8 {[%clk 0:07:56.8]} 11. Bf1 {[%clk 0:07:49.3]} 11... f5 {[%clk 0:07:55.3]} 12. f3 {[%clk 0:07:39.1]} 12... f4 {[%clk 0:07:54.5]} 13. Nb3 {[%clk 0:07:17.9]} 13... b6 {[%clk 0:07:38.1]} 14. Nb5 {[%clk 0:07:02]} 14... g5 {[%clk 0:07:24.8]} 15. Nd2 {[%clk 0:06:02.3]} 15... Rf6 {[%clk 0:07:14.1]} 16. Bd3 {[%clk 0:05:56.7]} 16... Rg6 {[%clk 0:07:12.5]} 17. Nf1 {[%clk 0:05:55.8]} 17... g4 {[%clk 0:07:11.3]} 18. Bxf4 {[%clk 0:05:43.9]} 18... exf4 {[%clk 0:07:06.6]} 19. e5 {[%clk 0:05:39.3]} 19... Nxd3 {[%clk 0:06:43.3]} 20. Qxd3 {[%clk 0:05:27.4]} 20... Bxe5 {[%clk 0:06:40.9]} 21. Rad1 {[%clk 0:05:17.9]} 21... gxf3 {[%clk 0:06:25.1]} 22. Qxf3 {[%clk 0:04:34.1]} 22... Bg4 {[%clk 0:06:19.6]} 23. Qd3 {[%clk 0:04:30]} 23... Bxd1 {[%clk 0:06:18.1]} 24. Qxd1 {[%clk 0:04:29.9]} 24... Qg5 {[%clk 0:06:16.2]} 25. Re2 {[%clk 0:04:19.6]} 25... f3 {[%clk 0:06:05.7]} 26. Rf2 {[%clk 0:04:00.1]} 26... fxg2 {[%clk 0:06:02.4]} 27. Ng3 {[%clk 0:03:54.6]} 27... Bxg3 {[%clk 0:05:40.3]} 28. hxg3 {[%clk 0:03:54.5]} 28... Qxg3 {[%clk 0:05:39.4]} 29. Qe2 {[%clk 0:03:30.2]} 29... Qh2+ {[%clk 0:05:38.3]} 30. Kxh2 {[%clk 0:03:18.3]} 30... g1=Q+ {[%clk 0:05:37.6]} 31. Kh3 {[%clk 0:03:15.6]} 31... Qg3# {[%clk 0:05:36.7]} 0-1\n",
+      "time_control": "600",
+      "end_time": 1610006742,
+      "rated": true,
+      "accuracies": {
+        "white": 75.57,
+        "black": 91.18
+      },
+      "tcn": "lB!TkA2Ubs92mCZRgv8!fm0KBJ5OegOIvlWGfeT8mf1LnvLDlrXPsHUMrl9TftTUlfMEcDKDCKItdt2KadEvtv6EvtEdtd7MemDvmnvofwKwpwMwdmwpgpo~pxgw",
+      "uuid": "8d05f198-50bd-11eb-bc90-0069e4010001",
+      "initial_setup": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "fen": "r3n1k1/2p4p/1p1p2r1/pN1P4/2P5/6qK/PP2QR2/8 w - -",
+      "time_class": "rapid",
+      "rules": "chess",
+      "white": {
+        "rating": 1186,
+        "result": "checkmated",
+        "@id": "https://api.chess.com/pub/player/adityarajagopal",
+        "username": "AdityaRajagopal",
+        "uuid": "1b3731f4-bfb8-11ea-8ace-b55aa1a8f7ca"
+      },
+      "black": {
+        "rating": 1600,
+        "result": "win",
+        "@id": "https://api.chess.com/pub/player/senseidanya",
+        "username": "SenseiDanya",
+        "uuid": "a3066ffc-17d6-11eb-b317-1754d2b3bc66"
+      },
+      "eco": "https://www.chess.com/openings/Kings-Indian-Defense-Orthodox-Positional-Defense-Closed-Line-8...Nc5-9.Nd2-a5"
+    },
+    "archive_url": "https://api.chess.com/pub/player/senseidanya/games/2021/01",
+    "match_status": "FOUND",
+    "youtube_url": "https://youtu.be/-PSQS88VdZU?si=hXkLb8PwrsURw9Bi&t=10",
+    "youtube_timestamp": 10
+  },
+  {
+    "csv_game": {
+      "row_number": 17,
+      "youtube_url": "https://youtu.be/-PSQS88VdZU?si=idapNkw_q4mobbt8&t=1045",
+      "chess_url": "https://www.chess.com/game/live/6166104330?username=senseidanya",
+      "game_id": "6166104330",
+      "youtube_timestamp": 1045
+    },
+    "api_game": {
+      "url": "https://www.chess.com/game/live/6166104330",
+      "pgn": "[Event \"Live Chess\"]\n[Site \"Chess.com\"]\n[Date \"2021.01.07\"]\n[Round \"-\"]\n[White \"SenseiDanya\"]\n[Black \"willforgetthis\"]\n[Result \"1-0\"]\n[CurrentPosition \"r6k/1p2NBpp/p4n2/2p4n/8/2N1B2P/PPP5/R4RK1 b - -\"]\n[Timezone \"UTC\"]\n[ECO \"C50\"]\n[ECOUrl \"https://www.chess.com/openings/Italian-Game...6.Nc3-Be7-7.O-O-O-O\"]\n[UTCDate \"2021.01.07\"]\n[UTCTime \"08:18:35\"]\n[WhiteElo \"1600\"]\n[BlackElo \"1464\"]\n[TimeControl \"600+5\"]\n[Termination \"SenseiDanya won by resignation\"]\n[StartTime \"08:18:35\"]\n[EndDate \"2021.01.07\"]\n[EndTime \"08:37:13\"]\n[Link \"https://www.chess.com/game/live/6166104330\"]\n\n1. e4 {[%clk 0:10:05]} 1... e5 {[%clk 0:10:05]} 2. Nf3 {[%clk 0:10:00.1]} 2... Nc6 {[%clk 0:10:08.9]} 3. d4 {[%clk 0:09:50]} 3... exd4 {[%clk 0:10:10.4]} 4. Bc4 {[%clk 0:09:50.9]} 4... d6 {[%clk 0:09:51]} 5. Nxd4 {[%clk 0:09:30.1]} 5... Nf6 {[%clk 0:09:04.3]} 6. Nc3 {[%clk 0:09:19.1]} 6... Be7 {[%clk 0:08:59.9]} 7. O-O {[%clk 0:09:22.9]} 7... O-O {[%clk 0:08:50.1]} 8. Bb3 {[%clk 0:07:58.2]} 8... Ne5 {[%clk 0:08:16]} 9. f4 {[%clk 0:07:30.9]} 9... Bg4 {[%clk 0:07:53.1]} 10. Qe1 {[%clk 0:07:07.4]} 10... Ned7 {[%clk 0:07:24.6]} 11. h3 {[%clk 0:06:55.6]} 11... Bxh3 {[%clk 0:06:24.3]} 12. gxh3 {[%clk 0:06:58.8]} 12... c5 {[%clk 0:05:54.8]} 13. Nf5 {[%clk 0:06:48.6]} 13... a6 {[%clk 0:05:27.4]} 14. e5 {[%clk 0:06:10.2]} 14... dxe5 {[%clk 0:05:15.8]} 15. fxe5 {[%clk 0:06:13.5]} 15... Nh5 {[%clk 0:05:16.9]} 16. e6 {[%clk 0:06:02.8]} 16... Ndf6 {[%clk 0:04:12.7]} 17. Nxe7+ {[%clk 0:05:49.6]} 17... Kh8 {[%clk 0:04:02.4]} 18. exf7 {[%clk 0:05:54.1]} 18... Qb6 {[%clk 0:03:16.5]} 19. Qe6 {[%clk 0:04:26]} 19... Qb4 {[%clk 0:02:42]} 20. Bg5 {[%clk 0:04:08]} 20... Qd4+ {[%clk 0:02:21.1]} 21. Qe3 {[%clk 0:03:39.9]} 21... Qxe3+ {[%clk 0:01:42.9]} 22. Bxe3 {[%clk 0:03:42.4]} 22... Rxf7 {[%clk 0:01:39]} 23. Bxf7 {[%clk 0:03:46.1]} 1-0\n",
+      "time_control": "600+5",
+      "end_time": 1610008633,
+      "rated": false,
+      "accuracies": {
+        "white": 88.21,
+        "black": 75.56
+      },
+      "tcn": "mC0Kgv5QlBKBfAZRvB!Tbs90eg8!ArQKnD6EdeKZpxExoxYIBLWOCKRKDKTNKSZTL0!?S17PeSPzcMzBSuBuMu91r1",
+      "uuid": "eb5dae56-50c0-11eb-bc90-0069e4010001",
+      "initial_setup": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "fen": "r6k/1p2NBpp/p4n2/2p4n/8/2N1B2P/PPP5/R4RK1 b - -",
+      "time_class": "rapid",
+      "rules": "chess",
+      "white": {
+        "rating": 1600,
+        "result": "win",
+        "@id": "https://api.chess.com/pub/player/senseidanya",
+        "username": "SenseiDanya",
+        "uuid": "a3066ffc-17d6-11eb-b317-1754d2b3bc66"
+      },
+      "black": {
+        "rating": 1464,
+        "result": "resigned",
+        "@id": "https://api.chess.com/pub/player/willforgetthis",
+        "username": "willforgetthis",
+        "uuid": "10a0c448-7950-11ea-8372-43e0c8a64011"
+      },
+      "eco": "https://www.chess.com/openings/Italian-Game...6.Nc3-Be7-7.O-O-O-O"
+    },
+    "archive_url": "https://api.chess.com/pub/player/senseidanya/games/2021/01",
+    "match_status": "FOUND",
+    "youtube_url": "https://youtu.be/-PSQS88VdZU?si=idapNkw_q4mobbt8&t=1045",
+    "youtube_timestamp": 1045
+  },
+  {
+    "csv_game": {
+      "row_number": 18,
+      "youtube_url": "https://youtu.be/VBxmm4zzC1g?si=nMnj1GBJfLpJ6dy5&t=3",
+      "chess_url": "https://www.chess.com/game/live/6193417416?username=senseidanya",
+      "game_id": "6193417416",
+      "youtube_timestamp": 3
+    },
+    "api_game": {
+      "url": "https://www.chess.com/game/live/6193417416",
+      "pgn": "[Event \"Live Chess\"]\n[Site \"Chess.com\"]\n[Date \"2021.01.10\"]\n[Round \"-\"]\n[White \"Balzdeep802\"]\n[Black \"SenseiDanya\"]\n[Result \"0-1\"]\n[CurrentPosition \"5rk1/pp2bppp/4q3/8/2p1N3/2NrB1R1/PP4KP/5R2 w - -\"]\n[Timezone \"UTC\"]\n[ECO \"B21\"]\n[ECOUrl \"https://www.chess.com/openings/Sicilian-Defense-McDonnell-Tal-Gambit\"]\n[UTCDate \"2021.01.10\"]\n[UTCTime \"07:39:11\"]\n[WhiteElo \"2044\"]\n[BlackElo \"1733\"]\n[TimeControl \"600\"]\n[Termination \"SenseiDanya won by resignation\"]\n[StartTime \"07:39:11\"]\n[EndDate \"2021.01.10\"]\n[EndTime \"07:52:16\"]\n[Link \"https://www.chess.com/game/live/6193417416\"]\n\n1. e4 {[%clk 0:10:00]} 1... c5 {[%clk 0:10:00]} 2. f4 {[%clk 0:09:52.4]} 2... d5 {[%clk 0:09:39.1]} 3. exd5 {[%clk 0:09:06.7]} 3... Nf6 {[%clk 0:09:37.8]} 4. c4 {[%clk 0:08:32.7]} 4... e6 {[%clk 0:09:02.6]} 5. dxe6 {[%clk 0:08:01.4]} 5... Bxe6 {[%clk 0:09:00.9]} 6. Nc3 {[%clk 0:07:54.7]} 6... Nc6 {[%clk 0:08:44.3]} 7. Nge2 {[%clk 0:07:39.4]} 7... Bxc4 {[%clk 0:08:20.3]} 8. Ng3 {[%clk 0:07:11.4]} 8... Bxf1 {[%clk 0:07:47.9]} 9. Rxf1 {[%clk 0:07:05]} 9... Be7 {[%clk 0:07:15.5]} 10. Nge4 {[%clk 0:06:37]} 10... O-O {[%clk 0:07:13.4]} 11. d3 {[%clk 0:06:25.8]} 11... Qd7 {[%clk 0:06:14.4]} 12. Rf3 {[%clk 0:05:51.1]} 12... Nd4 {[%clk 0:06:11.3]} 13. Rg3 {[%clk 0:05:44.1]} 13... Rad8 {[%clk 0:05:56.4]} 14. Kf1 {[%clk 0:05:19.5]} 14... Nf5 {[%clk 0:05:22.6]} 15. Rh3 {[%clk 0:05:11]} 15... c4 {[%clk 0:05:20]} 16. g4 {[%clk 0:04:42.9]} 16... Nxg4 {[%clk 0:04:56.5]} 17. Qxg4 {[%clk 0:04:04.6]} 17... Ne3+ {[%clk 0:04:39.5]} 18. Bxe3 {[%clk 0:03:59.9]} 18... Qxg4 {[%clk 0:04:38.5]} 19. Rg3 {[%clk 0:03:56.3]} 19... Qh5 {[%clk 0:04:16.3]} 20. f5 {[%clk 0:03:31.7]} 20... Qxf5+ {[%clk 0:04:03.3]} 21. Kg2 {[%clk 0:03:30.4]} 21... Rxd3 {[%clk 0:04:01.5]} 22. Rf1 {[%clk 0:03:26.9]} 22... Qe6 {[%clk 0:04:00.5]} 0-1\n",
+      "time_control": "600",
+      "end_time": 1610265136,
+      "rated": true,
+      "accuracies": {
+        "white": 83.13,
+        "black": 94.47
+      },
+      "tcn": "mCYInDZJCJ!TkA0SJS6Sbs5QgmSAmwAfhf90wC8!lt7ZfvQBvw47efBLwxIAoETEdELucuZExwENDLNLfo7tafLS",
+      "uuid": "ed8ba561-5316-11eb-bc90-0069e4010001",
+      "initial_setup": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "fen": "5rk1/pp2bppp/4q3/8/2p1N3/2NrB1R1/PP4KP/5R2 w - -",
+      "time_class": "rapid",
+      "rules": "chess",
+      "white": {
+        "rating": 2044,
+        "result": "resigned",
+        "@id": "https://api.chess.com/pub/player/balzdeep802",
+        "username": "Balzdeep802",
+        "uuid": "666cbb28-1012-11e4-8034-000000000000"
+      },
+      "black": {
+        "rating": 1733,
+        "result": "win",
+        "@id": "https://api.chess.com/pub/player/senseidanya",
+        "username": "SenseiDanya",
+        "uuid": "a3066ffc-17d6-11eb-b317-1754d2b3bc66"
+      },
+      "eco": "https://www.chess.com/openings/Sicilian-Defense-McDonnell-Tal-Gambit"
+    },
+    "archive_url": "https://api.chess.com/pub/player/senseidanya/games/2021/01",
+    "match_status": "FOUND",
+    "youtube_url": "https://youtu.be/VBxmm4zzC1g?si=nMnj1GBJfLpJ6dy5&t=3",
+    "youtube_timestamp": 3
+  },
+  {
+    "csv_game": {
+      "row_number": 19,
+      "youtube_url": "https://youtu.be/8QxDmN_BMaU?si=xKQK1Zcflt3K6IH4&t=8",
+      "chess_url": "https://www.chess.com/game/live/6193509401?username=senseidanya",
+      "game_id": "6193509401",
+      "youtube_timestamp": 8
+    },
+    "api_game": {
+      "url": "https://www.chess.com/game/live/6193509401",
+      "pgn": "[Event \"Live Chess\"]\n[Site \"Chess.com\"]\n[Date \"2021.01.10\"]\n[Round \"-\"]\n[White \"SenseiDanya\"]\n[Black \"willforgetthis\"]\n[Result \"1-0\"]\n[CurrentPosition \"r3k2R/ppp1q3/4Q3/8/4P3/8/PP4P1/n5K1 b - -\"]\n[Timezone \"UTC\"]\n[ECO \"C34\"]\n[ECOUrl \"https://www.chess.com/openings/Kings-Gambit-Accepted-Fischer-Defense-4.d4-g5\"]\n[UTCDate \"2021.01.10\"]\n[UTCTime \"07:59:56\"]\n[WhiteElo \"1751\"]\n[BlackElo \"1502\"]\n[TimeControl \"600+5\"]\n[Termination \"SenseiDanya won by checkmate\"]\n[StartTime \"07:59:56\"]\n[EndDate \"2021.01.10\"]\n[EndTime \"08:20:32\"]\n[Link \"https://www.chess.com/game/live/6193509401\"]\n\n1. e4 {[%clk 0:10:05]} 1... e5 {[%clk 0:10:05]} 2. f4 {[%clk 0:10:08.4]} 2... exf4 {[%clk 0:10:02.7]} 3. Nf3 {[%clk 0:09:43.8]} 3... d6 {[%clk 0:10:02.6]} 4. d4 {[%clk 0:09:44]} 4... g5 {[%clk 0:10:02.6]} 5. Bc4 {[%clk 0:09:20.8]} 5... Be6 {[%clk 0:09:05.8]} 6. Bxe6 {[%clk 0:08:28.9]} 6... fxe6 {[%clk 0:09:03.8]} 7. h4 {[%clk 0:08:15.9]} 7... Bh6 {[%clk 0:08:52]} 8. Nxg5 {[%clk 0:07:59.2]} 8... Bxg5 {[%clk 0:08:43.4]} 9. Qh5+ {[%clk 0:08:02.4]} 9... Kf8 {[%clk 0:08:37.6]} 10. hxg5 {[%clk 0:08:06.3]} 10... e5 {[%clk 0:08:17.1]} 11. dxe5 {[%clk 0:07:56.8]} 11... dxe5 {[%clk 0:08:13.5]} 12. g6 {[%clk 0:07:47.6]} 12... Nc6 {[%clk 0:07:07]} 13. Qxh7 {[%clk 0:07:08.5]} 13... Rxh7 {[%clk 0:06:05.9]} 14. gxh7 {[%clk 0:07:09.5]} 14... Qd4 {[%clk 0:05:49]} 15. Nc3 {[%clk 0:06:24.5]} 15... Nb4 {[%clk 0:05:11.8]} 16. h8=Q {[%clk 0:05:58.5]} 16... Nxc2+ {[%clk 0:04:05]} 17. Ke2 {[%clk 0:06:02.8]} 17... Nxa1 {[%clk 0:03:53.7]} 18. Rh7 {[%clk 0:05:32.8]} 18... Qc4+ {[%clk 0:03:10.3]} 19. Kf2 {[%clk 0:05:32.4]} 19... Qd4+ {[%clk 0:02:50]} 20. Kf1 {[%clk 0:05:23.7]} 20... Qd3+ {[%clk 0:02:38.1]} 21. Kg1 {[%clk 0:05:25.2]} 21... Qg3 {[%clk 0:02:34.5]} 22. Ne2 {[%clk 0:04:35.5]} 22... Qg5 {[%clk 0:01:31.1]} 23. Nxf4 {[%clk 0:03:05]} 23... exf4 {[%clk 0:01:06.7]} 24. Bxf4 {[%clk 0:03:08.4]} 24... Qxf4 {[%clk 0:01:06.2]} 25. Qg7+ {[%clk 0:03:12.1]} 25... Ke8 {[%clk 0:01:05.9]} 26. Qxg8+ {[%clk 0:03:01.3]} 26... Qf8 {[%clk 0:01:08.5]} 27. Qe6+ {[%clk 0:03:05.4]} 27... Qe7 {[%clk 0:01:05.4]} 28. Rh8# {[%clk 0:03:07.8]} 1-0\n",
+      "time_control": "600+5",
+      "end_time": 1610266832,
+      "rated": true,
+      "accuracies": {
+        "white": 79.79,
+        "black": 57.69
+      },
+      "tcn": "mC0KnDKDgvZRlB2MfA6SAS1SpF9VvMVMdN89FMSKBKRKMU5QN3?3U37BbsQz3~zkemkah3BAmnABnfBtfgtwsmwMmDKDcDMD?2982!D9!S903?",
+      "uuid": "d8adf957-5319-11eb-bc90-0069e4010001",
+      "initial_setup": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "fen": "r3k2R/ppp1q3/4Q3/8/4P3/8/PP4P1/n5K1 b - -",
+      "time_class": "rapid",
+      "rules": "chess",
+      "white": {
+        "rating": 1751,
+        "result": "win",
+        "@id": "https://api.chess.com/pub/player/senseidanya",
+        "username": "SenseiDanya",
+        "uuid": "a3066ffc-17d6-11eb-b317-1754d2b3bc66"
+      },
+      "black": {
+        "rating": 1502,
+        "result": "checkmated",
+        "@id": "https://api.chess.com/pub/player/willforgetthis",
+        "username": "willforgetthis",
+        "uuid": "10a0c448-7950-11ea-8372-43e0c8a64011"
+      },
+      "eco": "https://www.chess.com/openings/Kings-Gambit-Accepted-Fischer-Defense-4.d4-g5"
+    },
+    "archive_url": "https://api.chess.com/pub/player/senseidanya/games/2021/01",
+    "match_status": "FOUND",
+    "youtube_url": "https://youtu.be/8QxDmN_BMaU?si=xKQK1Zcflt3K6IH4&t=8",
+    "youtube_timestamp": 8
+  },
+  {
+    "csv_game": {
+      "row_number": 20,
+      "youtube_url": "https://youtu.be/0npOMfkAlVU?si=1xEv7Hq0eRvpKTn5&t=3",
+      "chess_url": "https://www.chess.com/game/live/6202338642?username=senseidanya",
+      "game_id": "6202338642",
+      "youtube_timestamp": 3
+    },
+    "api_game": {
+      "url": "https://www.chess.com/game/live/6202338642",
+      "pgn": "[Event \"Live Chess\"]\n[Site \"Chess.com\"]\n[Date \"2021.01.11\"]\n[Round \"-\"]\n[White \"ChessNinja012\"]\n[Black \"SenseiDanya\"]\n[Result \"0-1\"]\n[CurrentPosition \"2r2rk1/4bppp/p2pbn2/1p2p3/8/PP4Q1/2PBqPPP/2RR2K1 w - -\"]\n[Timezone \"UTC\"]\n[ECO \"B92\"]\n[ECOUrl \"https://www.chess.com/openings/Sicilian-Defense-Open-Najdorf-Opocensky-Traditional-Line-9.Qd3-Be6\"]\n[UTCDate \"2021.01.11\"]\n[UTCTime \"06:30:11\"]\n[WhiteElo \"1445\"]\n[BlackElo \"1763\"]\n[TimeControl \"900+10\"]\n[Termination \"SenseiDanya won by resignation\"]\n[StartTime \"06:30:11\"]\n[EndDate \"2021.01.11\"]\n[EndTime \"06:45:27\"]\n[Link \"https://www.chess.com/game/live/6202338642\"]\n\n1. e4 {[%clk 0:15:10]} 1... c5 {[%clk 0:15:10]} 2. Nf3 {[%clk 0:15:08.8]} 2... d6 {[%clk 0:15:04.7]} 3. d4 {[%clk 0:15:16.6]} 3... cxd4 {[%clk 0:15:11.7]} 4. Nxd4 {[%clk 0:15:25]} 4... Nf6 {[%clk 0:15:21.1]} 5. Nc3 {[%clk 0:15:31.7]} 5... a6 {[%clk 0:15:20.6]} 6. Be2 {[%clk 0:15:28.7]} 6... e5 {[%clk 0:14:36.5]} 7. Nb3 {[%clk 0:15:03]} 7... Be7 {[%clk 0:13:42.7]} 8. O-O {[%clk 0:14:42.7]} 8... O-O {[%clk 0:13:36.5]} 9. Qd3 {[%clk 0:14:06.4]} 9... Be6 {[%clk 0:13:32.2]} 10. Bg5 {[%clk 0:13:49.6]} 10... Nbd7 {[%clk 0:13:24.2]} 11. Na5 {[%clk 0:13:30.4]} 11... Qxa5 {[%clk 0:13:28.1]} 12. a3 {[%clk 0:13:21.8]} 12... Rac8 {[%clk 0:12:56.3]} 13. Bd2 {[%clk 0:12:52.2]} 13... Qc7 {[%clk 0:12:21]} 14. Rac1 {[%clk 0:12:30.5]} 14... b5 {[%clk 0:11:41.7]} 15. b3 {[%clk 0:11:50]} 15... Qb7 {[%clk 0:10:58.2]} 16. Rfd1 {[%clk 0:11:07.5]} 16... Nc5 {[%clk 0:10:42.5]} 17. Qf3 {[%clk 0:10:53.6]} 17... Ncxe4 {[%clk 0:10:49.9]} 18. Nxe4 {[%clk 0:10:56.5]} 18... Qxe4 {[%clk 0:10:38.9]} 19. Qg3 {[%clk 0:10:38.5]} 19... Qxe2 {[%clk 0:10:46.1]} 0-1\n",
+      "time_control": "900+10",
+      "end_time": 1610347527,
+      "rated": true,
+      "accuracies": {
+        "white": 83.89,
+        "black": 97.04
+      },
+      "tcn": "mCYIgvZRlBIBvB!TbsWOfm0KBr90eg8!dt6ScM5ZrG7Giq46MlGYacXHjrYXfdZItvICsCXCvwCm",
+      "uuid": "6fd9e664-53d6-11eb-bc90-0069e4010001",
+      "initial_setup": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "fen": "2r2rk1/4bppp/p2pbn2/1p2p3/8/PP4Q1/2PBqPPP/2RR2K1 w - -",
+      "time_class": "rapid",
+      "rules": "chess",
+      "white": {
+        "rating": 1445,
+        "result": "resigned",
+        "@id": "https://api.chess.com/pub/player/chessninja012",
+        "username": "ChessNinja012",
+        "uuid": "b0b78db4-ac79-11e7-8000-000000000000"
+      },
+      "black": {
+        "rating": 1763,
+        "result": "win",
+        "@id": "https://api.chess.com/pub/player/senseidanya",
+        "username": "SenseiDanya",
+        "uuid": "a3066ffc-17d6-11eb-b317-1754d2b3bc66"
+      },
+      "eco": "https://www.chess.com/openings/Sicilian-Defense-Open-Najdorf-Opocensky-Traditional-Line-9.Qd3-Be6"
+    },
+    "archive_url": "https://api.chess.com/pub/player/senseidanya/games/2021/01",
+    "match_status": "FOUND",
+    "youtube_url": "https://youtu.be/0npOMfkAlVU?si=1xEv7Hq0eRvpKTn5&t=3",
+    "youtube_timestamp": 3
+  },
+  {
+    "csv_game": {
+      "row_number": 21,
+      "youtube_url": "https://youtu.be/0npOMfkAlVU?si=K6G-iHf4LM3w3qqM&t=1830",
+      "chess_url": "https://www.chess.com/game/live/6202490727?username=senseidanya",
+      "game_id": "6202490727",
+      "youtube_timestamp": 1830
+    },
+    "api_game": {
+      "url": "https://www.chess.com/game/live/6202490727",
+      "pgn": "[Event \"Live Chess\"]\n[Site \"Chess.com\"]\n[Date \"2021.01.11\"]\n[Round \"-\"]\n[White \"celinat0r\"]\n[Black \"SenseiDanya\"]\n[Result \"0-1\"]\n[CurrentPosition \"r1b1r1k1/ppp2pp1/1b1p3p/3P4/8/N1P1n1PP/PP1N2qK/R3R3 w - -\"]\n[Timezone \"UTC\"]\n[ECO \"C50\"]\n[ECOUrl \"https://www.chess.com/openings/Giuoco-Piano-Game...6.c3-O-O-7.h3-h6\"]\n[UTCDate \"2021.01.11\"]\n[UTCTime \"07:07:02\"]\n[WhiteElo \"928\"]\n[BlackElo \"1764\"]\n[TimeControl \"600\"]\n[Termination \"SenseiDanya won by checkmate\"]\n[StartTime \"07:07:02\"]\n[EndDate \"2021.01.11\"]\n[EndTime \"07:15:08\"]\n[Link \"https://www.chess.com/game/live/6202490727\"]\n\n1. e4 {[%clk 0:10:00]} 1... e5 {[%clk 0:10:00]} 2. Nf3 {[%clk 0:09:58.4]} 2... Nc6 {[%clk 0:09:52]} 3. Bc4 {[%clk 0:09:54.8]} 3... Bc5 {[%clk 0:09:28.4]} 4. c3 {[%clk 0:09:52]} 4... Nf6 {[%clk 0:09:24.6]} 5. d3 {[%clk 0:09:42.9]} 5... O-O {[%clk 0:08:58]} 6. O-O {[%clk 0:09:36.7]} 6... h6 {[%clk 0:08:53.5]} 7. h3 {[%clk 0:09:14.4]} 7... d6 {[%clk 0:08:51.5]} 8. d4 {[%clk 0:09:07.1]} 8... Bb6 {[%clk 0:08:23.2]} 9. d5 {[%clk 0:08:58.2]} 9... Ne7 {[%clk 0:08:02.5]} 10. Na3 {[%clk 0:08:43.6]} 10... Nxe4 {[%clk 0:07:43.3]} 11. Qe2 {[%clk 0:08:22.8]} 11... Ng3 {[%clk 0:07:25.3]} 12. Be3 {[%clk 0:07:54.8]} 12... Nxe2+ {[%clk 0:07:22.1]} 13. Kh2 {[%clk 0:07:41.6]} 13... Nf4 {[%clk 0:07:02.9]} 14. Bxf4 {[%clk 0:07:20.2]} 14... exf4 {[%clk 0:07:01]} 15. g3 {[%clk 0:07:08.3]} 15... fxg3+ {[%clk 0:06:57.4]} 16. fxg3 {[%clk 0:07:07.3]} 16... Nf5 {[%clk 0:06:39.2]} 17. Bd3 {[%clk 0:06:45]} 17... Ne3 {[%clk 0:06:37]} 18. Rfe1 {[%clk 0:06:35.9]} 18... Qf6 {[%clk 0:06:35.6]} 19. Be4 {[%clk 0:06:16.7]} 19... Re8 {[%clk 0:06:20.3]} 20. Nd2 {[%clk 0:05:55.3]} 20... Qf2+ {[%clk 0:06:19.4]} 21. Bg2 {[%clk 0:05:47.1]} 21... Qxg2# {[%clk 0:06:17.8]} 0-1\n",
+      "time_control": "600",
+      "end_time": 1610349308,
+      "rated": true,
+      "accuracies": {
+        "white": 15.56,
+        "black": 99.17
+      },
+      "tcn": "mC0Kgv5QfA9Iks!Tlt8!eg3VpxZRtBIPBJQ0bqTCdmCwcuwmgpmDuDKDowDwnw0LAtLufe7TtC98vlTnCono",
+      "uuid": "9a55a77c-53db-11eb-bc90-0069e4010001",
+      "initial_setup": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "fen": "r1b1r1k1/ppp2pp1/1b1p3p/3P4/8/N1P1n1PP/PP1N2qK/R3R3 w - -",
+      "time_class": "rapid",
+      "rules": "chess",
+      "white": {
+        "rating": 928,
+        "result": "checkmated",
+        "@id": "https://api.chess.com/pub/player/celinat0r",
+        "username": "celinat0r",
+        "uuid": "88140022-8a93-11e5-801c-000000000000"
+      },
+      "black": {
+        "rating": 1764,
+        "result": "win",
+        "@id": "https://api.chess.com/pub/player/senseidanya",
+        "username": "SenseiDanya",
+        "uuid": "a3066ffc-17d6-11eb-b317-1754d2b3bc66"
+      },
+      "eco": "https://www.chess.com/openings/Giuoco-Piano-Game...6.c3-O-O-7.h3-h6"
+    },
+    "archive_url": "https://api.chess.com/pub/player/senseidanya/games/2021/01",
+    "match_status": "FOUND",
+    "youtube_url": "https://youtu.be/0npOMfkAlVU?si=K6G-iHf4LM3w3qqM&t=1830",
+    "youtube_timestamp": 1830
+  },
+  {
+    "csv_game": {
+      "row_number": 22,
+      "youtube_url": "https://youtu.be/OE2pJpVVzYw?si=ioyNdswVFe97yU88&t=8",
+      "chess_url": "https://www.chess.com/game/live/6212175556?username=senseidanya",
+      "game_id": "6212175556",
+      "youtube_timestamp": 8
+    },
+    "api_game": {
+      "url": "https://www.chess.com/game/live/6212175556",
+      "pgn": "[Event \"Live Chess\"]\n[Site \"Chess.com\"]\n[Date \"2021.01.12\"]\n[Round \"-\"]\n[White \"SenseiDanya\"]\n[Black \"abrahamcharles\"]\n[Result \"1-0\"]\n[CurrentPosition \"r4rk1/p1p4Q/2p5/3p2p1/3q4/2NB4/PPP3PP/R6K b - -\"]\n[Timezone \"UTC\"]\n[ECO \"C45\"]\n[ECOUrl \"https://www.chess.com/openings/Scotch-Game-Scotch-Gambit-4...d6-5.Nxd4-Nf6-6.Nc3\"]\n[UTCDate \"2021.01.12\"]\n[UTCTime \"08:11:32\"]\n[WhiteElo \"1764\"]\n[BlackElo \"1305\"]\n[TimeControl \"600\"]\n[Termination \"SenseiDanya won by checkmate\"]\n[StartTime \"08:11:32\"]\n[EndDate \"2021.01.12\"]\n[EndTime \"08:23:54\"]\n[Link \"https://www.chess.com/game/live/6212175556\"]\n\n1. e4 {[%clk 0:10:00]} 1... e5 {[%clk 0:10:00]} 2. Nf3 {[%clk 0:09:56.4]} 2... Nc6 {[%clk 0:09:54.4]} 3. d4 {[%clk 0:09:45.5]} 3... exd4 {[%clk 0:09:27.6]} 4. Nxd4 {[%clk 0:09:20.8]} 4... d6 {[%clk 0:09:13.8]} 5. Nc3 {[%clk 0:08:18.8]} 5... Nf6 {[%clk 0:08:53.3]} 6. Bc4 {[%clk 0:07:46.9]} 6... g6 {[%clk 0:08:28.9]} 7. Nxc6 {[%clk 0:06:11.6]} 7... bxc6 {[%clk 0:08:18.3]} 8. e5 {[%clk 0:06:10.6]} 8... d5 {[%clk 0:08:09]} 9. Bg5 {[%clk 0:05:32.9]} 9... Be7 {[%clk 0:07:35]} 10. exf6 {[%clk 0:05:09.8]} 10... Bxf6 {[%clk 0:07:26.1]} 11. Bxf6 {[%clk 0:05:07.8]} 11... Qxf6 {[%clk 0:07:16.8]} 12. Bd3 {[%clk 0:05:03.1]} 12... O-O {[%clk 0:07:10.8]} 13. O-O {[%clk 0:05:02.1]} 13... Qg5 {[%clk 0:07:01.5]} 14. f4 {[%clk 0:03:43.3]} 14... Qf6 {[%clk 0:06:34.2]} 15. f5 {[%clk 0:03:42.1]} 15... g5 {[%clk 0:06:18.7]} 16. Qh5 {[%clk 0:03:24.2]} 16... Bxf5 {[%clk 0:06:10.8]} 17. Rxf5 {[%clk 0:03:15]} 17... Qd4+ {[%clk 0:05:57.7]} 18. Kh1 {[%clk 0:03:00.9]} 18... f6 {[%clk 0:05:46.7]} 19. Rxg5+ {[%clk 0:02:24.7]} 19... fxg5 {[%clk 0:05:25.5]} 20. Qxh7# {[%clk 0:02:22.3]} 1-0\n",
+      "time_control": "600",
+      "end_time": 1610439834,
+      "rated": false,
+      "accuracies": {
+        "white": 96.79,
+        "black": 72.1
+      },
+      "tcn": "mC0Kgv5QlBKBvBZRbs!TfA2UBQXQCKRJcM90KT0TMT7TAt8!egTMnDMTDLUMdN6LfLTBgh1TLMTMN3",
+      "uuid": "c6a06dfe-54ad-11eb-bc90-0069e4010001",
+      "initial_setup": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "fen": "r4rk1/p1p4Q/2p5/3p2p1/3q4/2NB4/PPP3PP/R6K b - -",
+      "time_class": "rapid",
+      "rules": "chess",
+      "white": {
+        "rating": 1764,
+        "result": "win",
+        "@id": "https://api.chess.com/pub/player/senseidanya",
+        "username": "SenseiDanya",
+        "uuid": "a3066ffc-17d6-11eb-b317-1754d2b3bc66"
+      },
+      "black": {
+        "rating": 1305,
+        "result": "checkmated",
+        "@id": "https://api.chess.com/pub/player/abrahamcharles",
+        "username": "abrahamcharles",
+        "uuid": "25088dfe-23fe-11eb-a3fb-5f406ea31162"
+      },
+      "eco": "https://www.chess.com/openings/Scotch-Game-Scotch-Gambit-4...d6-5.Nxd4-Nf6-6.Nc3"
+    },
+    "archive_url": "https://api.chess.com/pub/player/senseidanya/games/2021/01",
+    "match_status": "FOUND",
+    "youtube_url": "https://youtu.be/OE2pJpVVzYw?si=ioyNdswVFe97yU88&t=8",
+    "youtube_timestamp": 8
+  },
+  {
+    "csv_game": {
+      "row_number": 23,
+      "youtube_url": "https://youtu.be/8O4UG9NtUoM?si=7kpEsZaLlVjIVfGm&t=2",
+      "chess_url": "https://www.chess.com/game/live/6260663141?username=senseidanya",
+      "game_id": "6260663141",
+      "youtube_timestamp": 2
+    },
+    "api_game": {
+      "url": "https://www.chess.com/game/live/6260663141",
+      "pgn": "[Event \"Live Chess\"]\n[Site \"Chess.com\"]\n[Date \"2021.01.17\"]\n[Round \"-\"]\n[White \"SenseiDanya\"]\n[Black \"chimzinho\"]\n[Result \"1-0\"]\n[CurrentPosition \"5rk1/5pp1/7p/5Q2/3P4/3p4/P4PPP/R4RK1 b - -\"]\n[Timezone \"UTC\"]\n[ECO \"C10\"]\n[ECOUrl \"https://www.chess.com/openings/French-Defense-Normal-Variation-2...d5-3.Nc3\"]\n[UTCDate \"2021.01.17\"]\n[UTCTime \"10:05:56\"]\n[WhiteElo \"1779\"]\n[BlackElo \"1418\"]\n[TimeControl \"600+5\"]\n[Termination \"SenseiDanya won by resignation\"]\n[StartTime \"10:05:56\"]\n[EndDate \"2021.01.17\"]\n[EndTime \"10:20:28\"]\n[Link \"https://www.chess.com/game/live/6260663141\"]\n\n1. d4 {[%clk 0:10:05]} 1... d5 {[%clk 0:10:05]} 2. Nc3 {[%clk 0:10:08.9]} 2... e6 {[%clk 0:10:08.8]} 3. e4 {[%clk 0:09:58.1]} 3... Nd7 {[%clk 0:10:04.3]} 4. exd5 {[%clk 0:09:38.1]} 4... exd5 {[%clk 0:10:08.6]} 5. Nxd5 {[%clk 0:09:42]} 5... Ngf6 {[%clk 0:10:05.5]} 6. Nxf6+ {[%clk 0:09:24.6]} 6... Qxf6 {[%clk 0:09:57.9]} 7. Nf3 {[%clk 0:09:27.9]} 7... Bd6 {[%clk 0:09:50.9]} 8. Bd3 {[%clk 0:08:24]} 8... O-O {[%clk 0:09:48.2]} 9. O-O {[%clk 0:08:08.3]} 9... h6 {[%clk 0:09:44.5]} 10. c3 {[%clk 0:07:29.1]} 10... c5 {[%clk 0:09:06.1]} 11. Bc2 {[%clk 0:07:26.2]} 11... c4 {[%clk 0:08:54.9]} 12. b3 {[%clk 0:07:09.9]} 12... b5 {[%clk 0:08:42.4]} 13. bxc4 {[%clk 0:06:43.7]} 13... bxc4 {[%clk 0:08:35.8]} 14. Qe2 {[%clk 0:06:31.5]} 14... Nb6 {[%clk 0:08:37.8]} 15. Qe4 {[%clk 0:06:35]} 15... Qg6 {[%clk 0:07:57.9]} 16. Qxa8 {[%clk 0:06:03]} 16... Qxc2 {[%clk 0:07:48.8]} 17. Qxa7 {[%clk 0:05:55.4]} 17... Qxc3 {[%clk 0:07:36.4]} 18. Bd2 {[%clk 0:05:07.5]} 18... Qd3 {[%clk 0:06:50]} 19. Qxb6 {[%clk 0:05:09.8]} 19... Ba3 {[%clk 0:06:30.5]} 20. Bb4 {[%clk 0:04:36.1]} 20... Bxb4 {[%clk 0:06:03.6]} 21. Qxb4 {[%clk 0:04:40]} 21... Bg4 {[%clk 0:06:05.1]} 22. Ne5 {[%clk 0:04:10.6]} 22... Be6 {[%clk 0:05:35.7]} 23. Nxd3 {[%clk 0:04:14.5]} 23... cxd3 {[%clk 0:05:38.3]} 24. Qb5 {[%clk 0:04:10.7]} 24... Bf5 {[%clk 0:05:32]} 25. Qxf5 {[%clk 0:04:14.6]} 1-0\n",
+      "time_control": "600+5",
+      "end_time": 1610878828,
+      "rated": true,
+      "accuracies": {
+        "white": 90.22,
+        "black": 75.37
+      },
+      "tcn": "lBZJbs0SmC5ZCJSJsJ!TJT7Tgv9Rft8!eg3VksYItkIAjrXHrAHAdmZPmCTUC4Uk4WksclstWPRqlzqzPz6EvKESKtAtzHSLHL",
+      "uuid": "98d6d521-58ab-11eb-9a76-0069e4010001",
+      "initial_setup": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "fen": "5rk1/5pp1/7p/5Q2/3P4/3p4/P4PPP/R4RK1 b - -",
+      "time_class": "rapid",
+      "rules": "chess",
+      "white": {
+        "rating": 1779,
+        "result": "win",
+        "@id": "https://api.chess.com/pub/player/senseidanya",
+        "username": "SenseiDanya",
+        "uuid": "a3066ffc-17d6-11eb-b317-1754d2b3bc66"
+      },
+      "black": {
+        "rating": 1418,
+        "result": "resigned",
+        "@id": "https://api.chess.com/pub/player/chimzinho",
+        "username": "chimzinho",
+        "uuid": "2e01fede-a627-11e7-8062-000000000000"
+      },
+      "eco": "https://www.chess.com/openings/French-Defense-Normal-Variation-2...d5-3.Nc3"
+    },
+    "archive_url": "https://api.chess.com/pub/player/senseidanya/games/2021/01",
+    "match_status": "FOUND",
+    "youtube_url": "https://youtu.be/8O4UG9NtUoM?si=7kpEsZaLlVjIVfGm&t=2",
+    "youtube_timestamp": 2
+  },
+  {
+    "csv_game": {
+      "row_number": 24,
+      "youtube_url": "https://youtu.be/fhDxUI-t2v4?si=GcCcKVBWWzyiDEjK&t=15",
+      "chess_url": "https://www.chess.com/game/live/6260835895?username=senseidanya",
+      "game_id": "6260835895",
+      "youtube_timestamp": 15
+    },
+    "api_game": {
+      "url": "https://www.chess.com/game/live/6260835895",
+      "pgn": "[Event \"Live Chess\"]\n[Site \"Chess.com\"]\n[Date \"2021.01.17\"]\n[Round \"-\"]\n[White \"Kajand\"]\n[Black \"SenseiDanya\"]\n[Result \"0-1\"]\n[CurrentPosition \"r6r/1b4k1/1B1p3p/4p1b1/P3q3/6Q1/1PP3PP/5RK1 w - -\"]\n[Timezone \"UTC\"]\n[ECO \"B94\"]\n[ECOUrl \"https://www.chess.com/openings/Sicilian-Defense-Open-Najdorf-Variation...8.Qf3-h6-9.Bh4-g5\"]\n[UTCDate \"2021.01.17\"]\n[UTCTime \"10:35:16\"]\n[WhiteElo \"1897\"]\n[BlackElo \"1825\"]\n[TimeControl \"600\"]\n[Termination \"SenseiDanya won on time\"]\n[StartTime \"10:35:16\"]\n[EndDate \"2021.01.17\"]\n[EndTime \"10:52:55\"]\n[Link \"https://www.chess.com/game/live/6260835895\"]\n\n1. e4 {[%clk 0:10:00]} 1... c5 {[%clk 0:10:00]} 2. Nf3 {[%clk 0:09:55.6]} 2... d6 {[%clk 0:09:58.8]} 3. d4 {[%clk 0:09:53.9]} 3... cxd4 {[%clk 0:09:58.1]} 4. Nxd4 {[%clk 0:09:52]} 4... Nf6 {[%clk 0:09:57.3]} 5. Nc3 {[%clk 0:09:50.9]} 5... a6 {[%clk 0:09:56.6]} 6. Bg5 {[%clk 0:09:49.6]} 6... Nbd7 {[%clk 0:09:25.6]} 7. f4 {[%clk 0:09:45.7]} 7... Qc7 {[%clk 0:09:06.9]} 8. Qf3 {[%clk 0:09:00.4]} 8... h6 {[%clk 0:08:55.2]} 9. Bh4 {[%clk 0:08:57.5]} 9... g5 {[%clk 0:08:26]} 10. Bg3 {[%clk 0:07:35.1]} 10... gxf4 {[%clk 0:08:00.2]} 11. Bxf4 {[%clk 0:07:35]} 11... e5 {[%clk 0:07:41.4]} 12. Ndb5 {[%clk 0:06:18.9]} 12... axb5 {[%clk 0:07:33.8]} 13. Nxb5 {[%clk 0:06:18.8]} 13... Qc6 {[%clk 0:06:26.1]} 14. Be3 {[%clk 0:05:35]} 14... Be7 {[%clk 0:05:53.1]} 15. Bd3 {[%clk 0:04:16.4]} 15... b6 {[%clk 0:05:50.9]} 16. O-O {[%clk 0:03:37.3]} 16... Bb7 {[%clk 0:05:49.8]} 17. a4 {[%clk 0:02:58.4]} 17... Nc5 {[%clk 0:05:11.1]} 18. Nc3 {[%clk 0:02:26.7]} 18... Kd8 {[%clk 0:04:11.3]} 19. Rad1 {[%clk 0:01:12.4]} 19... Ncxe4 {[%clk 0:03:37.8]} 20. Nxe4 {[%clk 0:00:23.3]} 20... Nxe4 {[%clk 0:03:37]} 21. Bxe4 {[%clk 0:00:17.6]} 21... Qxe4 {[%clk 0:03:35.6]} 22. Bxb6+ {[%clk 0:00:15.8]} 22... Kd7 {[%clk 0:03:03.1]} 23. Qh3+ {[%clk 0:00:07.5]} 23... Ke8 {[%clk 0:03:02.4]} 24. Rxf7 {[%clk 0:00:03.4]} 24... Kxf7 {[%clk 0:02:53.5]} 25. Rf1+ {[%clk 0:00:02.4]} 25... Kg7 {[%clk 0:02:35.3]} 26. Qg3+ {[%clk 0:00:00.4]} 26... Bg5 {[%clk 0:02:34.2]} 0-1\n",
+      "time_control": "600",
+      "end_time": 1610880775,
+      "rated": true,
+      "accuracies": {
+        "white": 76.83,
+        "black": 86.93
+      },
+      "tcn": "mCYIgvZRlBIBvB!TbsWOcM5ZnD7Ydv3VMF2MFwMDwD0KBHOHsHYQDu90ftXPeg6XiyZIHs87adICsCTCtCQCuP7ZvxZ8f181df12xw0M",
+      "uuid": "ab7959fc-58af-11eb-9a76-0069e4010001",
+      "initial_setup": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "fen": "r6r/1b4k1/1B1p3p/4p1b1/P3q3/6Q1/1PP3PP/5RK1 w - -",
+      "time_class": "rapid",
+      "rules": "chess",
+      "white": {
+        "rating": 1897,
+        "result": "timeout",
+        "@id": "https://api.chess.com/pub/player/kajand",
+        "username": "Kajand",
+        "uuid": "ac26c866-fa50-11de-8000-000000000000"
+      },
+      "black": {
+        "rating": 1825,
+        "result": "win",
+        "@id": "https://api.chess.com/pub/player/senseidanya",
+        "username": "SenseiDanya",
+        "uuid": "a3066ffc-17d6-11eb-b317-1754d2b3bc66"
+      },
+      "eco": "https://www.chess.com/openings/Sicilian-Defense-Open-Najdorf-Variation...8.Qf3-h6-9.Bh4-g5"
+    },
+    "archive_url": "https://api.chess.com/pub/player/senseidanya/games/2021/01",
+    "match_status": "FOUND",
+    "youtube_url": "https://youtu.be/fhDxUI-t2v4?si=GcCcKVBWWzyiDEjK&t=15",
+    "youtube_timestamp": 15
+  },
+  {
+    "csv_game": {
+      "row_number": 25,
+      "youtube_url": "https://youtu.be/ciTwGjksQWs?si=SztGzcLP0r23doMB&t=9",
+      "chess_url": "https://www.chess.com/game/live/6345139986?username=senseidanya",
+      "game_id": "6345139986",
+      "youtube_timestamp": 9
+    },
+    "api_game": {
+      "url": "https://www.chess.com/game/live/6345139986",
+      "pgn": "[Event \"Live Chess\"]\n[Site \"Chess.com\"]\n[Date \"2021.01.25\"]\n[Round \"-\"]\n[White \"Cyber-Allard\"]\n[Black \"SenseiDanya\"]\n[Result \"0-1\"]\n[CurrentPosition \"3r1r1k/pp2Npbp/6p1/8/4p3/P4P2/2p1nBPP/2Q3K1 w - -\"]\n[Timezone \"UTC\"]\n[ECO \"E60\"]\n[ECOUrl \"https://www.chess.com/openings/Kings-Indian-Defense\"]\n[UTCDate \"2021.01.25\"]\n[UTCTime \"20:03:48\"]\n[WhiteElo \"1714\"]\n[BlackElo \"1848\"]\n[TimeControl \"600\"]\n[Termination \"SenseiDanya won by resignation\"]\n[StartTime \"20:03:48\"]\n[EndDate \"2021.01.25\"]\n[EndTime \"20:21:38\"]\n[Link \"https://www.chess.com/game/live/6345139986\"]\n\n1. d4 {[%clk 0:10:00]} 1... Nf6 {[%clk 0:10:00]} 2. c4 {[%clk 0:09:53.8]} 2... g6 {[%clk 0:09:56.7]} 3. Bg5 {[%clk 0:09:51.8]} 3... Bg7 {[%clk 0:09:54.7]} 4. Nf3 {[%clk 0:09:48.9]} 4... O-O {[%clk 0:09:52.5]} 5. e3 {[%clk 0:09:44.6]} 5... c5 {[%clk 0:08:57.1]} 6. d5 {[%clk 0:09:24.4]} 6... Ne4 {[%clk 0:07:58.8]} 7. Bh4 {[%clk 0:08:53.8]} 7... Bxb2 {[%clk 0:07:43.7]} 8. Nbd2 {[%clk 0:08:30]} 8... Nc3 {[%clk 0:07:06.2]} 9. Qc2 {[%clk 0:08:04.2]} 9... Bxa1 {[%clk 0:07:05.3]} 10. Bd3 {[%clk 0:07:55]} 10... Nxd5 {[%clk 0:05:58.7]} 11. cxd5 {[%clk 0:07:48.8]} 11... d6 {[%clk 0:05:49.8]} 12. O-O {[%clk 0:07:45.8]} 12... Bg7 {[%clk 0:05:48.5]} 13. Rb1 {[%clk 0:07:30.6]} 13... Na6 {[%clk 0:05:42.4]} 14. a3 {[%clk 0:07:13.7]} 14... Nc7 {[%clk 0:05:40.7]} 15. Ne4 {[%clk 0:07:08.6]} 15... Nxd5 {[%clk 0:05:24.4]} 16. Bc4 {[%clk 0:06:12.7]} 16... Nb6 {[%clk 0:05:15.2]} 17. Bb3 {[%clk 0:06:00.9]} 17... Bf5 {[%clk 0:05:08.4]} 18. Rd1 {[%clk 0:04:46.6]} 18... c4 {[%clk 0:04:17.9]} 19. Ba2 {[%clk 0:04:39.9]} 19... d5 {[%clk 0:04:16.6]} 20. Nd4 {[%clk 0:03:20.8]} 20... Bxe4 {[%clk 0:04:05]} 21. Qe2 {[%clk 0:03:13.5]} 21... Na4 {[%clk 0:03:59.3]} 22. Qe1 {[%clk 0:03:04.9]} 22... c3 {[%clk 0:03:56.9]} 23. f3 {[%clk 0:02:51.8]} 23... Bf5 {[%clk 0:03:55.1]} 24. e4 {[%clk 0:02:47.3]} 24... dxe4 {[%clk 0:03:36.3]} 25. Nxf5 {[%clk 0:02:43.6]} 25... Qb6+ {[%clk 0:03:31.6]} 26. Bf2 {[%clk 0:02:36.9]} 26... Qb2 {[%clk 0:03:29.3]} 27. Nxe7+ {[%clk 0:02:28.9]} 27... Kh8 {[%clk 0:03:28.3]} 28. Bd5 {[%clk 0:02:04.5]} 28... c2 {[%clk 0:03:26.4]} 29. Rc1 {[%clk 0:02:01.6]} 29... Nc3 {[%clk 0:03:25.3]} 30. Bc4 {[%clk 0:01:42.6]} 30... Rad8 {[%clk 0:03:18]} 31. Be2 {[%clk 0:01:03.9]} 31... Qxc1 {[%clk 0:02:22.9]} 32. Qxc1 {[%clk 0:00:56.7]} 32... Nxe2+ {[%clk 0:01:46]} 0-1\n",
+      "time_control": "600",
+      "end_time": 1611606098,
+      "rated": true,
+      "accuracies": {
+        "white": 44.52,
+        "black": 97.75
+      },
+      "tcn": "lB!TkA2UcM92gv8!muYIBJTCMF2jblCsdkjaftsJAJZRega2fb5OiqOYlCYJtAJPAr6LbdIAriRJvBLCkmPymeAsnvCLuCJCBL7PFnPjL0!?iJskdcysJA47Amjcecsm",
+      "uuid": "6caad0eb-5f48-11eb-bd25-0069e4010001",
+      "initial_setup": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "fen": "3r1r1k/pp2Npbp/6p1/8/4p3/P4P2/2p1nBPP/2Q3K1 w - -",
+      "time_class": "rapid",
+      "rules": "chess",
+      "white": {
+        "rating": 1714,
+        "result": "resigned",
+        "@id": "https://api.chess.com/pub/player/cyber-allard",
+        "username": "Cyber-Allard",
+        "uuid": "f8ed4dc0-4538-11eb-8c9c-21aba58eb195"
+      },
+      "black": {
+        "rating": 1848,
+        "result": "win",
+        "@id": "https://api.chess.com/pub/player/senseidanya",
+        "username": "SenseiDanya",
+        "uuid": "a3066ffc-17d6-11eb-b317-1754d2b3bc66"
+      },
+      "eco": "https://www.chess.com/openings/Kings-Indian-Defense"
+    },
+    "archive_url": "https://api.chess.com/pub/player/senseidanya/games/2021/01",
+    "match_status": "FOUND",
+    "youtube_url": "https://youtu.be/ciTwGjksQWs?si=SztGzcLP0r23doMB&t=9",
+    "youtube_timestamp": 9
+  },
+  {
+    "csv_game": {
+      "row_number": 26,
+      "youtube_url": "https://youtu.be/lpHT3_yF4WQ?si=QoRN_B3rQK0Sc5zT&t=14",
+      "chess_url": "https://www.chess.com/game/live/6434950532?username=senseidanya",
+      "game_id": "6434950532",
+      "youtube_timestamp": 14
+    },
+    "api_game": {
+      "url": "https://www.chess.com/game/live/6434950532",
+      "pgn": "[Event \"Live Chess\"]\n[Site \"Chess.com\"]\n[Date \"2021.02.03\"]\n[Round \"-\"]\n[White \"johndavis_59\"]\n[Black \"SenseiDanya\"]\n[Result \"0-1\"]\n[CurrentPosition \"r1b2rk1/p4pbp/2p1p1pB/3p4/6qP/3B2P1/P1PQ4/1R2K2R w K -\"]\n[Timezone \"UTC\"]\n[ECO \"B34\"]\n[ECOUrl \"https://www.chess.com/openings/Sicilian-Defense-Open-Accelerated-Dragon-Modern-Variation...8.Qd2-d5-9.Nxc6-bxc6\"]\n[UTCDate \"2021.02.03\"]\n[UTCTime \"08:32:02\"]\n[WhiteElo \"1828\"]\n[BlackElo \"1907\"]\n[TimeControl \"600\"]\n[Termination \"SenseiDanya won by resignation\"]\n[StartTime \"08:32:02\"]\n[EndDate \"2021.02.03\"]\n[EndTime \"08:44:46\"]\n[Link \"https://www.chess.com/game/live/6434950532\"]\n\n1. e4 {[%clk 0:10:00]} 1... c5 {[%clk 0:10:00]} 2. Nf3 {[%clk 0:09:50.5]} 2... Nc6 {[%clk 0:09:58.9]} 3. d4 {[%clk 0:09:48.2]} 3... cxd4 {[%clk 0:09:57.6]} 4. Nxd4 {[%clk 0:09:48.1]} 4... g6 {[%clk 0:09:56.6]} 5. Nc3 {[%clk 0:09:44.6]} 5... Bg7 {[%clk 0:09:53.4]} 6. Be3 {[%clk 0:09:43.4]} 6... Nf6 {[%clk 0:09:52.5]} 7. f3 {[%clk 0:09:39.9]} 7... O-O {[%clk 0:09:40.9]} 8. Qd2 {[%clk 0:09:10.8]} 8... d5 {[%clk 0:09:20.6]} 9. Nxc6 {[%clk 0:08:47.7]} 9... bxc6 {[%clk 0:09:15.5]} 10. e5 {[%clk 0:08:44.2]} 10... Nd7 {[%clk 0:09:06.1]} 11. f4 {[%clk 0:08:42.2]} 11... e6 {[%clk 0:08:07.6]} 12. Na4 {[%clk 0:08:20.3]} 12... Nxe5 {[%clk 0:07:24.1]} 13. fxe5 {[%clk 0:06:38]} 13... Qh4+ {[%clk 0:07:22.6]} 14. g3 {[%clk 0:06:34]} 14... Qxa4 {[%clk 0:07:21.3]} 15. Bd3 {[%clk 0:05:07.2]} 15... Bxe5 {[%clk 0:07:08.3]} 16. Bh6 {[%clk 0:04:20.7]} 16... Bxb2 {[%clk 0:05:59.4]} 17. Rb1 {[%clk 0:03:53.3]} 17... Bg7 {[%clk 0:05:42.4]} 18. h4 {[%clk 0:03:19.4]} 18... Qg4 {[%clk 0:04:34.2]} 0-1\n",
+      "time_control": "600",
+      "end_time": 1612341886,
+      "rated": false,
+      "accuracies": {
+        "white": 15.96,
+        "black": 99.04
+      },
+      "tcn": "mCYIgv5QlBIBvB2Ubs92cu!Tnv8!dlZJBQXQCKTZvD0SsyZKDK7FowFyft2KuVKjabj2pFyE",
+      "uuid": "48c7b972-65fa-11eb-bd25-0069e4010001",
+      "initial_setup": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "fen": "r1b2rk1/p4pbp/2p1p1pB/3p4/6qP/3B2P1/P1PQ4/1R2K2R w K -",
+      "time_class": "rapid",
+      "rules": "chess",
+      "white": {
+        "rating": 1828,
+        "result": "resigned",
+        "@id": "https://api.chess.com/pub/player/johndavis_59",
+        "username": "johndavis_59",
+        "uuid": "dea04a56-556e-11e8-8022-000000000000"
+      },
+      "black": {
+        "rating": 1907,
+        "result": "win",
+        "@id": "https://api.chess.com/pub/player/senseidanya",
+        "username": "SenseiDanya",
+        "uuid": "a3066ffc-17d6-11eb-b317-1754d2b3bc66"
+      },
+      "eco": "https://www.chess.com/openings/Sicilian-Defense-Open-Accelerated-Dragon-Modern-Variation...8.Qd2-d5-9.Nxc6-bxc6"
+    },
+    "archive_url": "https://api.chess.com/pub/player/senseidanya/games/2021/02",
+    "match_status": "FOUND",
+    "youtube_url": "https://youtu.be/lpHT3_yF4WQ?si=QoRN_B3rQK0Sc5zT&t=14",
+    "youtube_timestamp": 14
+  },
+  {
+    "csv_game": {
+      "row_number": 27,
+      "youtube_url": "https://youtu.be/25w0mYsx_Lk?si=YX-icbPixqhQTQUM&t=5",
+      "chess_url": "https://www.chess.com/game/live/7541521455?username=senseidanya",
+      "game_id": "7541521455",
+      "youtube_timestamp": 5
+    },
+    "api_game": {
+      "url": "https://www.chess.com/game/live/7541521455",
+      "pgn": "[Event \"Live Chess\"]\n[Site \"Chess.com\"]\n[Date \"2021.02.20\"]\n[Round \"-\"]\n[White \"SenseiDanya\"]\n[Black \"KarateBaby\"]\n[Result \"1-0\"]\n[CurrentPosition \"7k/p4qRQ/1p3P1b/4r2P/8/2P5/6P1/6K1 b - -\"]\n[Timezone \"UTC\"]\n[ECO \"B07\"]\n[ECOUrl \"https://www.chess.com/openings/Pirc-Defense...5.O-O-O-O-6.c3-Nc6\"]\n[UTCDate \"2021.02.20\"]\n[UTCTime \"06:30:44\"]\n[WhiteElo \"1919\"]\n[BlackElo \"2235\"]\n[TimeControl \"600\"]\n[Termination \"SenseiDanya won by checkmate\"]\n[StartTime \"06:30:44\"]\n[EndDate \"2021.02.20\"]\n[EndTime \"06:48:49\"]\n[Link \"https://www.chess.com/game/live/7541521455\"]\n\n1. e4 {[%clk 0:10:00]} 1... g6 {[%clk 0:10:00]} 2. d4 {[%clk 0:09:56.5]} 2... Bg7 {[%clk 0:09:57]} 3. c3 {[%clk 0:09:52.7]} 3... d6 {[%clk 0:09:49.7]} 4. Bd3 {[%clk 0:09:41.9]} 4... Nf6 {[%clk 0:09:48.9]} 5. Nf3 {[%clk 0:09:33.9]} 5... O-O {[%clk 0:09:48.4]} 6. O-O {[%clk 0:09:33.1]} 6... Nc6 {[%clk 0:09:48]} 7. Bg5 {[%clk 0:09:28.3]} 7... h6 {[%clk 0:09:39.7]} 8. Bh4 {[%clk 0:09:26.5]} 8... e5 {[%clk 0:09:36]} 9. dxe5 {[%clk 0:09:09.8]} 9... Nxe5 {[%clk 0:09:35.9]} 10. Nxe5 {[%clk 0:09:07.1]} 10... dxe5 {[%clk 0:09:35.8]} 11. Na3 {[%clk 0:08:42]} 11... Qe7 {[%clk 0:09:23.4]} 12. Nc4 {[%clk 0:08:38.4]} 12... b6 {[%clk 0:09:08.4]} 13. f4 {[%clk 0:08:10.1]} 13... Qe8 {[%clk 0:05:57.3]} 14. Nxe5 {[%clk 0:07:09.5]} 14... Bb7 {[%clk 0:05:56.6]} 15. Qe2 {[%clk 0:06:47.9]} 15... g5 {[%clk 0:05:28.5]} 16. fxg5 {[%clk 0:06:05.3]} 16... hxg5 {[%clk 0:05:27.1]} 17. Bg3 {[%clk 0:06:04.6]} 17... Rd8 {[%clk 0:04:57.6]} 18. Rae1 {[%clk 0:05:29.6]} 18... Nd7 {[%clk 0:04:15.2]} 19. Nxf7 {[%clk 0:04:29.5]} 19... Rxf7 {[%clk 0:04:12.2]} 20. Bc4 {[%clk 0:04:13.8]} 20... Nf6 {[%clk 0:03:58.4]} 21. Bxf7+ {[%clk 0:04:11.7]} 21... Qxf7 {[%clk 0:03:48.9]} 22. e5 {[%clk 0:04:03.8]} 22... Re8 {[%clk 0:03:48.1]} 23. Qf2 {[%clk 0:03:43.7]} 23... Ba6 {[%clk 0:03:21.6]} 24. exf6 {[%clk 0:03:42.5]} 24... Bxf1 {[%clk 0:02:54.8]} 25. Rxf1 {[%clk 0:03:12.5]} 25... Bf8 {[%clk 0:02:54.3]} 26. Qf5 {[%clk 0:02:59.8]} 26... Bh6 {[%clk 0:02:27.8]} 27. Bxc7 {[%clk 0:02:36.4]} 27... Re2 {[%clk 0:02:24.8]} 28. h4 {[%clk 0:02:30.5]} 28... Bf8 {[%clk 0:02:01.3]} 29. Qxg5+ {[%clk 0:02:22.9]} 29... Kh7 {[%clk 0:02:00.4]} 30. Be5 {[%clk 0:02:10.2]} 30... Rxb2 {[%clk 0:01:44.9]} 31. h5 {[%clk 0:01:59.3]} 31... Rxa2 {[%clk 0:01:41.8]} 32. Rf3 {[%clk 0:01:49.4]} 32... Bh6 {[%clk 0:01:25.6]} 33. Qf5+ {[%clk 0:01:45.6]} 33... Kh8 {[%clk 0:01:23.3]} 34. Rg3 {[%clk 0:01:42.2]} 34... Re2 {[%clk 0:01:11]} 35. Rg7 {[%clk 0:01:17]} 35... Rxe5 {[%clk 0:01:05.3]} 36. Qh7# {[%clk 0:01:07.9]} 1-0\n",
+      "time_control": "600",
+      "end_time": 1613803729,
+      "rated": false,
+      "accuracies": {
+        "white": 90.16,
+        "black": 75.67
+      },
+      "tcn": "mC2UlB92ksZRft!Tgv8!eg5QcM3VMF0KBKQKvKRKbq70qAXPnD08AK6XdmUMDMVMFw47aeTZK191tAZTA181CK78mnXOKTOfef29nL9VwY8mpFV9LM!3YKmjFNjifv9VML3?vwimw2mKL3",
+      "uuid": "2a110cd3-7345-11eb-b78b-0069e4010001",
+      "initial_setup": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "fen": "7k/p4qRQ/1p3P1b/4r2P/8/2P5/6P1/6K1 b - -",
+      "time_class": "rapid",
+      "rules": "chess",
+      "white": {
+        "rating": 1919,
+        "result": "win",
+        "@id": "https://api.chess.com/pub/player/senseidanya",
+        "username": "SenseiDanya",
+        "uuid": "a3066ffc-17d6-11eb-b317-1754d2b3bc66"
+      },
+      "black": {
+        "rating": 2235,
+        "result": "checkmated",
+        "@id": "https://api.chess.com/pub/player/karatebaby",
+        "username": "KarateBaby",
+        "uuid": "6f8d88cc-3d2f-11ea-acee-251657f58b02"
+      },
+      "eco": "https://www.chess.com/openings/Pirc-Defense...5.O-O-O-O-6.c3-Nc6"
+    },
+    "archive_url": "https://api.chess.com/pub/player/senseidanya/games/2021/02",
+    "match_status": "FOUND",
+    "youtube_url": "https://youtu.be/25w0mYsx_Lk?si=YX-icbPixqhQTQUM&t=5",
+    "youtube_timestamp": 5
+  },
+  {
+    "csv_game": {
+      "row_number": 28,
+      "youtube_url": "https://youtu.be/VOQ7DlsATuc?si=jDWF286oy11t7pjZ&t=1",
+      "chess_url": "https://www.chess.com/game/live/7543290907?username=senseidanya",
+      "game_id": "7543290907",
+      "youtube_timestamp": 1
+    },
+    "api_game": {
+      "url": "https://www.chess.com/game/live/7543290907",
+      "pgn": "[Event \"Live Chess\"]\n[Site \"Chess.com\"]\n[Date \"2021.02.20\"]\n[Round \"-\"]\n[White \"SenseiDanya\"]\n[Black \"psilo_simon\"]\n[Result \"1-0\"]\n[CurrentPosition \"r3b1k1/1pR5/p2pPR2/4p1p1/1PP1P1P1/3B4/P7/2K5 b - -\"]\n[Timezone \"UTC\"]\n[ECO \"E87\"]\n[ECOUrl \"https://www.chess.com/openings/Kings-Indian-Defense-Samisch-Orthodox-Closed\"]\n[UTCDate \"2021.02.20\"]\n[UTCTime \"06:57:42\"]\n[WhiteElo \"1919\"]\n[BlackElo \"1509\"]\n[TimeControl \"600+5\"]\n[Termination \"SenseiDanya won by resignation\"]\n[StartTime \"06:57:42\"]\n[EndDate \"2021.02.20\"]\n[EndTime \"07:21:26\"]\n[Link \"https://www.chess.com/game/live/7543290907\"]\n\n1. d4 {[%clk 0:10:05]} 1... g6 {[%clk 0:10:05]} 2. c4 {[%clk 0:10:07.4]} 2... Bg7 {[%clk 0:10:06]} 3. e4 {[%clk 0:10:11.4]} 3... d6 {[%clk 0:09:55.2]} 4. Nc3 {[%clk 0:10:01.6]} 4... Nf6 {[%clk 0:09:58.1]} 5. f3 {[%clk 0:09:44]} 5... O-O {[%clk 0:09:53.3]} 6. Be3 {[%clk 0:09:35.5]} 6... e5 {[%clk 0:09:28.8]} 7. d5 {[%clk 0:09:18.5]} 7... Nbd7 {[%clk 0:09:22]} 8. Qd2 {[%clk 0:09:18.6]} 8... Re8 {[%clk 0:09:14.4]} 9. O-O-O {[%clk 0:09:20.2]} 9... Nc5 {[%clk 0:08:49.9]} 10. Bh6 {[%clk 0:07:59.6]} 10... Bd7 {[%clk 0:07:47.7]} 11. h4 {[%clk 0:07:34]} 11... a6 {[%clk 0:07:14]} 12. g4 {[%clk 0:06:38.2]} 12... Kh8 {[%clk 0:05:21.8]} 13. h5 {[%clk 0:06:02.5]} 13... Rg8 {[%clk 0:04:32.2]} 14. hxg6 {[%clk 0:05:51.6]} 14... fxg6 {[%clk 0:04:11.1]} 15. Bg5 {[%clk 0:05:11.9]} 15... Bf8 {[%clk 0:02:39.1]} 16. Qh2 {[%clk 0:04:48.4]} 16... Rg7 {[%clk 0:02:31.6]} 17. Qh4 {[%clk 0:03:26.4]} 17... Be7 {[%clk 0:02:20.4]} 18. Nh3 {[%clk 0:02:50.3]} 18... Qf8 {[%clk 0:02:01.8]} 19. Rd2 {[%clk 0:02:48.5]} 19... Ng8 {[%clk 0:01:33.3]} 20. Bxe7 {[%clk 0:02:17.1]} 20... Rxe7 {[%clk 0:01:17.5]} 21. Ng5 {[%clk 0:02:17.1]} 21... h6 {[%clk 0:00:53.9]} 22. b4 {[%clk 0:01:59.4]} 22... Na4 {[%clk 0:00:47.2]} 23. Nxa4 {[%clk 0:02:03.7]} 23... Bxa4 {[%clk 0:00:48.9]} 24. Ne6 {[%clk 0:01:53.4]} 24... Rxe6 {[%clk 0:00:40]} 25. dxe6 {[%clk 0:01:56.8]} 25... Qxf3 {[%clk 0:00:42.4]} 26. Bd3 {[%clk 0:01:43.3]} 26... Qf8 {[%clk 0:00:12.9]} 27. Rf2 {[%clk 0:01:43.4]} 27... Qg7 {[%clk 0:00:14.8]} 28. Rf7 {[%clk 0:01:47.3]} 28... g5 {[%clk 0:00:09.2]} 29. Qh5 {[%clk 0:01:40.3]} 29... Nf6 {[%clk 0:00:09.7]} 30. Qxh6+ {[%clk 0:01:40.4]} 30... Qxh6 {[%clk 0:00:13.3]} 31. Rxh6+ {[%clk 0:01:44.4]} 31... Kg8 {[%clk 0:00:16.7]} 32. Rhxf6 {[%clk 0:01:48.7]} 32... Be8 {[%clk 0:00:15.1]} 33. Rxc7 {[%clk 0:01:51.7]} 1-0\n",
+      "time_control": "600+5",
+      "end_time": 1613805686,
+      "rated": false,
+      "accuracies": {
+        "white": 83.45,
+        "black": 76.07
+      },
+      "tcn": "lB2UkA92mCZRbs!Tnv8!cu0KBJ5Zdl98ecZIuV6ZpFWOoE!?FN8!NU1UVM29lp!2pF90gx79dlT!M020xM3VjzIysyZyMS0SJS9vftv9ln92n1UMFN!TNV2VhV?!VTy81Y",
+      "uuid": "eee2c2db-7348-11eb-b78b-0069e4010001",
+      "initial_setup": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "fen": "r3b1k1/1pR5/p2pPR2/4p1p1/1PP1P1P1/3B4/P7/2K5 b - -",
+      "time_class": "rapid",
+      "rules": "chess",
+      "white": {
+        "rating": 1919,
+        "result": "win",
+        "@id": "https://api.chess.com/pub/player/senseidanya",
+        "username": "SenseiDanya",
+        "uuid": "a3066ffc-17d6-11eb-b317-1754d2b3bc66"
+      },
+      "black": {
+        "rating": 1509,
+        "result": "resigned",
+        "@id": "https://api.chess.com/pub/player/psilo_simon",
+        "username": "psilo_simon",
+        "uuid": "95c96e44-a77b-11e7-8030-000000000000"
+      },
+      "eco": "https://www.chess.com/openings/Kings-Indian-Defense-Samisch-Orthodox-Closed"
+    },
+    "archive_url": "https://api.chess.com/pub/player/senseidanya/games/2021/02",
+    "match_status": "FOUND",
+    "youtube_url": "https://youtu.be/VOQ7DlsATuc?si=jDWF286oy11t7pjZ&t=1",
+    "youtube_timestamp": 1
+  }
+]
