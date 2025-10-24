@@ -67,7 +67,13 @@ for idx, entry in enumerate(games, 1):
         print(f"⚠️ Could not parse game: {api_game.get('url', 'unknown')}")
         continue
 
-    daniel_color = "white" if api_game["white"]["username"].lower() == "senseidanya" else "black"
+    daniel_usernames = set([
+    "senseidanya",
+    "ohmylands",
+    "frankfurtairport",
+    "hebeccararis"
+    ])
+    daniel_color = "white" if api_game["white"]["username"].lower() in daniel_usernames else "black"
     board = game.board()
     positions = {}
 
