@@ -8,6 +8,10 @@
     box-sizing: border-box;
 }
 
+html {
+    height: 100%;
+}
+
 :root {
     --primary-color: #1a1a2e;
     --secondary-color: #0f4c75;
@@ -30,6 +34,173 @@ body {
     min-height: 100vh;
     padding: 20px;
     color: var(--text-primary);
+    position: relative;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    opacity: 0.1;
+    background-image: 
+        url('../img/daniel1.jfif'),
+        url('../img/daniel5.jpg'),
+        url('../img/daniel10.jpg'),
+        url('../img/daniel11.jpg'),
+        url('../img/daniel13.jpeg'),
+        url('../img/daniel2.avif'),
+        url('../img/daniel3.avif'),
+        url('../img/daniel-naroditsky-picjpg.webp'),
+        url('../img/daniel4.webp'),
+        url('../img/daniel6.webp'),
+        url('../img/U3YIYWD4RFHHVJGKLW3BLX5QRA.avif'),
+        url('../img/21daniel.webp'),
+        url('../img/danyanaroditsky21uschamps.jpg'),
+        url('../img/DSC_2129-2-copy.jpg'),
+        url('../img/DanyaKasparov.JPG'),
+        url('../img/img-1.webp'),
+        url('../img/daniel7.jfif'),
+        url('../img/danielnaroditsky.png'),
+        url('../img/F3Xsu7AWUAA-Fn9.jfif'),
+        url('../img/GGZP0qkXsAAkgLV.jfif'),
+        url('../img/php3a555O.jpg'),
+        url('../img/251021-ONE-TIME-USE-Daniel-Naroditsky-mb-1032-ba5eb7.webp'),
+        url('../img/f37JQ7QVNgB7NX0n.jpg_large'),
+        url('../img/b036e39c6ea76c02bf5592cca1d62b63.jfif'),
+        url('../img/8346d7e2a0c1f6a87eae6b8fa6e791a9.jfif'),
+        url('../img/Daniel-Naroditsky-102025-ecdb1d5c63f44663a46db94d94e04139.jpg'),
+        url('../img/20071129_081458_chess-1.webp'),
+        url('../img/3-563.jpg'),
+        url('../img/3504.avif'),
+        url('../img/35dff6a0-ae67-11f0-b2a1-6f537f66f9aa.jpg.webp'),
+        url('../img/557c6130-ae65-11f0-bf6e-0db822206ec2.jpg.webp'),
+        url('../img/81a4c0fe-1af9-11eb-a6ad-1d481ca0b22e.c8560903.5000x5000o.9e30f07e17c8.jpeg'),
+        url('../img/Daniel_Naroditsky_2012.JPG.webp'),
+        url('../img/Daniel-Naroditsky-102025-cf5a734c9ec34c12bddd1180d372a7a1.jpg'),
+        url('../img/nar00003.webp'),
+        url('../img/nar00004.webp'),
+        url('../img/phpd0vaqk6piehlb7vQElK.jpg'),
+        url('../img/73884efa4b80421fb2b235f245be3e29Obit_Daniel_Naroditsky_47876.jpg'),
+        url('../img/ab7e4-17610506427195-1920.avif'),
+        url('../img/Daniel-Naroditsky-World-Rapid-and-Blitz-Championships-2024-1200-2025-10-beff6c6486218dcb357f14045443f66f.avif'),
+        url('../img/Daniel-Naroditsky.jpg'),
+        url('../img/g3ui13kxgaarqho-LAQCJ9l8h.jpg'),
+        url('../img/her-my-parents-arent-home-danya-alireza-is-online-give-me-5-v0-cg8bmyaycy991.webp'),
+        url('../img/hq720.jpg'),
+        url('../img/naroditsky.jpg'),
+        url('../img/S43R5XZO75FI3GYMUYATQUOM4Y.avif'),
+        url('../img/thebridgechronicle_2025-10-22_6gi800b7_Daniel-Naroditsky.avif'),
+        url('../img/this-man-just-gave-us-an-interview-for-the-ages-v0-y4xmmwc4wbhd1.webp'),
+        url('../img/U3YIYWD4RFHHVJGKLW3BLX5QRA (1).avif'),
+        url('../img/Daniel-Naroditsky-cause-of-death-2025-10-7c31d20abc1160a1b5fa98b08845124a-1200x675.avif');
+    background-size: 
+        13% auto,
+        12% auto,
+        14% auto,
+        13% auto,
+        12% auto,
+        14% auto,
+        13% auto,
+        14% auto,
+        12% auto,
+        13% auto,
+        14% auto,
+        12% auto,
+        13% auto,
+        14% auto,
+        13% auto,
+        14% auto,
+        13% auto,
+        14% auto,
+        12% auto,
+        13% auto,
+        14% auto,
+        13% auto,
+        14% auto,
+        15% auto,
+        14% auto,
+        13% auto,
+        15% auto,
+        14% auto,
+        13% auto,
+        14% auto,
+        13% auto,
+        14% auto,
+        12% auto,
+        13% auto,
+        14% auto,
+        13% auto,
+        15% auto,
+        15% auto,
+        14% auto,
+        13% auto,
+        15% auto,
+        14% auto,
+        16% auto,
+        15% auto,
+        16% auto,
+        15% auto,
+        16% auto,
+        17% auto,
+        16% auto,
+        18% auto;
+    background-position: 
+        -3% -2%,
+        14% 1%,
+        31% -1%,
+        48% 3%,
+        65% 0%,
+        82% 4%,
+        99% 2%,
+        -2% 18%,
+        15% 21%,
+        32% 17%,
+        49% 23%,
+        66% 19%,
+        83% 25%,
+        100% 22%,
+        -3% 35%,
+        14% 38%,
+        31% 34%,
+        48% 40%,
+        65% 36%,
+        82% 42%,
+        99% 39%,
+        -2% 52%,
+        15% 55%,
+        32% 51%,
+        49% 57%,
+        66% 53%,
+        83% 59%,
+        100% 56%,
+        -3% 69%,
+        14% 72%,
+        31% 68%,
+        48% 74%,
+        65% 70%,
+        82% 76%,
+        99% 73%,
+        -2% 86%,
+        15% 89%,
+        32% 85%,
+        49% 91%,
+        66% 87%,
+        83% 93%,
+        100% 90%,
+        -5% 101%,
+        11% 104%,
+        27% 100%,
+        43% 106%,
+        59% 102%,
+        75% 108%,
+        91% 105%,
+        103% 112%;
+    background-repeat: no-repeat;
+    filter: grayscale(40%) blur(0.3px);
 }
 
 .container {
@@ -674,4 +845,3 @@ header h1 {
 .board-section::-webkit-scrollbar-thumb:hover {
     background: var(--secondary-color);
 }
-
