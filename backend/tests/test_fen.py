@@ -14,9 +14,10 @@ test_accelerated_dragon = "r1bqk1nr/pp1pppbp/2n3p1/8/3NP3/4B3/PPP2PPP/RN1QKB1R w
 test_weird_accelerated_dragon = "r1bqk2r/pp1pppbp/2n2np1/8/3NP3/2P1BP2/PP4PP/RN1QKB1R b KQkq -"
 test_h4 = "rnbqkbnr/pppppppp/8/8/7P/8/PPPPPPP1/RNBQKBNR b KQkq h3"
 test_b3 = "rnbqkbnr/pppppppp/8/8/8/1P6/P1PPPPPP/RNBQKBNR b KQkq -"
+test_ponziani = "r1bqkbnr/ppp2ppp/2n5/3pp3/Q3P3/2P2N2/PP1P1PPP/RNB1KB1R b KQkq -"
 
 # The FEN you want to test
-fen_to_test = test_b3
+fen_to_test = test_ponziani
 
 # Query the DB
 cur.execute("""
