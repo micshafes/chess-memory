@@ -114,6 +114,8 @@ header h1 {
     grid-template-columns: 1fr 400px;
     gap: 20px;
     margin-top: 20px;
+    height: calc(100vh - 200px);
+    overflow: hidden;
 }
 
 /* ===========================
@@ -126,6 +128,8 @@ header h1 {
     padding: 35px;
     box-shadow: var(--shadow-lg);
     border: 1px solid var(--border-color);
+    overflow-y: auto;
+    height: 100%;
 }
 
 .board-container {
@@ -299,6 +303,8 @@ header h1 {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    height: 100%;
+    overflow: hidden;
 }
 
 .moves-section,
@@ -308,6 +314,18 @@ header h1 {
     padding: 28px;
     box-shadow: var(--shadow-lg);
     border: 1px solid var(--border-color);
+    display: flex;
+    flex-direction: column;
+}
+
+.moves-section {
+    flex: 0 0 auto;
+    max-height: 40%;
+}
+
+.videos-section {
+    flex: 1;
+    min-height: 0;
 }
 
 .moves-section h2,
@@ -319,6 +337,14 @@ header h1 {
     padding-bottom: 12px;
     font-weight: 700;
     letter-spacing: -0.3px;
+    flex-shrink: 0;
+}
+
+/* Moves Content Wrapper */
+.moves-content {
+    flex: 1;
+    overflow-y: auto;
+    min-height: 0;
 }
 
 /* Move Categories */
@@ -399,6 +425,13 @@ header h1 {
     box-shadow: 0 4px 12px rgba(231, 76, 60, 0.3);
 }
 
+.move-btn.disabled,
+.move-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
 .no-moves {
     color: var(--text-secondary);
     font-style: italic;
@@ -417,8 +450,9 @@ header h1 {
 
 /* Video Links */
 .video-links-container {
-    max-height: 600px;
+    flex: 1;
     overflow-y: auto;
+    min-height: 0;
 }
 
 .video-link {
@@ -499,8 +533,11 @@ header h1 {
     margin-bottom: 6px;
     color: var(--text-primary);
     overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    line-height: 1.4;
 }
 
 .video-time {
@@ -523,12 +560,21 @@ header h1 {
 @media (max-width: 1200px) {
     .main-content {
         grid-template-columns: 1fr;
+        height: auto;
+        overflow: visible;
     }
     
     .sidebar {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
+        height: auto;
+        overflow: visible;
+    }
+    
+    .moves-section,
+    .videos-section {
+        max-height: 600px;
     }
 }
 
@@ -547,6 +593,8 @@ header h1 {
     
     .board-section {
         padding: 15px;
+        height: auto;
+        overflow-y: visible;
     }
     
     .control-btn {
@@ -601,21 +649,29 @@ header h1 {
    Scrollbar Styling
    =========================== */
 
-.video-links-container::-webkit-scrollbar {
+.video-links-container::-webkit-scrollbar,
+.moves-content::-webkit-scrollbar,
+.board-section::-webkit-scrollbar {
     width: 10px;
 }
 
-.video-links-container::-webkit-scrollbar-track {
+.video-links-container::-webkit-scrollbar-track,
+.moves-content::-webkit-scrollbar-track,
+.board-section::-webkit-scrollbar-track {
     background: var(--bg-color);
     border-radius: 10px;
 }
 
-.video-links-container::-webkit-scrollbar-thumb {
+.video-links-container::-webkit-scrollbar-thumb,
+.moves-content::-webkit-scrollbar-thumb,
+.board-section::-webkit-scrollbar-thumb {
     background: var(--accent-color);
     border-radius: 10px;
 }
 
-.video-links-container::-webkit-scrollbar-thumb:hover {
+.video-links-container::-webkit-scrollbar-thumb:hover,
+.moves-content::-webkit-scrollbar-thumb:hover,
+.board-section::-webkit-scrollbar-thumb:hover {
     background: var(--secondary-color);
 }
 

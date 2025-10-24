@@ -103,6 +103,11 @@ function initializeBoard() {
 // ===========================
 
 function onDragStart(source, piece, position, orientation) {
+    // Don't allow moves if viewing history (not at the latest position)
+    if (historyIndex < moveHistory.length - 1) {
+        return false;
+    }
+    
     // Don't allow moves if game is over
     if (game.game_over()) return false;
     
@@ -114,11 +119,6 @@ function onDragStart(source, piece, position, orientation) {
 }
 
 function onDrop(source, target) {
-    // Ensure game state matches the current position in history
-    if (currentPosition && historyIndex >= 0) {
-        game.load(moveHistory[historyIndex]);
-    }
-    
     // Try to make the move
     const move = game.move({
         from: source,
@@ -139,7 +139,8 @@ function onDrop(source, target) {
     
     // Add to history and load position data (even if not in database)
     addToHistory(newFEN);
-    loadPositionData(newFEN);
+    // Skip board update during drag - onSnapEnd will handle the animation
+    loadPositionData(newFEN, false);
     
     // Play sound
     playMoveSound(isCapture);
@@ -237,7 +238,7 @@ function updateNavigationButtons() {
 // Position Loading
 // ===========================
 
-function loadPositionData(fen) {
+function loadPositionData(fen, updateBoard = true) {
     currentPosition = positionLookup[fen];
     
     // If position not in database, create an empty position object
@@ -253,11 +254,17 @@ function loadPositionData(fen) {
     
     // Update board and game state
     try {
+        // Just load the FEN - don't create new instance here
+        // (Fresh instances are only created in onDrop/makeMove to prevent state pollution)
         game.load(fen);
-        board.position(fen);
+        // Only update board position if requested (skip during drag-and-drop)
+        if (updateBoard) {
+            board.position(fen);
+        }
     } catch (error) {
         console.error('Error loading position on board:', error);
         // Try to recover by resetting
+        game = new Chess();
         game.reset();
         board.start();
     }
@@ -287,28 +294,39 @@ function updateMoveButtons() {
     const danyaMoves = currentPosition.next_by_daniel || [];
     const opponentMoves = currentPosition.next_faced || [];
     
+    // Check if we're viewing history (not at the latest position)
+    const viewingHistory = historyIndex < moveHistory.length - 1;
+    const disabledAttr = viewingHistory ? 'disabled' : '';
+    const disabledClass = viewingHistory ? ' disabled' : '';
+    
     // Update Danya's moves
     const danyaContainer = document.getElementById('danya-moves');
     if (danyaMoves.length > 0) {
         danyaContainer.innerHTML = danyaMoves
-            .map(move => `<button class="move-btn danya" onclick="makeMove('${escapeHtml(move)}')" 
+            .map(move => `<button class="move-btn danya${disabledClass}" ${disabledAttr} onclick="makeMove('${escapeHtml(move)}')" 
                           onmouseenter="highlightMove('${escapeHtml(move)}')" 
                           onmouseleave="clearHighlight()">${escapeHtml(move)}</button>`)
             .join('');
     } else {
-        danyaContainer.innerHTML = '<p class="no-moves">Danya hasn\'t played this position<br><small>You can still make any legal move</small></p>';
+        const message = viewingHistory ? 
+            'Navigate forward to make moves' : 
+            'Danya hasn\'t played this position<br><small>You can still make any legal move</small>';
+        danyaContainer.innerHTML = `<p class="no-moves">${message}</p>`;
     }
     
     // Update opponent's moves
     const opponentContainer = document.getElementById('opponent-moves');
     if (opponentMoves.length > 0) {
         opponentContainer.innerHTML = opponentMoves
-            .map(move => `<button class="move-btn opponent" onclick="makeMove('${escapeHtml(move)}')" 
+            .map(move => `<button class="move-btn opponent${disabledClass}" ${disabledAttr} onclick="makeMove('${escapeHtml(move)}')" 
                           onmouseenter="highlightMove('${escapeHtml(move)}')" 
                           onmouseleave="clearHighlight()">${escapeHtml(move)}</button>`)
             .join('');
     } else {
-        opponentContainer.innerHTML = '<p class="no-moves">No opponent moves recorded<br><small>You can still make any legal move</small></p>';
+        const message = viewingHistory ? 
+            'Navigate forward to make moves' : 
+            'No opponent moves recorded<br><small>You can still make any legal move</small>';
+        opponentContainer.innerHTML = `<p class="no-moves">${message}</p>`;
     }
 }
 
@@ -318,18 +336,30 @@ function updateVideoLinks() {
     
     if (videos.length > 0) {
         container.innerHTML = videos
-            .map((url, index) => createVideoLinkHTML(url, index + 1))
+            .map((video, index) => createVideoLinkHTML(video, index + 1))
             .join('');
     } else {
         container.innerHTML = '<p class="no-videos">No videos for this position</p>';
     }
 }
 
-function createVideoLinkHTML(url, index) {
-    // Extract video ID and timestamp from URL
-    const videoId = extractVideoId(url);
-    const timestamp = extractTimestamp(url);
+function createVideoLinkHTML(video, index) {
+    // Handle both old format (string URL) and new format (object with metadata)
+    let url, videoId, title;
     
+    if (typeof video === 'string') {
+        // Old format: just a URL string
+        url = video;
+        videoId = extractVideoId(url);
+        title = `Danya's Speedrun Game #${index}`;
+    } else {
+        // New format: object with url, title, video_id
+        url = video.url;
+        videoId = video.video_id || extractVideoId(url);
+        title = video.title || `Danya's Speedrun Game #${index}`;
+    }
+    
+    const timestamp = extractTimestamp(url);
     const timeFormatted = formatTimestamp(timestamp);
     
     // YouTube thumbnail URL (using high quality default)
@@ -342,7 +372,7 @@ function createVideoLinkHTML(url, index) {
                 <div class="play-overlay">▶</div>
             </div>
             <div class="video-info">
-                <div class="video-title">Danya's Speedrun Game #${index}</div>
+                <div class="video-title">${escapeHtml(title)}</div>
                 <div class="video-time">⏱️ Start at ${timeFormatted}</div>
             </div>
         </a>
@@ -395,9 +425,10 @@ function updateMoveHistory() {
 
 function makeMove(moveNotation) {
     try {
-        // Ensure game state matches the current position in history
-        if (currentPosition && historyIndex >= 0) {
-            game.load(moveHistory[historyIndex]);
+        // Don't allow moves if viewing history (not at the latest position)
+        if (historyIndex < moveHistory.length - 1) {
+            console.log('Cannot make moves while viewing history');
+            return;
         }
         
         // Make the move in chess.js

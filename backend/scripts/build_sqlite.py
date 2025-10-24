@@ -8,7 +8,15 @@ import re
 import os
 
 # === CONFIG ===
-INPUT_FILE = os.path.abspath("../../data/json/top_theory_game_data.json")
+# Process all game data JSON files
+INPUT_FILES = [
+    "back_to_3000_game_data.json",
+    "beginner_to_master_game_data.json",
+    "develop_your_instincts_game_data.json",
+    "master_class_game_data.json",
+    "sensei_speedrun_game_data.json",
+    "top_theory_game_data.json"
+]
 DB_FILE = os.path.abspath("../../data/sqlite/chess_positions.db")
 
 # Ensure the folder exists
@@ -47,130 +55,146 @@ def get_youtube_start_time(url):
     except ValueError:
         return 0
 
-# === LOAD JSON ===
-with open(INPUT_FILE, "r", encoding="utf-8") as f:
-    games = json.load(f)
+# === PROCESS ALL FILES ===
+total_games_processed = 0
 
-print(f"Found {len(games)} games. Starting processing...")
+for file_name in INPUT_FILES:
+    INPUT_FILE = os.path.abspath(f"../../data/json/{file_name}")
+    
+    print(f"\n{'='*60}")
+    print(f"Processing: {file_name}")
+    print(f"{'='*60}")
+    
+    # === LOAD JSON ===
+    with open(INPUT_FILE, "r", encoding="utf-8") as f:
+        games = json.load(f)
+    
+    print(f"Found {len(games)} games in {file_name}")
+    
+    # === PROCESS EACH GAME ===
+    for idx, entry in enumerate(games, 1):
+        api_game = entry["api_game"]
+        csv_game = entry["csv_game"]
 
-# === PROCESS EACH GAME ===
-for idx, entry in enumerate(games, 1):
-    api_game = entry["api_game"]
-    csv_game = entry["csv_game"]
+        youtube_url = csv_game["youtube_url"]
+        youtube_start = get_youtube_start_time(youtube_url)
+        pgn_text = api_game["pgn"]
 
-    youtube_url = csv_game["youtube_url"]
-    youtube_start = get_youtube_start_time(youtube_url)
-    pgn_text = api_game["pgn"]
+        game = chess.pgn.read_game(StringIO(pgn_text))
+        if game is None:
+            print(f"[!] Could not parse game: {api_game.get('url', 'unknown')}")
+            continue
 
-    game = chess.pgn.read_game(StringIO(pgn_text))
-    if game is None:
-        print(f"⚠️ Could not parse game: {api_game.get('url', 'unknown')}")
-        continue
+        daniel_usernames = set([
+        "senseidanya",
+        "ohmylands",
+        "frankfurtairport",
+        "hebeccararis"
+        ])
+        daniel_color = "white" if api_game["white"]["username"].lower() in daniel_usernames else "black"
+        board = game.board()
+        positions = {}
 
-    daniel_usernames = set([
-    "senseidanya",
-    "ohmylands",
-    "frankfurtairport",
-    "hebeccararis"
-    ])
-    daniel_color = "white" if api_game["white"]["username"].lower() in daniel_usernames else "black"
-    board = game.board()
-    positions = {}
+        last_clock_white = None
+        last_clock_black = None
+        total_time_elapsed = 0.0
 
-    last_clock_white = None
-    last_clock_black = None
-    total_time_elapsed = 0.0
+        # Use mainline() to iterate all moves
+        for move_node in game.mainline():
+            fen_before = board.fen()
+            move = move_node.move
+            comment = move_node.comment
+            to_move = "white" if board.turn == chess.WHITE else "black"
 
-    # Use mainline() to iterate all moves
-    for move_node in game.mainline():
-        fen_before = board.fen()
-        move = move_node.move
-        comment = move_node.comment
-        to_move = "white" if board.turn == chess.WHITE else "black"
+            # Parse clock
+            current_clock = parse_clock(comment)
+            if to_move == "white" and last_clock_white is not None and current_clock is not None:
+                elapsed = last_clock_white - current_clock
+                if elapsed > 0:
+                    total_time_elapsed += elapsed
+            elif to_move == "black" and last_clock_black is not None and current_clock is not None:
+                elapsed = last_clock_black - current_clock
+                if elapsed > 0:
+                    total_time_elapsed += elapsed
 
-        # Parse clock
-        current_clock = parse_clock(comment)
-        if to_move == "white" and last_clock_white is not None and current_clock is not None:
-            elapsed = last_clock_white - current_clock
-            if elapsed > 0:
-                total_time_elapsed += elapsed
-        elif to_move == "black" and last_clock_black is not None and current_clock is not None:
-            elapsed = last_clock_black - current_clock
-            if elapsed > 0:
-                total_time_elapsed += elapsed
+            if to_move == "white":
+                last_clock_white = current_clock
+            else:
+                last_clock_black = current_clock
 
-        if to_move == "white":
-            last_clock_white = current_clock
-        else:
-            last_clock_black = current_clock
+            # Normalize FEN
+            # Combine board layout, side to move, castling rights, en passant square
+            fen_no_counts = board.board_fen() + ' ' + \
+                    ('w' if board.turn == chess.WHITE else 'b') + ' ' + \
+                    board.castling_xfen() + ' ' + \
+                    (chess.square_name(board.ep_square) if board.ep_square is not None else '-')
+            fen_before = fen_no_counts
 
-        # Normalize FEN
-        # Combine board layout, side to move, castling rights, en passant square
-        fen_no_counts = board.board_fen() + ' ' + \
-                ('w' if board.turn == chess.WHITE else 'b') + ' ' + \
-                board.castling_xfen() + ' ' + \
-                (chess.square_name(board.ep_square) if board.ep_square is not None else '-')
-        fen_before = fen_no_counts
+            # Initialize FEN entry
+            if fen_before not in positions:
+                positions[fen_before] = {"videos": [], "next_by_daniel": set(), "next_faced": set()}
 
-        # Initialize FEN entry
-        if fen_before not in positions:
-            positions[fen_before] = {"videos": [], "next_by_daniel": set(), "next_faced": set()}
+            # Build YouTube link
+            link_time = youtube_start + int(total_time_elapsed)
+            video_link = youtube_url.split("&t=")[0] + f"&t={link_time}"
+            positions[fen_before]["videos"].append(video_link)
 
-        # Build YouTube link
-        link_time = youtube_start + int(total_time_elapsed)
-        video_link = youtube_url.split("&t=")[0] + f"&t={link_time}"
-        positions[fen_before]["videos"].append(video_link)
+            # Track next moves
+            daniel_to_move = (to_move == daniel_color)
+            san_move = board.san(move)
+            if daniel_to_move:
+                positions[fen_before]["next_by_daniel"].add(san_move)
+            else:
+                positions[fen_before]["next_faced"].add(san_move)
 
-        # Track next moves
-        daniel_to_move = (to_move == daniel_color)
-        san_move = board.san(move)
-        if daniel_to_move:
-            positions[fen_before]["next_by_daniel"].add(san_move)
-        else:
-            positions[fen_before]["next_faced"].add(san_move)
+            board.push(move)
 
-        board.push(move)
+        # Insert positions into SQLite
+        for fen, info in positions.items():
+            # Check if FEN exists
+            cur.execute("SELECT video_links, next_moves_by_daniel, next_moves_faced FROM positions WHERE fen = ?", (fen,))
+            row = cur.fetchone()
 
-    # Insert positions into SQLite
-    for fen, info in positions.items():
-        # 1️⃣ Check if FEN exists
-        cur.execute("SELECT video_links, next_moves_by_daniel, next_moves_faced FROM positions WHERE fen = ?", (fen,))
-        row = cur.fetchone()
+            if row:
+                # Merge existing lists with new ones
+                existing_videos = set(json.loads(row[0]))
+                existing_next_by_daniel = set(json.loads(row[1]))
+                existing_next_faced = set(json.loads(row[2]))
 
-        if row:
-            # Merge existing lists with new ones
-            existing_videos = set(json.loads(row[0]))
-            existing_next_by_daniel = set(json.loads(row[1]))
-            existing_next_faced = set(json.loads(row[2]))
+                new_videos = existing_videos.union(info["videos"])
+                new_next_by_daniel = existing_next_by_daniel.union(info["next_by_daniel"])
+                new_next_faced = existing_next_faced.union(info["next_faced"])
 
-            new_videos = existing_videos.union(info["videos"])
-            new_next_by_daniel = existing_next_by_daniel.union(info["next_by_daniel"])
-            new_next_faced = existing_next_faced.union(info["next_faced"])
+                cur.execute("""
+                    UPDATE positions
+                    SET video_links = ?, next_moves_by_daniel = ?, next_moves_faced = ?
+                    WHERE fen = ?
+                """, (
+                    json.dumps(list(new_videos)),
+                    json.dumps(list(new_next_by_daniel)),
+                    json.dumps(list(new_next_faced)),
+                    fen
+                ))
+            else:
+                cur.execute("""
+                    INSERT INTO positions (fen, video_links, next_moves_by_daniel, next_moves_faced)
+                    VALUES (?, ?, ?, ?)
+                """, (
+                    fen,
+                    json.dumps(list(info["videos"])),
+                    json.dumps(list(info["next_by_daniel"])),
+                    json.dumps(list(info["next_faced"]))
+                ))
 
-            cur.execute("""
-                UPDATE positions
-                SET video_links = ?, next_moves_by_daniel = ?, next_moves_faced = ?
-                WHERE fen = ?
-            """, (
-                json.dumps(list(new_videos)),
-                json.dumps(list(new_next_by_daniel)),
-                json.dumps(list(new_next_faced)),
-                fen
-            ))
-        else:
-            cur.execute("""
-                INSERT INTO positions (fen, video_links, next_moves_by_daniel, next_moves_faced)
-                VALUES (?, ?, ?, ?)
-            """, (
-                fen,
-                json.dumps(list(info["videos"])),
-                json.dumps(list(info["next_by_daniel"])),
-                json.dumps(list(info["next_faced"]))
-            ))
+        if idx % 10 == 0 or idx == len(games):
+            print(f"  Processed {idx}/{len(games)} games...")
+    
+    total_games_processed += len(games)
+    print(f"[OK] Completed {file_name}: {len(games)} games")
+    conn.commit()
 
-            if idx % 10 == 0 or idx == len(games):
-                print(f"Processed {idx}/{len(games)} games...")
-
-conn.commit()
 conn.close()
-print("✅ All positions stored in chess_positions.db with real clock times.")
+print(f"\n{'='*60}")
+print(f"[OK] All positions stored in chess_positions.db")
+print(f"[OK] Total games processed: {total_games_processed}")
+print(f"{'='*60}")
