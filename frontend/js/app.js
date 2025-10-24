@@ -332,12 +332,18 @@ function createVideoLinkHTML(url, index) {
     
     const timeFormatted = formatTimestamp(timestamp);
     
+    // YouTube thumbnail URL (using high quality default)
+    const thumbnailUrl = `https://img.youtube.com/vi/${videoId}/mqdefault.jpg`;
+    
     return `
         <a href="${url}" target="_blank" class="video-link">
-            <span class="video-icon">▶️</span>
+            <div class="video-thumbnail">
+                <img src="${thumbnailUrl}" alt="Video thumbnail" loading="lazy">
+                <div class="play-overlay">▶</div>
+            </div>
             <div class="video-info">
-                <div class="video-title">Video ${index}</div>
-                <div class="video-time">Start at ${timeFormatted}</div>
+                <div class="video-title">Danya's Speedrun Game #${index}</div>
+                <div class="video-time">⏱️ Start at ${timeFormatted}</div>
             </div>
         </a>
     `;

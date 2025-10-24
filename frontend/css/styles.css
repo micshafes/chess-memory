@@ -417,7 +417,7 @@ header h1 {
 
 /* Video Links */
 .video-links-container {
-    max-height: 400px;
+    max-height: 600px;
     overflow-y: auto;
 }
 
@@ -425,43 +425,88 @@ header h1 {
     display: flex;
     align-items: center;
     gap: 14px;
-    padding: 14px 16px;
-    margin-bottom: 10px;
-    background: #f8f9fa;
-    border-radius: 10px;
+    padding: 12px;
+    margin-bottom: 12px;
+    background: white;
+    border-radius: 12px;
     text-decoration: none;
     color: var(--text-primary);
-    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-    border-left: 4px solid var(--accent-color);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     border: 1px solid var(--border-color);
-    border-left: 4px solid var(--accent-color);
+    box-shadow: var(--shadow);
+    overflow: hidden;
 }
 
 .video-link:hover {
-    background: white;
-    transform: translateX(4px);
+    transform: translateY(-4px);
     box-shadow: var(--shadow-hover);
-    border-left-color: var(--secondary-color);
+    border-color: var(--accent-color);
 }
 
-.video-icon {
-    font-size: 1.5rem;
+.video-link:hover .video-thumbnail img {
+    transform: scale(1.05);
+}
+
+.video-link:hover .play-overlay {
+    background: var(--secondary-color);
+    transform: scale(1.1);
+}
+
+.video-thumbnail {
+    position: relative;
+    width: 120px;
+    height: 90px;
     flex-shrink: 0;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #000;
+}
+
+.video-thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.play-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(50, 130, 184, 0.9);
+    color: white;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    pointer-events: none;
+    padding-left: 3px;
 }
 
 .video-info {
     flex: 1;
+    min-width: 0;
 }
 
 .video-title {
-    font-size: 0.9rem;
-    font-weight: 600;
-    margin-bottom: 4px;
+    font-size: 0.95rem;
+    font-weight: 700;
+    margin-bottom: 6px;
+    color: var(--text-primary);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .video-time {
-    font-size: 0.8rem;
+    font-size: 0.85rem;
     color: var(--text-secondary);
+    font-weight: 500;
 }
 
 .no-videos {
@@ -507,6 +552,19 @@ header h1 {
     .control-btn {
         padding: 10px 16px;
         font-size: 1rem;
+    }
+    
+    .video-thumbnail {
+        width: 100px;
+        height: 75px;
+    }
+    
+    .video-title {
+        font-size: 0.85rem;
+    }
+    
+    .video-time {
+        font-size: 0.75rem;
     }
 }
 
