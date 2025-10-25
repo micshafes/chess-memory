@@ -58,8 +58,8 @@ Try it yourself! (Link will be added when deployed)
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/chess-gift.git
-   cd chess-gift
+   git clone https://github.com/yourusername/chess-memory.git
+   cd chess-memory
    ```
 
 2. **Serve the frontend locally**
@@ -80,7 +80,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for detailed setup instructions.
 ## 📁 Project Structure
 
 ```
-chess-gift/
+chess-memory/
 ├── frontend/                   # Static web application
 │   ├── index.html             # Main HTML file
 │   ├── css/
@@ -173,8 +173,8 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 
 1. **Fork and clone the repository**
    ```bash
-   git clone https://github.com/yourusername/chess-gift.git
-   cd chess-gift
+   git clone https://github.com/yourusername/chess-memory.git
+   cd chess-memory
    ```
 
 2. **Set up Python environment** (optional but recommended)

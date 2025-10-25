@@ -14,7 +14,7 @@ git push origin main
 
 ### 2. Enable GitHub Pages
 
-1. Go to: `https://github.com/YOUR-USERNAME/chess-gift/settings/pages`
+1. Go to: `https://github.com/YOUR-USERNAME/chess-memory/settings/pages`
 2. Under "Build and deployment":
    - Source: **Deploy from a branch**
    - Branch: **main**
@@ -25,7 +25,7 @@ git push origin main
 
 Wait 1-2 minutes, then visit:
 ```
-https://YOUR-USERNAME.github.io/chess-gift/
+https://YOUR-USERNAME.github.io/chess-memory/
 ```
 
 ✅ **Done!** Your site is live!

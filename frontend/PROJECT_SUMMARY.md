@@ -59,7 +59,7 @@ The application is fully configured for GitHub Pages:
 2. Enable GitHub Pages in repo settings
 3. Select `/frontend` folder
 4. Wait 2 minutes
-5. Access at: `https://[username].github.io/chess-gift/`
+5. Access at: `https://[username].github.io/chess-memory/`
 
 ## 📊 Technical Specifications
 

@@ -72,8 +72,8 @@ Have an idea? Open an issue with:
 1. **Fork the repository**
    ```bash
    # Click "Fork" on GitHub, then:
-   git clone https://github.com/YOUR_USERNAME/chess-gift.git
-   cd chess-gift
+   git clone https://github.com/YOUR_USERNAME/chess-memory.git
+   cd chess-memory
    ```
 
 2. **Create a branch**

@@ -15,7 +15,7 @@ This guide will walk you through deploying the Chess Positions Explorer to GitHu
 Make sure your repository structure looks like this:
 
 ```
-chess-gift/
+chess-memory/
 ├── frontend/
 │   ├── index.html
 │   ├── chess_positions.json
@@ -41,7 +41,7 @@ git push origin main
 
 ### Step 3: Enable GitHub Pages
 
-1. Go to https://github.com/[your-username]/chess-gift
+1. Go to https://github.com/[your-username]/chess-memory
 2. Click the **Settings** tab (⚙️ icon at the top)
 3. In the left sidebar, click **Pages** (under "Code and automation")
 4. Under **Build and deployment**:
@@ -55,13 +55,13 @@ git push origin main
 - GitHub will start building your site automatically
 - You'll see a blue notification: "GitHub Pages source saved"
 - Wait 1-2 minutes for the build to complete
-- Refresh the page, and you'll see: "Your site is live at https://[username].github.io/chess-gift/"
+- Refresh the page, and you'll see: "Your site is live at https://[username].github.io/chess-memory/"
 
 ### Step 5: Visit Your Site
 
 Click the link or go to:
 ```
-https://[your-username].github.io/chess-gift/
+https://[your-username].github.io/chess-memory/
 ```
 
 🎉 **That's it! Your site is now live!**

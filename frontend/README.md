@@ -74,13 +74,13 @@ To run this application locally:
 
 - GitHub will automatically build and deploy your site
 - This usually takes 1-2 minutes
-- Once complete, you'll see a message: "Your site is live at https://[username].github.io/chess-gift/"
+- Once complete, you'll see a message: "Your site is live at https://[username].github.io/chess-memory/"
 
 ### Step 4: Access Your Site
 
 Your site will be available at:
 ```
-https://[your-github-username].github.io/chess-gift/
+https://[your-github-username].github.io/chess-memory/
 ```
 
 ## Customization Options
