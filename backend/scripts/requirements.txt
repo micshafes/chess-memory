@@ -1,4 +1,15 @@
+# Python Dependencies for Chess Position Database Pipeline
+# =========================================================
+
+# HTTP Requests for Chess.com and YouTube APIs
+# Used for fetching game data and video metadata
 requests>=2.31.0
+
+# Chess Game Processing
+# Handles PGN parsing, FEN notation, move validation, and board state
 python-chess>=1.999
+
+# Note: chess and chess.pgn are included in python-chess package
+# The separate entries below are for backwards compatibility
 chess>=1.10.0
 chess.pgn>=1.10.0

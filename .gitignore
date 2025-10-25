@@ -1,2 +1,53 @@
-/__pycache__
-/chess_env
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+chess_env/
+venv/
+env/
+ENV/
+*.egg-info/
+dist/
+build/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Database
+*.db
+*.db-journal
+*.sqlite
+*.sqlite3
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.cache
+
+# Large data files (already tracked if needed)
+# Uncomment if you want to exclude these:
+# data/json/*.json
+# frontend/chess_positions.json
+
+# OS specific
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# Test outputs
+game_matches.json
+test_*.py

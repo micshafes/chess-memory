@@ -1,42 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Basic Metadata -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Explore chess positions from Daniel Naroditsky's YouTube speedrun games. Interactive chess board with moves and video links.">
     <meta name="keywords" content="chess, Daniel Naroditsky, Danya, speedrun, positions, YouTube, chess board">
     <meta name="author" content="Chess Gift">
     
-    <!-- Open Graph / Facebook -->
+    <!-- Open Graph / Facebook Meta Tags -->
+    <!-- These tags control how the site appears when shared on social media -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="Danya's Chess Positions Explorer">
     <meta property="og:description" content="Explore chess positions from Daniel Naroditsky's YouTube speedrun games">
     
-    <!-- Twitter -->
+    <!-- Twitter Card Meta Tags -->
+    <!-- Controls appearance when shared on Twitter/X -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:title" content="Danya's Chess Positions Explorer">
     <meta property="twitter:description" content="Explore chess positions from Daniel Naroditsky's YouTube speedrun games">
     
     <title>Danya's Chess Positions Explorer</title>
     
-    <!-- Chess libraries -->
+    <!-- Chess Libraries -->
+    <!-- chessboard.js: Provides the interactive chess board UI with drag-and-drop -->
     <link rel="stylesheet" href="https://unpkg.com/@chrisoakman/chessboardjs@1.0.0/dist/chessboard-1.0.0.min.css">
+    
+    <!-- jQuery: Required dependency for chessboard.js -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+    <!-- chessboard.js: Visual board component -->
     <script src="https://unpkg.com/@chrisoakman/chessboardjs@1.0.0/dist/chessboard-1.0.0.min.js"></script>
+    
+    <!-- chess.js: Chess game logic, move validation, and FEN handling -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/chess.js/0.10.3/chess.js"></script>
     
-    <!-- Custom styles -->
+    <!-- Custom Styles -->
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <div class="container">
-        <!-- Header -->
+        <!-- ==================== HEADER ==================== -->
         <header>
             <h1>Danya's Chess Position Explorer</h1>
             <p class="subtitle">In loving memory of the world's favorite chess teacher, Daniel Naroditsky</p>
         </header>
 
-        <!-- Loading Screen -->
+        <!-- ==================== LOADING SCREEN ==================== -->
+        <!-- Displayed while the large JSON file (50-100MB) is being loaded -->
+        <!-- Hidden once data is ready and board is initialized -->
         <div id="loading-screen" class="loading-screen">
             <div class="loading-content">
                 <div class="spinner"></div>
@@ -45,15 +57,20 @@
             </div>
         </div>
 
-        <!-- Main Content -->
+        <!-- ==================== MAIN CONTENT ==================== -->
+        <!-- Hidden initially, shown after data loads -->
         <div id="main-content" class="main-content" style="display: none;">
-            <!-- Board Section -->
+            
+            <!-- ==================== BOARD SECTION ==================== -->
             <div class="board-section">
+                <!-- Interactive Chess Board -->
+                <!-- Rendered by chessboard.js, supports drag-and-drop moves -->
                 <div class="board-container">
                     <div id="board"></div>
                 </div>
                 
-                <!-- Board Controls -->
+                <!-- ==================== BOARD CONTROLS ==================== -->
+                <!-- Navigation buttons for move history -->
                 <div class="board-controls">
                     <button id="btn-start" class="control-btn" title="Go to start of history">⏮️</button>
                     <button id="btn-back" class="control-btn" title="Previous move">◀️</button>
@@ -63,35 +80,43 @@
                     <button id="btn-sound" class="control-btn sound-btn" title="Toggle sound">🔊</button>
                 </div>
 
-                <!-- Current Position Info -->
+                <!-- ==================== POSITION INFO ==================== -->
+                <!-- Displays current position details -->
                 <div class="position-info">
+                    <!-- FEN (Forsyth-Edwards Notation) - standard chess position notation -->
                     <div class="info-item">
                         <span class="info-label">FEN:</span>
                         <input type="text" id="fen-display" readonly>
                     </div>
+                    <!-- Current move number in history -->
                     <div class="info-item">
                         <span class="info-label">Move:</span>
                         <span id="move-number">Start position</span>
                     </div>
+                    <!-- Number of YouTube videos featuring this position -->
                     <div class="info-item">
                         <span class="info-label">Videos:</span>
                         <span id="video-count">0</span>
                     </div>
                 </div>
 
-                <!-- Move History -->
+                <!-- ==================== MOVE HISTORY ==================== -->
+                <!-- Clickable buttons to jump to any position in current line -->
                 <div class="move-history">
                     <h3>Move History</h3>
                     <div id="move-history-list" class="move-list"></div>
                 </div>
             </div>
 
-            <!-- Sidebar -->
+            <!-- ==================== SIDEBAR ==================== -->
             <div class="sidebar">
-                <!-- Next Moves -->
+                
+                <!-- ==================== AVAILABLE MOVES SECTION ==================== -->
+                <!-- Shows what moves Danya and opponents have played from current position -->
                 <div class="moves-section">
                     <h2>Available Moves</h2>
                     <div class="moves-content">
+                        <!-- Danya's Moves -->
                         <div class="move-category">
                             <h3 class="category-title danya-moves">🟢 Danya Played</h3>
                             <div id="danya-moves" class="moves-container">
@@ -99,6 +124,7 @@
                             </div>
                         </div>
 
+                        <!-- Opponent's Moves -->
                         <div class="move-category">
                             <h3 class="category-title opponent-moves">🔴 Opponents Played</h3>
                             <div id="opponent-moves" class="moves-container">
@@ -108,7 +134,8 @@
                     </div>
                 </div>
 
-                <!-- Video Links -->
+                <!-- ==================== VIDEO LINKS SECTION ==================== -->
+                <!-- YouTube videos where this position appears with direct timestamps -->
                 <div class="videos-section">
                     <h2>YouTube Videos</h2>
                     <div id="video-links" class="video-links-container">
@@ -119,7 +146,8 @@
         </div>
     </div>
 
-    <!-- Scripts -->
+    <!-- ==================== APPLICATION JAVASCRIPT ==================== -->
+    <!-- defer: Script loads after HTML is parsed but before DOMContentLoaded -->
     <script src="js/app.js" defer></script>
 </body>
 </html>
