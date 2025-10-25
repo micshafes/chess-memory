@@ -1,0 +1,14 @@
+# robots.txt for Chess Opening Explorer - Daniel Naroditsky Speedrun Database
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://chess-memory.com/sitemap.xml
+
+# Crawl delay (optional, be respectful to bots)
+Crawl-delay: 1
+
+# Disallow large JSON file from being indexed directly
+Disallow: /chess_positions.json
+
