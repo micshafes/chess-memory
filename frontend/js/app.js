@@ -96,6 +96,43 @@ function initializeBoard() {
     window.addEventListener('resize', () => {
         board.resize();
     });
+    
+    // Prevent page scroll when touching the chess board
+    preventBoardScroll();
+}
+
+// ===========================
+// Touch Event Handling for Mobile
+// ===========================
+
+function preventBoardScroll() {
+    // Wait a bit for chessboard.js to fully initialize
+    setTimeout(function() {
+        const boardElement = document.getElementById('board');
+        
+        if (!boardElement) {
+            console.warn('Board element not found for touch event handling');
+            return;
+        }
+        
+        console.log('Setting up touch event handlers for mobile...');
+        
+        // Only prevent scroll on touchmove, not touchstart/touchend
+        // This allows chessboard.js to handle the drag events
+        boardElement.addEventListener('touchmove', function(e) {
+            // Only prevent default to stop page scrolling
+            // Don't stop propagation so chessboard.js can still work
+            e.preventDefault();
+        }, { passive: false });
+        
+        // Prevent context menu on long press
+        boardElement.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+            return false;
+        });
+        
+        console.log('Touch event handlers attached successfully');
+    }, 500);
 }
 
 // ===========================
