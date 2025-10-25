@@ -332,7 +332,7 @@ header h1 {
 #board {
     width: 100%;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
-    border-radius: 12px;
+    border-radius: 0;
     overflow: hidden;
     border: 2px solid var(--border-color);
 }
@@ -763,21 +763,23 @@ header h1 {
    Touch Event Handling
    =========================== */
 
-/* Prevent scroll on touch when interacting with board */
+/* Configure touch behavior for board - allow piece interactions but prevent zoom/scroll */
 #board {
-    touch-action: none !important;
+    touch-action: manipulation !important;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     user-select: none;
 }
 
-/* Make sure pieces are also non-scrollable */
+/* Make sure pieces can be dragged on mobile */
 #board .piece-417db {
-    touch-action: none !important;
+    touch-action: manipulation !important;
+    cursor: pointer;
+    cursor: grab;
 }
 
 #board .square-55d63 {
-    touch-action: none !important;
+    touch-action: manipulation !important;
 }
 
 /* Allow scrolling in other areas */

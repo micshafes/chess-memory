@@ -117,20 +117,12 @@ function preventBoardScroll() {
         
         console.log('Setting up touch event handlers for mobile...');
         
-        // Prevent scrolling when touching the board - more aggressive approach
-        boardElement.addEventListener('touchstart', function(e) {
-            e.preventDefault();
-            e.stopPropagation();
-        }, { passive: false });
-        
+        // Only prevent scroll on touchmove, not touchstart/touchend
+        // This allows chessboard.js to handle the drag events
         boardElement.addEventListener('touchmove', function(e) {
+            // Only prevent default to stop page scrolling
+            // Don't stop propagation so chessboard.js can still work
             e.preventDefault();
-            e.stopPropagation();
-        }, { passive: false });
-        
-        boardElement.addEventListener('touchend', function(e) {
-            e.preventDefault();
-            e.stopPropagation();
         }, { passive: false });
         
         // Prevent context menu on long press
