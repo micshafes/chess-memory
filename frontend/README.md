@@ -157,7 +157,7 @@ Feel free to:
 
 ## License
 
-This project is for educational and personal use.
+The frontend code is released under the [MIT License](../LICENSE). Chess game data and YouTube content remain the property of their respective owners.
 
 ## Acknowledgments
 
