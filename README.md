@@ -50,7 +50,7 @@ Perfect for chess students who want to learn from Danya's incredible teaching co
 
 ## 🎮 Demo
 
-Try it yourself! (Link will be added when deployed)
+[Try it yourself!](https://chess-memory.com)
 
 ## 🚀 Quick Start
 
