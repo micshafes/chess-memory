@@ -96,9 +96,9 @@ frontend/
 ## Supporting the Project
 
 Hosting the explorer costs about **$10 per month**.  
-Donations go solely toward paying for hosting and bandwidth:
+Donations go solely toward paying for hosting and bandwidth. Any excess will be donated to the Charlotte Chess Center:
 
-- Venmo: [@micshafes](https://venmo.com/u/micshafes)
+- Donation link: [buymeacoffee.com/micshafes](https://buymeacoffee.com/micshafes)
 
 
 ## Contributing
