@@ -10,6 +10,9 @@ let historyIndex = -1; // Current position in history
 let board = null;
 let game = null;
 
+// Debug logging flag
+const DEBUG_ENABLED = false;
+
 // Sound effects
 let soundEnabled = true;
 let audioContext = null;
@@ -140,11 +143,13 @@ function preventBoardScroll() {
 // ===========================
 
 function onDragStart(source, piece, position, orientation) {
-    // Don't allow moves if viewing history (not at the latest position)
-    if (historyIndex < moveHistory.length - 1) {
-        return false;
-    }
-    
+    logDebug('Drag start', {
+        source,
+        piece,
+        historyIndex,
+        moveHistoryLength: moveHistory.length,
+        currentTurn: game ? game.turn() : null
+    });
     // Don't allow moves if game is over
     if (game.game_over()) return false;
     
@@ -165,6 +170,7 @@ function onDrop(source, target) {
     
     // Illegal move
     if (move === null) {
+        logDebug('Illegal move attempted via drag', { source, target });
         return 'snapback';
     }
     
@@ -180,7 +186,14 @@ function onDrop(source, target) {
     loadPositionData(newFEN, false);
     
     // Play sound
-    playMoveSound(isCapture);
+    playMoveSound({ isCapture });
+    logDebug('Drag move completed', {
+        source,
+        target,
+        newFEN,
+        historyIndex,
+        moveHistoryLength: moveHistory.length
+    });
 }
 
 function onSnapEnd() {
@@ -192,6 +205,7 @@ function onSnapEnd() {
 // ===========================
 
 function navigateToPosition(fen) {
+    logDebug('navigateToPosition invoked', { fen });
     addToHistory(fen);
     loadPositionData(fen);
 }
@@ -199,6 +213,11 @@ function navigateToPosition(fen) {
 function addToHistory(fen) {
     // Remove any forward history if we're not at the end (branching from middle of history)
     if (historyIndex < moveHistory.length - 1) {
+        logDebug('Branching history before adding new move', {
+            historyIndex,
+            moveHistoryLength: moveHistory.length,
+            fen
+        });
         console.log(`Branching from position ${historyIndex}, removing ${moveHistory.length - historyIndex - 1} future moves`);
         moveHistory = moveHistory.slice(0, historyIndex + 1);
     }
@@ -211,6 +230,11 @@ function addToHistory(fen) {
     
     moveHistory.push(fen);
     historyIndex = moveHistory.length - 1;
+    logDebug('Added position to history', {
+        fen,
+        historyIndex,
+        moveHistoryLength: moveHistory.length
+    });
     console.log(`Added to history. Now at position ${historyIndex} of ${moveHistory.length - 1}`);
     updateNavigationButtons();
 }
@@ -218,6 +242,10 @@ function addToHistory(fen) {
 function navigateBack() {
     if (historyIndex > 0) {
         historyIndex--;
+        logDebug('Navigating back', {
+            historyIndex,
+            fen: moveHistory[historyIndex]
+        });
         loadPositionData(moveHistory[historyIndex]);
         updateNavigationButtons();
     }
@@ -226,6 +254,10 @@ function navigateBack() {
 function navigateForward() {
     if (historyIndex < moveHistory.length - 1) {
         historyIndex++;
+        logDebug('Navigating forward', {
+            historyIndex,
+            fen: moveHistory[historyIndex]
+        });
         loadPositionData(moveHistory[historyIndex]);
         updateNavigationButtons();
     }
@@ -244,6 +276,7 @@ function resetBoard() {
     // Clear all history and start fresh
     moveHistory = [];
     historyIndex = -1;
+    logDebug('Resetting board and clearing history');
     
     // Reset to starting position
     const startFEN = 'rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq -';
@@ -261,14 +294,26 @@ function resetBoard() {
 function navigateToHistoryIndex(index) {
     if (index >= 0 && index < moveHistory.length) {
         historyIndex = index;
+        logDebug('Navigating to specific history index', {
+            historyIndex,
+            fen: moveHistory[historyIndex]
+        });
         loadPositionData(moveHistory[historyIndex]);
         updateNavigationButtons();
     }
 }
 
 function updateNavigationButtons() {
-    document.getElementById('btn-back').disabled = historyIndex <= 0;
-    document.getElementById('btn-forward').disabled = historyIndex >= moveHistory.length - 1;
+    const backDisabled = historyIndex <= 0;
+    const forwardDisabled = historyIndex >= moveHistory.length - 1;
+    document.getElementById('btn-back').disabled = backDisabled;
+    document.getElementById('btn-forward').disabled = forwardDisabled;
+    logDebug('Navigation buttons updated', {
+        historyIndex,
+        moveHistoryLength: moveHistory.length,
+        backDisabled,
+        forwardDisabled
+    });
 }
 
 // ===========================
@@ -276,6 +321,12 @@ function updateNavigationButtons() {
 // ===========================
 
 function loadPositionData(fen, updateBoard = true) {
+    logDebug('Loading position data', {
+        requestedFen: fen,
+        updateBoard,
+        historyIndex,
+        moveHistoryLength: moveHistory.length
+    });
     currentPosition = positionLookup[fen];
     
     // If position not in database, create an empty position object
@@ -290,20 +341,22 @@ function loadPositionData(fen, updateBoard = true) {
     }
     
     // Update board and game state
-    try {
-        // Just load the FEN - don't create new instance here
-        // (Fresh instances are only created in onDrop/makeMove to prevent state pollution)
-        game.load(fen);
-        // Only update board position if requested (skip during drag-and-drop)
-        if (updateBoard) {
-            board.position(fen);
-        }
-    } catch (error) {
-        console.error('Error loading position on board:', error);
-        // Try to recover by resetting
-        game = new Chess();
+    const fenForGame = ensureFullFen(fen);
+    const loaded = game.load(fenForGame);
+    if (!loaded) {
+        console.error('Error loading position on board:', fen);
         game.reset();
         board.start();
+        logDebug('Failed to load FEN into game, reset performed', {
+            fen,
+            fenForGame
+        });
+    } else if (updateBoard) {
+        board.position(game.fen());
+        logDebug('Board updated to new position', {
+            boardFen: board.fen ? board.fen() : 'n/a',
+            gameFen: game.fen()
+        });
     }
     
     // Update UI
@@ -330,40 +383,45 @@ function updatePositionInfo() {
 function updateMoveButtons() {
     const danyaMoves = currentPosition.next_by_daniel || [];
     const opponentMoves = currentPosition.next_faced || [];
-    
-    // Check if we're viewing history (not at the latest position)
-    const viewingHistory = historyIndex < moveHistory.length - 1;
-    const disabledAttr = viewingHistory ? 'disabled' : '';
-    const disabledClass = viewingHistory ? ' disabled' : '';
+    logDebug('updateMoveButtons invoked', {
+        danyaMoves,
+        opponentMoves,
+        historyIndex,
+        moveHistoryLength: moveHistory.length
+    });
     
     // Update Danya's moves
     const danyaContainer = document.getElementById('danya-moves');
     if (danyaMoves.length > 0) {
         danyaContainer.innerHTML = danyaMoves
-            .map(move => `<button class="move-btn danya${disabledClass}" ${disabledAttr} onclick="makeMove('${escapeHtml(move)}')" 
+            .map(move => `<button class="move-btn danya" onclick="makeMove('${escapeHtml(move)}')" 
                           onmouseenter="highlightMove('${escapeHtml(move)}')" 
                           onmouseleave="clearHighlight()">${escapeHtml(move)}</button>`)
             .join('');
+        danyaContainer.querySelectorAll('button').forEach(button => {
+            button.disabled = false;
+            button.classList.remove('disabled');
+            logDebug('Enabled Danya move button', { text: button.textContent });
+        });
     } else {
-        const message = viewingHistory ? 
-            'Navigate forward to make moves' : 
-            'Danya hasn\'t played this position<br><small>You can still make any legal move</small>';
-        danyaContainer.innerHTML = `<p class="no-moves">${message}</p>`;
+        danyaContainer.innerHTML = `<p class="no-moves">Danya hasn't played this position<br><small>You can still make any legal move</small></p>`;
     }
     
     // Update opponent's moves
     const opponentContainer = document.getElementById('opponent-moves');
     if (opponentMoves.length > 0) {
         opponentContainer.innerHTML = opponentMoves
-            .map(move => `<button class="move-btn opponent${disabledClass}" ${disabledAttr} onclick="makeMove('${escapeHtml(move)}')" 
+            .map(move => `<button class="move-btn opponent" onclick="makeMove('${escapeHtml(move)}')" 
                           onmouseenter="highlightMove('${escapeHtml(move)}')" 
                           onmouseleave="clearHighlight()">${escapeHtml(move)}</button>`)
             .join('');
+        opponentContainer.querySelectorAll('button').forEach(button => {
+            button.disabled = false;
+            button.classList.remove('disabled');
+            logDebug('Enabled opponent move button', { text: button.textContent });
+        });
     } else {
-        const message = viewingHistory ? 
-            'Navigate forward to make moves' : 
-            'No opponent moves recorded<br><small>You can still make any legal move</small>';
-        opponentContainer.innerHTML = `<p class="no-moves">${message}</p>`;
+        opponentContainer.innerHTML = `<p class="no-moves">No opponent moves recorded<br><small>You can still make any legal move</small></p>`;
     }
 }
 
@@ -443,6 +501,10 @@ function updateMoveHistory() {
     
     if (moveHistory.length <= 1) {
         container.innerHTML = '<span style="color: #7f8c8d; font-style: italic;">Make moves to see history</span>';
+        logDebug('Move history updated - only start position present', {
+            moveHistoryLength: moveHistory.length,
+            historyIndex
+        });
         return;
     }
     
@@ -454,6 +516,11 @@ function updateMoveHistory() {
                             onclick="navigateToHistoryIndex(${index})">${moveNum}</button>`;
         })
         .join('');
+    logDebug('Move history updated', {
+        moveHistoryLength: moveHistory.length,
+        historyIndex,
+        currentFen: moveHistory[historyIndex]
+    });
 }
 
 // ===========================
@@ -462,12 +529,12 @@ function updateMoveHistory() {
 
 function makeMove(moveNotation) {
     try {
-        // Don't allow moves if viewing history (not at the latest position)
-        if (historyIndex < moveHistory.length - 1) {
-            console.log('Cannot make moves while viewing history');
-            return;
-        }
-        
+        logDebug('Attempting move', {
+            moveNotation,
+            historyIndex,
+            moveHistoryLength: moveHistory.length,
+            currentHistoryFen: moveHistory[historyIndex] || null
+        });
         // Make the move in chess.js
         const move = game.move(moveNotation);
         
@@ -486,9 +553,15 @@ function makeMove(moveNotation) {
         // Add to history and load position data (even if not in database)
         addToHistory(newFEN);
         loadPositionData(newFEN);
+        logDebug('Move executed successfully', {
+            moveNotation,
+            newFEN,
+            historyIndex,
+            moveHistoryLength: moveHistory.length
+        });
         
         // Play sound
-        playMoveSound(isCapture);
+        playMoveSound({ isCapture });
         
     } catch (error) {
         console.error('Error making move:', error);
@@ -505,6 +578,11 @@ function initializeSounds() {
         // Use Lichess open-source sound files
         moveSound = new Audio('https://lichess1.org/assets/sound/standard/Move.mp3');
         captureSound = new Audio('https://lichess1.org/assets/sound/standard/Capture.mp3');
+
+        [moveSound, captureSound].forEach(audio => {
+            audio.crossOrigin = 'anonymous';
+            audio.preload = 'auto';
+        });
         
         // Preload sounds
         moveSound.load();
@@ -519,11 +597,14 @@ function initializeSounds() {
     }
 }
 
-function playMoveSound(isCapture = false) {
+function playMoveSound({ isCapture = false } = {}) {
     if (!soundEnabled) return;
     
     try {
-        const sound = isCapture ? captureSound : moveSound;
+        let sound = moveSound;
+        if (isCapture && captureSound) {
+            sound = captureSound;
+        }
         
         // Reset and play
         sound.currentTime = 0;
@@ -616,6 +697,27 @@ function getFENWithoutMoveNumbers(fen) {
     const parts = fen.split(' ');
     return parts.slice(0, 4).join(' ');
 }
+
+function ensureFullFen(fen) {
+    const parts = fen.trim().split(/\s+/);
+    if (parts.length >= 6) {
+        return parts.slice(0, 6).join(' ');
+    }
+    if (parts.length === 4) {
+        return `${parts.join(' ')} 0 1`;
+    }
+    return fen;
+}
+
+function logDebug(message, data = {}) {
+    if (!DEBUG_ENABLED) return;
+    try {
+        console.log('[DEBUG]', message, data);
+    } catch (error) {
+        // Swallow logging errors to avoid breaking the app
+    }
+}
+
 
 function escapeHtml(text) {
     const div = document.createElement('div');
