@@ -95,8 +95,8 @@ frontend/
 
 ## Supporting the Project
 
-Hosting the explorer costs about **$10 per month**.  
-Donations go solely toward paying for hosting and bandwidth. Any excess will be donated to the Charlotte Chess Center:
+The domain for this site costs about **$10 per year**.  
+Contributions help keep the explorer free for the community.
 
 - Donation link: [buymeacoffee.com/micshafes](https://buymeacoffee.com/micshafes)
 
