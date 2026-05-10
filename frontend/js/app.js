@@ -4,6 +4,7 @@
 
 let positionsData = []; // All positions from JSON
 let positionLookup = {}; // Map: FEN -> position data
+let gameLinks = {}; // Map: video_id -> [{t, url}, ...] sorted by t
 let currentPosition = null;
 let moveHistory = []; // Stack of positions user has navigated through
 let historyIndex = -1; // Current position in history
@@ -47,12 +48,16 @@ document.addEventListener('DOMContentLoaded', async () => {
 
 async function loadPositionsData() {
     try {
-        const response = await fetch('chess_positions.json');
-        if (!response.ok) {
-            throw new Error(`HTTP error! status: ${response.status}`);
+        const [positionsResp, gameLinksResp] = await Promise.all([
+            fetch('chess_positions.json'),
+            fetch('game_links.json')
+        ]);
+        
+        if (!positionsResp.ok) {
+            throw new Error(`HTTP error! status: ${positionsResp.status}`);
         }
         
-        positionsData = await response.json();
+        positionsData = await positionsResp.json();
         console.log(`Loaded ${positionsData.length} positions`);
         
         // Build lookup map for fast access
@@ -60,10 +65,34 @@ async function loadPositionsData() {
             positionLookup[pos.fen] = pos;
         });
         
+        // game_links.json is optional — fall back to empty map if missing
+        if (gameLinksResp.ok) {
+            gameLinks = await gameLinksResp.json();
+            console.log(`Loaded game links for ${Object.keys(gameLinks).length} videos`);
+        } else {
+            console.warn('game_links.json not found — Chess.com links will be hidden');
+        }
+        
     } catch (error) {
         console.error('Error loading positions:', error);
         throw error;
     }
+}
+
+function lookupGameUrl(videoId, timestamp) {
+    // Each video_id maps to a list of {t, url} entries sorted by t.
+    // We pick the entry with the largest t <= timestamp — this is the game
+    // in progress at that moment in the video. If timestamp is somehow earlier
+    // than the first entry (data drift between CSVs and stored video URLs),
+    // fall back to the earliest entry rather than returning null.
+    const entries = gameLinks[videoId];
+    if (!entries || entries.length === 0) return null;
+    let match = null;
+    for (const entry of entries) {
+        if (entry.t <= timestamp) match = entry;
+        else break;
+    }
+    return match ? match.url : entries[0].url;
 }
 
 function hideLoading() {
@@ -456,21 +485,29 @@ function createVideoLinkHTML(video, index) {
     
     const timestamp = extractTimestamp(url);
     const timeFormatted = formatTimestamp(timestamp);
+    const gameUrl = videoId ? lookupGameUrl(videoId, timestamp) : null;
     
     // YouTube thumbnail URL (using high quality default)
     const thumbnailUrl = `https://img.youtube.com/vi/${videoId}/mqdefault.jpg`;
     
+    const gameLink = gameUrl
+        ? `<a href="${escapeHtml(gameUrl)}" target="_blank" class="game-link">View game on Chess.com</a>`
+        : '';
+    
     return `
-        <a href="${url}" target="_blank" class="video-link">
-            <div class="video-thumbnail">
-                <img src="${thumbnailUrl}" alt="Video thumbnail" loading="lazy">
-                <div class="play-overlay">▶</div>
-            </div>
-            <div class="video-info">
-                <div class="video-title">${escapeHtml(title)}</div>
-                <div class="video-time">⏱️ Start at ${timeFormatted}</div>
-            </div>
-        </a>
+        <div class="video-card">
+            <a href="${url}" target="_blank" class="video-link">
+                <div class="video-thumbnail">
+                    <img src="${thumbnailUrl}" alt="Video thumbnail" loading="lazy">
+                    <div class="play-overlay">▶</div>
+                </div>
+                <div class="video-info">
+                    <div class="video-title">${escapeHtml(title)}</div>
+                    <div class="video-time">⏱️ Start at ${timeFormatted}</div>
+                </div>
+            </a>
+            ${gameLink}
+        </div>
     `;
 }
 

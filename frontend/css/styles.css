@@ -661,33 +661,36 @@ header h1 {
     min-height: 0;
 }
 
-.video-link {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    padding: 10px;
+.video-card {
     margin-bottom: 10px;
     background: white;
     border-radius: 12px;
-    text-decoration: none;
-    color: var(--text-primary);
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     border: 1px solid var(--border-color);
     box-shadow: var(--shadow);
     overflow: hidden;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.video-link:hover {
+.video-card:hover {
     transform: translateY(-4px);
     box-shadow: var(--shadow-hover);
     border-color: var(--accent-color);
 }
 
-.video-link:hover .video-thumbnail img {
+.video-link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px;
+    text-decoration: none;
+    color: var(--text-primary);
+}
+
+.video-card:hover .video-thumbnail img {
     transform: scale(1.05);
 }
 
-.video-link:hover .play-overlay {
+.video-card:hover .play-overlay {
     background: var(--secondary-color);
     transform: scale(1.1);
 }
@@ -750,6 +753,19 @@ header h1 {
     font-size: 0.8rem;
     color: var(--text-secondary);
     font-weight: 500;
+}
+
+.game-link {
+    display: inline-block;
+    padding: 0 10px 8px;
+    font-size: 0.75rem;
+    color: var(--secondary-color);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.game-link:hover {
+    text-decoration: underline;
 }
 
 .no-videos {

@@ -12,11 +12,12 @@ Run this script whenever you:
 - Want to rebuild from scratch
 - Need to ensure all data is fresh and synchronized
 
-The script runs all 5 pipeline steps in order:
+The script runs all pipeline steps in order:
 1. Build SQLite database from ALL game data files
 2. Fetch YouTube video titles for all positions
 3. Clean any invalid links from the database
 4. Export final data to frontend JSON
+5. Build Chess.com game links map for the frontend
 
 Input:
 ------
@@ -42,6 +43,7 @@ Expected Runtime:
 - Step 2 (Fetch titles): 5-15 minutes (depends on number of unique videos)
 - Step 3 (Clean DB): < 1 minute
 - Step 4 (Export JSON): < 1 minute
+- Step 5 (Game links map): < 1 minute
 
 Total: ~10-20 minutes for a full rebuild
 """
@@ -152,6 +154,11 @@ def main():
     # Step 4: Export to frontend JSON format
     if not run_script("5_export_to_frontend_json.py", 
                      "Step 4: Exporting to frontend JSON"):
+        return
+    
+    # Step 5: Build Chess.com game links map for the frontend
+    if not run_script("build_game_links_json.py",
+                     "Step 5: Building Chess.com game links map"):
         return
     
     # === SUCCESS ===
