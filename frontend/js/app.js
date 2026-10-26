@@ -55,9 +55,21 @@ async function loadPositionsData() {
         positionsData = await response.json();
         console.log(`Loaded ${positionsData.length} positions`);
         
-        // Build lookup map for fast access
+        // Build lookup map for fast access.
+        // Keys are normalized so older data files that still carry an
+        // en passant square after every double pawn push merge correctly.
         positionsData.forEach(pos => {
-            positionLookup[pos.fen] = pos;
+            const key = getFENWithoutMoveNumbers(pos.fen);
+            const existing = positionLookup[key];
+            if (existing) {
+                existing.videos = existing.videos.concat(pos.videos);
+                existing.next_by_daniel = [...new Set(
+                    existing.next_by_daniel.concat(pos.next_by_daniel))];
+                existing.next_faced = [...new Set(
+                    existing.next_faced.concat(pos.next_faced))];
+            } else {
+                positionLookup[key] = { ...pos, fen: key };
+            }
         });
         
     } catch (error) {
@@ -691,11 +703,26 @@ function highlightSquare(square, type) {
 // Utility Functions
 // ===========================
 
+/**
+ * Normalize a FEN for position lookup.
+ * Removes the halfmove clock and fullmove number, and keeps the en passant
+ * square only when an en passant capture is actually legal. chess.js sets it
+ * after every double pawn push, which would give one position two keys
+ * (e.g. 1.d4 d5 2.Nf3 vs 1.Nf3 d5 2.d4).
+ * @param {string} fen - Full or 4-field FEN
+ * @returns {string} 4-field FEN: position, turn, castling, en passant
+ */
 function getFENWithoutMoveNumbers(fen) {
-    // Remove the halfmove clock and fullmove number from FEN
-    // Keep: position, turn, castling, en passant
-    const parts = fen.split(' ');
-    return parts.slice(0, 4).join(' ');
+    const parts = fen.trim().split(/\s+/).slice(0, 4);
+    if (parts[3] && parts[3] !== '-') {
+        const temp = new Chess(`${parts.join(' ')} 0 1`);
+        const canCaptureEnPassant = temp.moves({ verbose: true })
+            .some(move => move.flags.includes('e'));
+        if (!canCaptureEnPassant) {
+            parts[3] = '-';
+        }
+    }
+    return parts.join(' ');
 }
 
 function ensureFullFen(fen) {

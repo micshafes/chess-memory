@@ -9,10 +9,10 @@ DB_FILE = os.path.abspath("../../data/sqlite/chess_positions.db")
 conn = sqlite3.connect(DB_FILE)
 cur = conn.cursor()
 
-test_e4 = "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq e3"
+test_e4 = "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq -"
 test_accelerated_dragon = "r1bqk1nr/pp1pppbp/2n3p1/8/3NP3/4B3/PPP2PPP/RN1QKB1R w KQkq -"
 test_weird_accelerated_dragon = "r1bqk2r/pp1pppbp/2n2np1/8/3NP3/2P1BP2/PP4PP/RN1QKB1R b KQkq -"
-test_h4 = "rnbqkbnr/pppppppp/8/8/7P/8/PPPPPPP1/RNBQKBNR b KQkq h3"
+test_h4 = "rnbqkbnr/pppppppp/8/8/7P/8/PPPPPPP1/RNBQKBNR b KQkq -"
 test_b3 = "rnbqkbnr/pppppppp/8/8/8/1P6/P1PPPPPP/RNBQKBNR b KQkq -"
 test_ponziani = "r1bqkbnr/ppp2ppp/2n5/3pp3/Q3P3/2P2N2/PP1P1PPP/RNB1KB1R b KQkq -"
 

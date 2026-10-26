@@ -141,7 +141,8 @@ def normalize_fen(fen_string):
     1. Piece placement
     2. Active color (w/b)
     3. Castling rights
-    4. En passant target
+    4. En passant target (only meaningful if an en passant capture is legal;
+       pass board.fen(en_passant="legal") so it is '-' otherwise)
     5. Halfmove clock (not needed for position matching)
     6. Fullmove number (not needed for position matching)
     
@@ -237,11 +238,11 @@ for file_name in INPUT_FILES:
                 last_clock_black = current_clock
 
             # === Normalize FEN (remove move counters) ===
-            # Combine: board layout + turn + castling + en passant
-            fen_normalized = board.board_fen() + ' ' + \
-                           ('w' if board.turn == chess.WHITE else 'b') + ' ' + \
-                           board.castling_xfen() + ' ' + \
-                           (chess.square_name(board.ep_square) if board.ep_square is not None else '-')
+            # Combine: board layout + turn + castling + en passant.
+            # The en passant square is only kept when an en passant capture is
+            # actually legal, so the same position reached by different move
+            # orders (transpositions) always gets the same key.
+            fen_normalized = normalize_fen(board.fen(en_passant="legal"))
 
             # === Initialize position entry ===
             if fen_normalized not in positions:
