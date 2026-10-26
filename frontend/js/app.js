@@ -7,6 +7,7 @@ let positionLookup = {}; // Map: FEN -> position data
 let currentPosition = null;
 let moveHistory = []; // Stack of positions user has navigated through
 let historyIndex = -1; // Current position in history
+let videoColorFilter = 'all'; // 'all', 'white' or 'black' (Danya's color)
 let board = null;
 let game = null;
 
@@ -425,22 +426,91 @@ function updateMoveButtons() {
     }
 }
 
+/**
+ * Render the video list for the current position.
+ * Videos are sorted by YouTube view count (most popular first) and filtered by
+ * the color Danya played. Older data files without view_count/danya_color keep
+ * their original order and hide the color filter.
+ */
 function updateVideoLinks() {
     const videos = currentPosition.videos || [];
     const container = document.getElementById('video-links');
-    
-    if (videos.length > 0) {
-        container.innerHTML = videos
-            .map((video, index) => createVideoLinkHTML(video, index + 1))
+    const filter = document.getElementById('video-color-filter');
+
+    // Only offer the color filter when this position has color data
+    const hasColors = videos.some(video => video && video.danya_color);
+    filter.hidden = !hasColors;
+    const activeFilter = hasColors ? videoColorFilter : 'all';
+
+    // Keep each video's original number, then filter and sort (stable sort)
+    const shown = videos
+        .map((video, index) => ({ video, number: index + 1 }))
+        .filter(({ video }) => activeFilter === 'all' || video.danya_color === activeFilter)
+        .sort((a, b) => getViewCount(b.video) - getViewCount(a.video));
+
+    if (shown.length > 0) {
+        container.innerHTML = shown
+            .map(({ video, number }) => createVideoLinkHTML(video, number))
             .join('');
+    } else if (videos.length > 0) {
+        container.innerHTML = `<p class="no-videos">No videos with Danya playing ${activeFilter} here</p>`;
     } else {
         container.innerHTML = '<p class="no-videos">No videos for this position</p>';
     }
 }
 
+/**
+ * View count used for sorting; videos without one go last.
+ * @param {Object|string} video - Video entry from the data file
+ * @returns {number} View count, or -1 if unknown
+ */
+function getViewCount(video) {
+    return video && typeof video.view_count === 'number' ? video.view_count : -1;
+}
+
+/**
+ * Set the Danya color filter for the video list and re-render it.
+ * @param {string} color - 'all', 'white' or 'black'
+ */
+function setVideoColorFilter(color) {
+    videoColorFilter = color;
+    document.querySelectorAll('#video-color-filter button').forEach(button => {
+        button.setAttribute('aria-pressed', String(button.dataset.color === color));
+    });
+    updateVideoLinks();
+}
+
+/**
+ * Small badge showing which color Danya played in the game behind a link.
+ * @param {string|null} color - 'white', 'black' or null if unknown
+ * @returns {string} Badge HTML, or an empty string if unknown
+ */
+function createColorBadgeHTML(color) {
+    if (color !== 'white' && color !== 'black') {
+        return '';
+    }
+    const label = color === 'white' ? 'White' : 'Black';
+    const piece = color === 'white' ? '♔' : '♚';
+    return `<span class="color-badge ${color}" title="Danya played ${label} in this game">` +
+        `<span aria-hidden="true">${piece}</span> Danya Plays ${label}</span>`;
+}
+
+/**
+ * Format a view count compactly, e.g. 1234567 -> "1.2M views".
+ * @param {number|null|undefined} count - View count
+ * @returns {string} Formatted text, or an empty string if unknown
+ */
+function formatViewCount(count) {
+    if (typeof count !== 'number') {
+        return '';
+    }
+    const compact = new Intl.NumberFormat('en', { notation: 'compact', maximumFractionDigits: 1 });
+    return `${compact.format(count)} views`;
+}
+
 function createVideoLinkHTML(video, index) {
     // Handle both old format (string URL) and new format (object with metadata)
-    let url, videoId, title;
+    let url, videoId, title, color = null, views = '';
     
     if (typeof video === 'string') {
         // Old format: just a URL string
@@ -452,6 +522,8 @@ function createVideoLinkHTML(video, index) {
         url = video.url;
         videoId = video.video_id || extractVideoId(url);
         title = video.title || `Danya's Speedrun Game #${index}`;
+        color = video.danya_color || null;
+        views = formatViewCount(video.view_count);
     }
     
     const timestamp = extractTimestamp(url);
@@ -468,7 +540,8 @@ function createVideoLinkHTML(video, index) {
             </div>
             <div class="video-info">
                 <div class="video-title">${escapeHtml(title)}</div>
-                <div class="video-time">⏱️ Start at ${timeFormatted}</div>
+                <div class="video-time">⏱️ Start at ${timeFormatted}${views ? ` · ${views}` : ''}</div>
+                ${createColorBadgeHTML(color)}
             </div>
         </a>
     `;
@@ -748,6 +821,11 @@ function setupEventListeners() {
     document.getElementById('btn-reset').addEventListener('click', resetBoard);
     document.getElementById('btn-flip').addEventListener('click', flipBoard);
     document.getElementById('btn-sound').addEventListener('click', toggleSound);
+
+    // Video color filter (All / White / Black)
+    document.querySelectorAll('#video-color-filter button').forEach(button => {
+        button.addEventListener('click', () => setVideoColorFilter(button.dataset.color));
+    });
     
     // Allow clicking on FEN to copy it
     document.getElementById('fen-display').addEventListener('click', function() {

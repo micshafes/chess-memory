@@ -13,3 +13,6 @@ python-chess>=1.999
 # The separate entries below are for backwards compatibility
 chess>=1.10.0
 chess.pgn>=1.10.0
+
+# YouTube view counts (optional: fetch_view_counts.py)
+yt-dlp>=2024.1.0

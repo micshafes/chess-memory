@@ -198,6 +198,24 @@ python update_titles_only.py
 
 ---
 
+### Fetch View Counts (`fetch_view_counts.py`)
+
+Fetches each video's current YouTube view count with `yt-dlp` and saves it, with
+the fetch date, to `data/json/video_view_counts.json`. Step 5 adds `view_count`
+to every video so the site can list the most popular videos first.
+
+**Usage** (run after step 2, then re-export):
+```bash
+python fetch_view_counts.py
+python 5_export_to_frontend_json.py
+```
+
+**When to use**: whenever you want fresher view counts. The file is kept between
+rebuilds, so `rebuild_all.py` reuses the last counts. Failed fetches keep the
+previous value.
+
+---
+
 ### Development Test Tool (`dev_test_chess_api.py`)
 
 Tests Chess.com API connectivity and game data extraction.
@@ -226,6 +244,7 @@ pip install -r requirements.txt
 Required packages:
 - `requests` - HTTP requests for APIs
 - `python-chess` - Chess game processing and PGN parsing
+- `yt-dlp` - YouTube view counts (only for `fetch_view_counts.py`)
 
 ---
 
@@ -244,6 +263,7 @@ backend/scripts/
 │
 ├── rebuild_all.py                      # Utility: Complete rebuild
 ├── update_titles_only.py               # Utility: Update titles
+├── fetch_view_counts.py                # Utility: Update view counts
 └── dev_test_chess_api.py               # Dev tool: Test API
 ```
 
@@ -342,6 +362,7 @@ When adding new features:
 | `next_moves_by_daniel` | TEXT (JSON array) | Moves Danya played from this position |
 | `next_moves_faced` | TEXT (JSON array) | Moves opponents played from this position |
 | `video_metadata` | TEXT (JSON array) | Enriched: URLs + titles + video IDs |
+| `video_colors` | TEXT (JSON object) | Video URL -> color Danya played in that game (`white`/`black`) |
 
 ### Example Position Entry
 

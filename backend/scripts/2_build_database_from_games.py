@@ -36,7 +36,8 @@ Output:
     fen TEXT PRIMARY KEY,           -- Chess position in FEN notation
     video_links TEXT,                -- JSON array of YouTube URLs
     next_moves_by_daniel TEXT,       -- JSON array of moves Danya played
-    next_moves_faced TEXT            -- JSON array of moves opponents played
+    next_moves_faced TEXT,           -- JSON array of moves opponents played
+    video_colors TEXT                -- JSON object: YouTube URL -> Danya's color
   )
 
 Usage:
@@ -80,7 +81,8 @@ CREATE TABLE IF NOT EXISTS positions (
     fen TEXT PRIMARY KEY,
     video_links TEXT,
     next_moves_by_daniel TEXT,
-    next_moves_faced TEXT
+    next_moves_faced TEXT,
+    video_colors TEXT
 )
 """)
 conn.commit()
@@ -200,7 +202,16 @@ for file_name in INPUT_FILES:
         }
         
         white_username = api_game["white"]["username"].lower()
+        black_username = api_game["black"]["username"].lower()
         daniel_color = "white" if white_username in daniel_usernames else "black"
+
+        # Color shown next to each video link (None if neither account is known)
+        if white_username in daniel_usernames:
+            video_color = "white"
+        elif black_username in daniel_usernames:
+            video_color = "black"
+        else:
+            video_color = None
         
         # Initialize board and position tracker
         board = game.board()
@@ -247,6 +258,7 @@ for file_name in INPUT_FILES:
             if fen_normalized not in positions:
                 positions[fen_normalized] = {
                     "videos": [],
+                    "video_colors": {},
                     "next_by_daniel": set(),
                     "next_faced": set()
                 }
@@ -255,6 +267,9 @@ for file_name in INPUT_FILES:
             link_time = youtube_start + int(total_time_elapsed)
             video_link = youtube_url.split("&t=")[0] + f"&t={link_time}"
             positions[fen_normalized]["videos"].append(video_link)
+            # Each link points at one game, so it maps to exactly one color
+            if video_color:
+                positions[fen_normalized]["video_colors"][video_link] = video_color
 
             # === Track which moves were played ===
             daniel_to_move = (to_move == daniel_color)
@@ -272,7 +287,8 @@ for file_name in INPUT_FILES:
         for fen, info in positions.items():
             # Check if this FEN already exists in database
             cur.execute(
-                "SELECT video_links, next_moves_by_daniel, next_moves_faced FROM positions WHERE fen = ?",
+                "SELECT video_links, next_moves_by_daniel, next_moves_faced, video_colors "
+                "FROM positions WHERE fen = ?",
                 (fen,)
             )
             row = cur.fetchone()
@@ -287,28 +303,33 @@ for file_name in INPUT_FILES:
                 new_videos = existing_videos.union(info["videos"])
                 new_next_by_daniel = existing_next_by_daniel.union(info["next_by_daniel"])
                 new_next_faced = existing_next_faced.union(info["next_faced"])
+                new_video_colors = {**json.loads(row[3] or "{}"), **info["video_colors"]}
 
                 # Update database
                 cur.execute("""
                     UPDATE positions
-                    SET video_links = ?, next_moves_by_daniel = ?, next_moves_faced = ?
+                    SET video_links = ?, next_moves_by_daniel = ?, next_moves_faced = ?,
+                        video_colors = ?
                     WHERE fen = ?
                 """, (
                     json.dumps(list(new_videos)),
                     json.dumps(list(new_next_by_daniel)),
                     json.dumps(list(new_next_faced)),
+                    json.dumps(new_video_colors),
                     fen
                 ))
             else:
                 # Insert new position
                 cur.execute("""
-                    INSERT INTO positions (fen, video_links, next_moves_by_daniel, next_moves_faced)
-                    VALUES (?, ?, ?, ?)
+                    INSERT INTO positions
+                        (fen, video_links, next_moves_by_daniel, next_moves_faced, video_colors)
+                    VALUES (?, ?, ?, ?, ?)
                 """, (
                     fen,
                     json.dumps(list(info["videos"])),
                     json.dumps(list(info["next_by_daniel"])),
-                    json.dumps(list(info["next_faced"]))
+                    json.dumps(list(info["next_faced"])),
+                    json.dumps(info["video_colors"])
                 ))
 
         # Progress update

@@ -301,6 +301,13 @@
                 <!-- YouTube videos where this position appears with direct timestamps -->
                 <div class="videos-section">
                     <h2>YouTube Videos</h2>
+                    <!-- Sorted by view count; filter by the color Danya played -->
+                    <div id="video-color-filter" class="video-color-filter" role="group"
+                         aria-label="Show videos where Danya played" hidden>
+                        <button type="button" data-color="all" aria-pressed="true">All</button>
+                        <button type="button" data-color="white" aria-pressed="false">♔ White</button>
+                        <button type="button" data-color="black" aria-pressed="false">♚ Black</button>
+                    </div>
                     <div id="video-links" class="video-links-container">
                         <p class="no-videos">No videos for this position</p>
                     </div>

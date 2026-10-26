@@ -759,6 +759,54 @@ header h1 {
     text-align: center;
 }
 
+/* Danya's color: filter buttons and per-video badge */
+.video-color-filter {
+    display: flex;
+    gap: 6px;
+    margin-bottom: 10px;
+}
+
+.video-color-filter[hidden] {
+    display: none;
+}
+
+.video-color-filter button {
+    flex: 1;
+    padding: 6px 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    background: white;
+    color: var(--text-primary);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.video-color-filter button[aria-pressed="true"] {
+    background: var(--accent-color);
+    border-color: var(--accent-color);
+    color: white;
+}
+
+.color-badge {
+    display: inline-block;
+    margin-top: 4px;
+    padding: 1px 8px;
+    border-radius: 10px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    border: 1px solid var(--text-primary);
+}
+
+.color-badge.white {
+    background: #ffffff;
+    color: var(--text-primary);
+}
+
+.color-badge.black {
+    background: var(--text-primary);
+    color: #ffffff;
+}
+
 /* ===========================
    Touch Event Handling
    =========================== */
